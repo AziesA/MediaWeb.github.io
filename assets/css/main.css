@@ -1,0 +1,124 @@
+.btn-mint {
+    background-color: #0f8258;
+}
+
+.border-bottom-mint {
+    border-bottom: 0.25rem solid#0f8258 !important;
+}
+
+.bg_buku {
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-position: right 30px;
+
+}
+
+.bg_orang {
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left 30px;
+}
+
+.bg-purple {
+    background-color: #3A1078 !important;
+}
+
+.bg-ungu {
+    background-color: #4E31AA !important;
+}
+
+.btn-ungu {
+    background-color: #4E31AA !important;
+}
+
+.border-purple {
+    border-color: #3A1078 !important
+}
+
+.btn-outline-ungu {
+    color: #4E31AA;
+    border-color: #4E31AA;
+}
+
+.btn-outline-ungu:hover {
+    color: #fff;
+    background-color: #4E31AA;
+    border-color: #4E31AA;
+}
+
+.btn-outline-ungu:focus,
+.btn-outline-ungu.focus {
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+}
+
+.btn-outline-ungu.disabled,
+.btn-outline-ungu:disabled {
+    color: #4E31AA;
+    background-color: transparent;
+}
+
+.btn-outline-ungu:not(:disabled):not(.disabled):active,
+.btn-outline-ungu:not(:disabled):not(.disabled).active,
+.show>.btn-outline-ungu.dropdown-toggle {
+    color: #fff;
+    background-color: #4E31AA;
+    border-color: #4E31AA;
+}
+
+.btn-outline-ungu:not(:disabled):not(.disabled):active:focus,
+.btn-outline-ungu:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-ungu.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.5);
+}
+
+.prg {
+    text-align: justify;
+    text-indent: 0.5in;
+}
+
+.isimateri {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: candara;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 2%;
+    text-align: justify;
+    float: left;
+    color: black;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.thick {
+    font-weight: bold;
+}
+
+.frac>span {
+    display: block;
+    padding: 0.1em;
+}
+
+.frac span.bottom {
+    border-top: thin solid black;
+}
+
+.frac span.symbol {
+    display: none;
+}
+
+.bord {
+    border: 2px solid #3A1078;
+    padding-bottom: 10px;
+}
