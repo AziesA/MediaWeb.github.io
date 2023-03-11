@@ -30,61 +30,57 @@ function mulai1() {
     let kelas1 = document.getElementById('kelas').value;
     let sekolah1 = document.getElementById('sekolah').value;
 
-    //Local Storage
-    localStorage.setItem("nama", nama1);
-    localStorage.setItem('kelas', kelas1);
-    localStorage.setItem('sekolah', sekolah1);
 
     const errNama = document.getElementById('errNama');
     const errKelas = document.getElementById('errKelas');
     if ((nama1 == "") && (kelas1 == "") && (sekolah1 == "")) {
-        errNama.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errNama.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Nama harus diisi terlebih dahulu!
                             </div>`;
-        errKelas.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errKelas.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih kelas terlebih dahulu!
                             </div>`;
-        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errSekolah.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih sekolah terlebih dahulu!
                             </div>`;
     } else if ((nama1 == "") && (kelas1 == "")) {
-        errNama.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errNama.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Nama harus diisi terlebih dahulu!
                             </div>`;
-        errKelas.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errKelas.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih kelas terlebih dahulu!
                             </div>`;
         errSekolah.innerHTML = '';
     } else if ((nama1 == "") && (sekolah1 == "")) {
-        errNama.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errNama.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Nama harus diisi terlebih dahulu!
                             </div>`;
-        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errSekolah.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih kelas terlebih dahulu!
                             </div>`;
         errKelas.innerHTML = '';
     } else if ((sekolah1 == "") && (kelas1 == "")) {
-        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errSekolah.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Nama harus diisi terlebih dahulu!
                             </div>`;
-        errKelas.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errKelas.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih kelas terlebih dahulu!
                             </div>`;
         errNama.innerHTML = '';
     } else if (nama1 == "") {
-        errNama.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errNama.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Nama harus diisi terlebih dahulu!
                             </div>`;
         errKelas.innerHTML = '';
         errSekolah.innerHTML = '';
     } else if (kelas1 == "") {
-        errKelas.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errKelas.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih kelas terlebih dahulu!
                             </div>`;
         errNama.innerHTML = '';
         errSekolah.innerHTML = '';
     } else if (sekolah1 == "") {
-        errSekolah.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size: 12pt;">
+        errSekolah.innerHTML = `<div class="alert alert-primary" role="alert" style="font-size: 12pt;">
                                 Silahkan pilih sekolah terlebih dahulu!
                             </div>`;
         errNama.innerHTML = '';
@@ -276,10 +272,10 @@ function cekKuis1TO() {
         }
     }
 
-    localStorage.setItem("nkuis1", nilai);
-    var namaS = localStorage.getItem('nama');
-    var kelasS = localStorage.getItem('kelas');
-    var sekolahS = localStorage.getItem('sekolah');
+    document.setItem("nkuis1", nilai);
+    var namaS = document.getItem('nama');
+    var kelasS = document.getItem('kelas');
+    var sekolahS = document.getItem('sekolah');
 
 
     if (nilai < kkm1) {
@@ -333,10 +329,10 @@ function cekKuis1() {
             }
         }
 
-        localStorage.setItem("nkuis1", nilai);
-        var namaS = localStorage.getItem('nama');
-        var kelasS = localStorage.getItem('kelas');
-        var sekolahS = localStorage.getItem('sekolah');
+        document.setItem("nkuis1", nilai);
+        var namaS = document.getItem('nama');
+        var kelasS = document.getItem('kelas');
+        var sekolahS = document.getItem('sekolah');
 
 
         if (nilai < kkm1) {
