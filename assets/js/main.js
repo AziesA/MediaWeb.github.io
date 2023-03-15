@@ -79,20 +79,5 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
+//Pengatar
 
-$('span[data-toggle="popover"]').popover({
-    trigger: 'hover',
-    placement: 'bottom',
-});
-
-const popovers = document.querySelectorAll('span[data-toggle="popover"]');
-for (let popover of popovers) {
-    const div = document.createElement('div');
-    div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;'); // display:none works as well but then MathJax will just create anothe div with this style
-    div.innerHTML = popover.getAttribute('data-content');
-    document.body.appendChild(div);
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-    MathJax.Hub.Queue(function () {
-        popover.setAttribute('data-content', div.querySelector('.mjx-chtml').outerHTML);
-    })
-}
