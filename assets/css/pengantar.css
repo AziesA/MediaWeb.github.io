@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 
+* {
+    box-sizing: border-box;
+}
+
 
 h1 {
     font-weight: 700;
@@ -16,20 +20,6 @@ h1.title {
 }
 
 
-a {
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
-    transition: 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #4bb6b7;
-}
-
-
-
 
 button:hover {
     letter-spacing: 3px;
@@ -43,31 +33,31 @@ button:focus {
     outline: none;
 }
 
-.ghost {
+button.ghost {
     background-color: rgba(225, 225, 225, 0.2);
 
 }
 
-.ghost i {
+button.ghost i {
     position: absolute;
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
 
-.ghost i.register {
+button.ghost i.register {
     right: 70px;
 }
 
-.ghost i.login {
+button.ghost i.login {
     left: 70px;
 }
 
-.ghost:hover i.register {
+button.ghost:hover i.register {
     right: 40px;
     opacity: 1;
 }
 
-.ghost:hover i.login {
+button.ghost:hover i.login {
     left: 40px;
     opacity: 1;
 }
@@ -76,7 +66,6 @@ button:focus {
 
 .container {
     background-color: #fff;
-    border-radius: 25px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
@@ -206,24 +195,4 @@ button:focus {
 
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
-}
-
-.social-container {
-    margin: 20px 0;
-}
-
-.social-container a {
-    border: 1px solid #dddddd;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
-    transition: 0.3s ease-in-out;
-}
-
-.social-container a:hover {
-    border: 1px solid #4bb6b7;
 }
