@@ -32,7 +32,94 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
+        <ul class="navbar-nav bg-purple sidebar sidebar-dark accordion border-right-" id="accordionSidebar">
 
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../homepage.html">
+                <div class="sidebar-brand-icon">
+                    <img src="../assets/img/integral_sign.png" style="height:40px;width:40px;">
+                </div>
+                <div class="sidebar-brand-text mx-3">Integral</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Pengantar -->
+            <li class="nav-item ">
+                <a class="nav-link" href="Pengantar.html">
+                    <i class="fas fa-book"></i>
+                    <span>PENGANTAR</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Heading -->
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-1"></i>
+                    <span>Pengertian Integral</span>
+                </a>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="../Materi/PengertianIntegral.html">1.1. Konsep
+                            Integral</a>
+                        <a class="collapse-item " href="../Materi/Notasi.html">1.2. Notas Integral</a>
+                        <a class="collapse-item active" href="../Materi/kuis1.html">Kuis 1</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-2"></i>
+                    <span>Integral Tak Tentu Fungsi Aljabar dan Sifat-Sifatnya</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="../Materi/SifatIntegral.html">Materi</a>
+                        <a class="collapse-item" href="../Materi/kuis2.html">Kuis 2</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fa-solid fa-3"></i>
+                    <span>Penerapan Integral</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="../Materi/PenerapanIntegral.html">Materi</a>
+                        <a class="collapse-item" href="../Materi/kuis3.html">Kuis 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+
+            <!-- Heading -->
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="../Materi/Evaluasi.html">
+                    <i class="fa-brands fa-leanpub"></i>
+                    <span>Evaluasi</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -40,14 +127,11 @@
             <!-- Main Content -->
             <div id="content">
                 <!-- Topbar -->
-                <nav class="navbar navbar-dark bg-ungu topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-light topbar mb-4 static-top justify-content-center"
+                    style=" box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); ">
                     <!-- Page Heading -->
-                    <div class="text-center" style="width: 100%;">
-                        <a class="float-right " style="cursor: pointer;" data-toggle="modal"
-                            data-target="#ModalHome"><img src="../assets/img/home2.png" alt=""
-                                style="width:50px;height:50px;;"></a>
-                        <h4 class="h3 mt-2 grays">Kuis Pengertian Integral</h4>
-                    </div>
+                    <h4 class="h3 mt-2 grays">Kuis Pengertian Integral</h4>
+
                 </nav>
                 <!-- End of Topbar -->
 
@@ -56,7 +140,7 @@
 
                     <!-- Content Row -->
                     <div id="dataKuis1">
-                        <div class="row" style="height: 500px; width: 100%;">
+                        <div class="row bord3" style="height: 500px; width: 100%;">
                             <div class="mb-1 col-sm-6 bg-white border border-purple isimateri">
                                 <div class="h5 font-weight-bold">
                                     <div class="ml-3 mb-3 mr-3">
@@ -176,7 +260,7 @@
                     </div>
 
                     <div id="kuis1" hidden>
-                        <div class="row" style="height: 500px; width: 100%; margin-top: -15px;">
+                        <div class="row bord3" style="height: 500px; width: 100%; margin-top: -15px;">
                             <div class="mb-1 col-sm-3 bg-white border border-purple isimateri">
                                 <div class="h5 font-weight-bold">
                                     <h5 class="text-truncate text-center bord bg-purple text-white">Nomor Soal</h5>
@@ -248,8 +332,8 @@
                         </div>
                     </div>
                     <div id="hasilKuis1" hidden>
-                        <div class="row" style="height: 500px; width: 100%; margin-top: -15px;">
-                            <div class="mb-1 col-sm bg-white border border-primary isimateri">
+                        <div class="row bord3" style="height: 500px; width: 100%; margin-top: -15px;">
+                            <div class="mb-1 col-sm bg-white border border-purple isimateri">
                                 <div class="h5 font-weight-bold">
                                     <div class="h3 text-center" style="font-weight: normal;">Hasil Kuis 1</div>
                                     <hr style="border-top: 3px dashed rgb(58, 16, 120);">
