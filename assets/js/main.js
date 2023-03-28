@@ -78,5 +78,3 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
-//Pengatar
-

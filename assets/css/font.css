@@ -30,6 +30,11 @@ h4 {
     base-palette: 9;
 }
 
+@font-palette-values --Reds {
+    font-family: Rocher;
+    base-palette: 1;
+}
+
 
 .blues {
     font-palette: --Blues;
@@ -45,4 +50,8 @@ h4 {
 
 .grays {
     font-palette: --Grays;
+}
+
+.reds {
+    font-palette: --Reds;
 }
