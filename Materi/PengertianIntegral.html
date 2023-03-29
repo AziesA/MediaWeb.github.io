@@ -147,7 +147,7 @@
                     <div class="row-center border border-purple isimateri rounded bg-white bord3"
                         style="height:480px; width: 100%;">
                         <div class="col-lg">
-                            <div id="satu">
+                            <div id="satu" hidden>
                                 <div class="prg text-black">
                                     Sebelumnya kita telah mempelajari konsep turunan, karena konsep turunan sangat
                                     berhubungan dengan konsep integral yang akan kita pelajari. Bagaimanakah hubungan
@@ -284,7 +284,7 @@
                                 </div>
                             </div>
 
-                            <div id="tiga" hidden>
+                            <div id="tiga">
                                 <div class="text-truncate  bord4 ">
                                     <h4 class="h4 text-white pt-3 reds text-center">Contoh soal</h4>
                                 </div><br>
@@ -324,15 +324,49 @@
                                                     1). $y' = \frac {dy}{dx} = x^4 $
                                                 </p>
                                                 <p><b>Penyelesaian:</b> <br>
-                                                    $y' = \frac {dy}{dx} = x^4 $
+                                                    $y' = \frac {dy}{dx} = x^4 $, <br>
+                                                <ul class="circle">
+                                                    <li>Turunan dari $x^5$ pastilah mengandung unsur $x^4$ sehingga <br>
+                                                        $ \frac{d}{dx}(x^5) = 5x^4$
+                                                    </li>
+                                                    <li>Supaya koefisiennya menjadi 1 maka kedua ruas dapat dibagi
+                                                        dengan $\frac{1}{5}$ menjadi:<br>
+                                                        $\frac{d}{x}(\frac{1}{5}x^5) = \frac{1}{5}.5x^4$ sehingga
+                                                        $\frac{d}{dx}(\frac{1}{5}x^5) = x^4 $
+                                                    </li>
+                                                    <li>Jadi antiturunan $y'=\frac{dy}{dx} = x^4$ adalah $y=
+                                                        \frac{1}{5}x^5$</li>
+                                                </ul>
+
                                             </div>
                                             <div class="tab-pane fade" id="contoh2">
                                                 <p class="card-text" style="font-family: lucida sans; font-size: 18px;">
                                                     2). $y' = \frac {dy}{dx} = 2x^3 $
                                                 </p>
                                                 <p> <b>Penyelesaian:</b> <br>
-
-
+                                                    $y' = \frac {dy}{dx} = 2x^3 $,
+                                                <ul class="circle">
+                                                    <li>
+                                                        Turunan dari $x^4$ pastilah mengandung unsur $x^3$ sehingga<br>
+                                                        $\frac{d}{dx}(x^4) = 4x^3$
+                                                    </li>
+                                                    <li>
+                                                        Supaya koefisiennya menjadi 1 maka kedua ruas dapat dibagi
+                                                        dengan $\frac{1}{4}$ menjadi: <br>
+                                                        $\frac{d}{x}(\frac{1}{4}x^4) = \frac{1}{4}.4x^3$ sehingga
+                                                        $\frac{d}{dx}(\frac{1}{4}x^4) = x^3 $
+                                                    </li>
+                                                    <li>
+                                                        Sekarang hasil antiturunan $x^3$ yaitu $\frac{1}{4}x^4$ kalikan
+                                                        dengan 2 menjadi:<br>
+                                                        $\frac{d}{dx}(2(\frac{1}{4}x^4)) = \frac{d}{dx}(\frac{2}{4}x^4)
+                                                        = \frac{d}{dx}(\frac{1}{2}x^4) = 2x^3 $
+                                                    </li>
+                                                    <li>
+                                                        Jadi, antiturunan $y'= \frac{dy}{dx} = 2x^3$ adalah
+                                                        $\frac{1}{2}x^4$
+                                                    </li>
+                                                </ul>
 
                                             </div>
                                             <div class="tab-pane fade" id="contoh3">
@@ -341,7 +375,37 @@
                                                 </p>
                                                 <p>
                                                     <b>Penyelesaian:</b><br>
-
+                                                    $y' = \frac {dy}{dx} = \frac{1}{\sqrt{x}} $,
+                                                <ul class="circle">
+                                                    <li>
+                                                        Ubah $\frac{dy}{dx} = \frac{1}{\sqrt{x}}$ menjadi bentuk
+                                                        perpangkatan biasa yaitu <br>
+                                                        $\frac{dy}{dx} = \frac{1}{\sqrt{x}} = x^{-\frac{1}{2}}$
+                                                    </li>
+                                                    <li>
+                                                        Untuk mempermudah ambil fungsi yang pangkat satu lebih besar
+                                                        daripada $x^{-\frac{1}{2}}$ yaitu $x^{\frac{1}{2}}$
+                                                    </li>
+                                                    <li>
+                                                        Turunkan fungsi $x^{\frac{1}{2}}$ sehingga <br>
+                                                        $\frac{d}{dx}(x^{\frac{1}{2}})$ = $\frac{1}{2}x^{-\frac{1}{2}}$
+                                                    </li>
+                                                    <li>
+                                                        Supaya koefisiennya menjadi 1 maka kedua ruas dapat dibagi
+                                                        dengan 2 menjadi:<br>
+                                                        $\frac{d}{dx}(2x^{\frac{1}{2}}) = 2.\frac{1}{2}x^{-\frac{1}{2}}$
+                                                        sehingga $\frac{d}{dx}(2x^\frac{1}{2})$ = $x^{-\frac{1}{2}}$
+                                                    </li>
+                                                    <li>
+                                                        Ubah hasil antiturunan $\frac{d}{dx}(2x^{\frac{1}{2}})$ ke
+                                                        bentuk akar menjadi:<br>
+                                                        $2\sqrt{x}$
+                                                    </li>
+                                                    <li>
+                                                        Jadi, antiturunan dari $ y' = \frac{dy}{dx} = \frac{1}{\sqrt{x}}
+                                                        $ adalah $y = 2\sqrt{x}$
+                                                    </li>
+                                                </ul>
                                                 </p>
                                             </div>
                                         </div>

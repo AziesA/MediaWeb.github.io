@@ -178,3 +178,7 @@
     width: 250px;
     height: 60px;
 }
+
+ul.circle {
+    list-style-type: circle;
+}
