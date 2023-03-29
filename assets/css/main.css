@@ -185,3 +185,9 @@
 ul.circle {
     list-style-type: circle;
 }
+
+.note {
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
