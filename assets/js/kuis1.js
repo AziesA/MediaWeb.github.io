@@ -153,7 +153,7 @@ function listsoal1() {
     });
 
     countDownDate = new Date().getTime();
-    //waktu 15 menit
+    //waktu 30 menit 
     countDownDate += 1802000;
 
     var x = setInterval(function () {
