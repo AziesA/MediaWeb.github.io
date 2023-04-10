@@ -110,7 +110,9 @@ function listsoal1() {
                     error();
                 }
             }
+            MathJax.typeset();
         }
+
         xhr.open('get', url);
         xhr.send();
     }
