@@ -140,14 +140,7 @@ function listsoal1() {
 
         document.getElementById("id1").hidden = false;
         document.getElementById("id2").hidden = true;
-        document.getElementById("id3").hidden = true;
-        document.getElementById("id4").hidden = true;
-        document.getElementById("id5").hidden = true;
-        document.getElementById("id6").hidden = true;
-        document.getElementById("id7").hidden = true;
-        document.getElementById("id8").hidden = true;
-        document.getElementById("id9").hidden = true;
-        document.getElementById("id10").hidden = true;
+
     }, () => {
 
     });
@@ -195,14 +188,7 @@ function listsoal1() {
 
 let kuis1_1 = "";
 let kuis1_2 = "";
-let kuis1_3 = "";
-let kuis1_4 = "";
-let kuis1_5 = "";
-let kuis1_6 = "";
-let kuis1_7 = "";
-let kuis1_8 = "";
-let kuis1_9 = "";
-let kuis1_10 = "";
+
 let nilai = 0;
 function cek1(pilih) {
     kuis1_1 = pilih;
@@ -214,53 +200,14 @@ function cek2(pilih) {
     document.getElementById("soal2").classList.add('active', 'btn-primary');
     document.getElementById("soal2").classList.remove('btn-light');
 }
-function cek3(pilih) {
-    kuis1_3 = pilih;
-    document.getElementById("soal3").classList.add('active', 'btn-primary');
-    document.getElementById("soal3").classList.remove('btn-light');
-}
-function cek4(pilih) {
-    kuis1_4 = pilih;
-    document.getElementById("soal4").classList.add('active', 'btn-primary');
-    document.getElementById("soal4").classList.remove('btn-light');
-}
-function cek5(pilih) {
-    kuis1_5 = pilih;
-    document.getElementById("soal5").classList.add('active', 'btn-primary');
-    document.getElementById("soal5").classList.remove('btn-light');
-}
-function cek6(pilih) {
-    kuis1_6 = pilih;
-    document.getElementById("soal6").classList.add('active', 'btn-primary');
-    document.getElementById("soal6").classList.remove('btn-light');
-}
-function cek7(pilih) {
-    kuis1_7 = pilih;
-    document.getElementById("soal7").classList.add('active', 'btn-primary');
-    document.getElementById("soal7").classList.remove('btn-light');
-}
-function cek8(pilih) {
-    kuis1_8 = pilih;
-    document.getElementById("soal8").classList.add('active', 'btn-primary');
-    document.getElementById("soal8").classList.remove('btn-light');
-}
-function cek9(pilih) {
-    kuis1_9 = pilih;
-    document.getElementById("soal9").classList.add('active', 'btn-primary');
-    document.getElementById("soal9").classList.remove('btn-light');
-}
-function cek10(pilih) {
-    kuis1_10 = pilih;
-    document.getElementById("soal10").classList.add('active', 'btn-primary');
-    document.getElementById("soal10").classList.remove('btn-light');
-}
+
 $(function () {
     setInterval(cek, 1000);
 });
 
 let kuis1 = [];
 function cek() {
-    kuis1 = [kuis1_1, kuis1_2, kuis1_3, kuis1_4, kuis1_5, kuis1_6, kuis1_7, kuis1_8, kuis1_9, kuis1_10];
+    kuis1 = [kuis1_1, kuis1_2];
 }
 
 function cekKuis1TO() {
@@ -316,7 +263,7 @@ function cekKuis1TO() {
 }
 
 function cekKuis1() {
-    if ((kuis1_1 == "") || (kuis1_2 == "") || (kuis1_3 == "") || (kuis1_4 == "") || (kuis1_5 == "") || (kuis1_6 == "") || (kuis1_7 == "") || (kuis1_8 == "") || (kuis1_9 == "") || (kuis1_10 == "")) {
+    if ((kuis1_1 == "") || (kuis1_2 == "")) {
         $('#ModalKuisKosong').modal('show')
         $('#ModalSubmit1').modal('hide')
     } else {
@@ -381,174 +328,14 @@ function soal1() {
     document.getElementById("soalPrev").hidden = true;
     document.getElementById("id1").hidden = false;
     document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
     document.getElementById("soalNext").setAttribute("onClick", "javascript: soal2();");
 }
 
 function soal2() {
     indeks.innerHTML = 2;
     document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = false;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal1();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal3();");
-}
-
-function soal3() {
-    indeks.innerHTML = 3;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = false;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal2();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal4();");
-}
-
-function soal4() {
-    indeks.innerHTML = 4;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = false;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal3();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal5();");
-}
-
-function soal5() {
-    indeks.innerHTML = 5;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = false;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal4();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal6();");
-}
-
-function soal6() {
-    indeks.innerHTML = 6;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = false;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal5();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal7();");
-}
-
-function soal7() {
-    indeks.innerHTML = 7;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = false;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal6();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal8();");
-}
-
-function soal8() {
-    indeks.innerHTML = 8;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = false;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal7();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal9();");
-}
-
-function soal9() {
-    indeks.innerHTML = 9;
-    document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
-    document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = false;
-    document.getElementById("id10").hidden = true;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal8();");
-    document.getElementById("soalNext").setAttribute("onClick", "javascript: soal10();");
-}
-
-function soal10() {
-    indeks.innerHTML = 10;
-    document.getElementById("soalPrev").hidden = false;
     document.getElementById("soalNext").hidden = true;
     document.getElementById("id1").hidden = true;
-    document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = false;
-    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal9();");
+    document.getElementById("id2").hidden = false;
+    document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal1();");
 }
