@@ -191,3 +191,32 @@ ul.circle {
     margin-top: 10px;
     text-align: center;
 }
+
+.next_pensil {
+    background-color: #4E31AA !important;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid #4E31AA !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next_pensil:hover {
+    background-color: #3A1078 !important;
+    color: #3A1078 !important;
+}
+
+.hilang,
+.hilang1 {
+    display: none !important;
+}
+
+.masuk {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.aau {
+    margin-left: 55px !important;
+}
