@@ -194,9 +194,9 @@ ul.circle {
 
 .next_pensil {
     background-color: #4E31AA !important;
-    padding: 5px;
+    padding: 1px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 5px;
     border: 1px solid #4E31AA !important;
     border-radius: 5px;
     cursor: pointer;
@@ -214,9 +214,9 @@ ul.circle {
 
 .masuk {
     margin-left: 15px;
-    margin-right: 10px;
 }
 
 .aau {
-    margin-left: 55px !important;
+    font-weight: bold;
+    margin-left: 55px !
 }
