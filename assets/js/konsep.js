@@ -104,7 +104,7 @@ tmblnya1.addEventListener('click', function () {
     } else if (kondisi2 == 3) {
         bgnya1[3].className = bgnya1[3].className.replace('hilang1', '');
         tmblnya1.className += ' hilang1';
-        jadi[3].className = jadi[3].className.replace('hilang1', '');
+        jadi[4].className = jadi[4].className.replace('hilang1', '');
     }
 })
 
@@ -126,7 +126,7 @@ tmblnya2.addEventListener('click', function () {
         kondisi3 += 1;
         bgnya2[3].className = bgnya2[3].className.replace('hilang1', '');
         tmblnya2.innerText = "Jawab";
-    } else if (kondisi == 4) {
+    } else if (kondisi3 == 4) {
         kondisi3 += 1;
         bgnya2[4].className = bgnya2[4].className.replace('hilang1', '');
         tmblnya2.innerText = "Hasil";
