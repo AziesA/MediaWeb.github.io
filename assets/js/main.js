@@ -15,6 +15,3 @@ window.MathJax = {
     script.async = true;
     document.head.appendChild(script);
 })();
-
-
-
