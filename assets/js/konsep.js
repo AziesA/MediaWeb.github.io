@@ -136,3 +136,6 @@ tmblnya2.addEventListener('click', function () {
         jadi[5].className = jadi[5].className.replace('hilang1', '');
     }
 })
+
+//tahapan mari mencoba
+

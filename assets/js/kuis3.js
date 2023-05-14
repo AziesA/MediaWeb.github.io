@@ -147,7 +147,7 @@ function listsoal1() {
 
     countDownDate = new Date().getTime();
     //waktu 30 menit 
-    countDownDate += 1802000;
+    countDownDate += 600000;
 
     var x = setInterval(function () {
         var now = new Date().getTime();
