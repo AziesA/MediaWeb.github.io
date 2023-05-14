@@ -61,6 +61,89 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
+//Tahapan mari mencoba
+let bgny = document.querySelectorAll('.mm1');
+let bgny1 = document.querySelectorAll('.mm2');
+let bgny2 = document.querySelectorAll('.mm3');
+let jad = document.querySelectorAll('.aau');
+let tmblny = document.querySelector('.tmb_mm1');
+let tmblny1 = document.querySelector('.tmb_mm2');
+let tmblny2 = document.querySelector('.tmb_mm3');
+let kond1 = 0;
+let kond2 = 0;
+let kond3 = 0;
+tmblny.addEventListener('click', function () {
+    if (kond1 == 0) {
+        kond1 += 1;
+        bgny[0].className = bgny[0].className.replace('hilang1', '');
+        tmblny.innerText = "Jawab";
+    } else if (kond1 == 1) {
+        kond1 += 1;
+        bgny[1].className = bgny[1].className.replace('hilang1', '');
+        tmblny.innerText = "Jawab";
+    } else if (kond1 == 2) {
+        kond1 += 1;
+        bgny[2].className = bgny[2].className.replace('hilang1', '');
+        tmblny.innerText = "Hasil";
+    } else if (kond1 == 3) {
+        bgny[3].className = bgny[3].className.replace('hilang1', '');
+        tmblny.className += ' hilang1';
+        jad[4].className = jad[4].className.replace('hilang1', '');
+    }
+})
+
+tmblny1.addEventListener('click', function () {
+    if (kond2 == 0) {
+        kond2 += 1;
+        bgny1[0].className = bgny1[0].className.replace('hilang1', '');
+        tmblny1.innerText = "Jawab";
+    } else if (kond2 == 1) {
+        kond2 += 1;
+        bgny1[1].className = bgny1[1].className.replace('hilang1', '');
+        tmblny1.innerText = "Jawab";
+    } else if (kond2 == 2) {
+        kond2 += 1;
+        bgny1[2].className = bgny1[2].className.replace('hilang1', '');
+        tmblny1.innerText = "Hasil";
+    } else if (kond2 == 3) {
+        bgny1[3].className = bgny1[3].className.replace('hilang1', '');
+        tmblny1.className += ' hilang1';
+        jad[4].className = jad[4].className.replace('hilang1', '');
+    }
+})
+
+tmblny2.addEventListener('click', function () {
+    if (kond3 == 0) {
+        kond3 += 1;
+        bgny2[0].className = bgny2[0].className.replace('hilang1', '');
+        tmblny2.innerText = "Jawab";
+    } else if (kond3 == 1) {
+        kond3 += 1;
+        bgny2[1].className = bgny2[1].className.replace('hilang1', '');
+        tmblny2.innerText = "Jawab";
+    } else if (kond3 == 2) {
+        kond3 += 1;
+        bgny2[2].className = bgny2[2].className.replace('hilang1', '');
+        tmblny2.innerText = "Hasil";
+    } else if (kond3 == 3) {
+        bgny2[3].className = bgny2[3].className.replace('hilang1', '');
+        tmblny2.className += ' hilang1';
+        jad[4].className = jad[4].className.replace('hilang1', '');
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 // tahapan contoh soal
 let bgnya = document.querySelectorAll('.cth1');
 let bgnya1 = document.querySelectorAll('.cth2');

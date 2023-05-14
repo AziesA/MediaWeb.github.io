@@ -16,12 +16,12 @@ window.MathJax = {
     document.head.appendChild(script);
 })();
 
-$('#atp').popover({
+$('#boo').popover({
     placement: 'right',
     html: true,
-    trigger: 'click',
+    trigger: 'show',
     title: "Aturan Pangkat Turunan",
-    content: "Jika $y=ax^{n}$ maka $y'=a.nx^{n-1}$"
+    content: "Jika $y= ax^{n}$ maka $y'=a.nx^{n-1}$"
 });
 
-$('#atp').popover('show');
+$('#boo').popover('show')
