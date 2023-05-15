@@ -65,7 +65,7 @@ function empat() {
 let bgny = document.querySelectorAll('.mm1');
 let bgny1 = document.querySelectorAll('.mm2');
 let bgny2 = document.querySelectorAll('.mm3');
-let jad = document.querySelectorAll('.aau');
+let jad = document.querySelectorAll('.auu');
 let tmblny = document.querySelector('.tmb_mm1');
 let tmblny1 = document.querySelector('.tmb_mm2');
 let tmblny2 = document.querySelector('.tmb_mm3');
@@ -131,16 +131,6 @@ tmblny2.addEventListener('click', function () {
         jad[4].className = jad[4].className.replace('hilang1', '');
     }
 })
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -220,5 +210,4 @@ tmblnya2.addEventListener('click', function () {
     }
 })
 
-//tahapan mari mencoba
 
