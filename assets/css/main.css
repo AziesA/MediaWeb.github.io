@@ -1,9 +1,32 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 input {
     width: 40px;
 }
 
-.btn-mint {
-    background-color: #0f8258;
+::placeholder {
+    text-align: center;
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+hr .new1 {
+    border: 5px solid black;
+    border-radius: 2px;
 }
 
 .border-bottom-mint {
