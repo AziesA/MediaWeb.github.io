@@ -24,10 +24,6 @@ input {
     text-align: center;
 }
 
-hr .new1 {
-    border: 5px solid black;
-    border-radius: 2px;
-}
 
 .border-bottom-mint {
     border-bottom: 0.25rem solid#0f8258 !important;
@@ -246,4 +242,34 @@ ul.circle {
 .aau {
     font-weight: bold;
     margin-left: 55px !
+}
+
+.la2 {
+    margin-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+    margin-left: 0.66vw;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.frac>span {
+    display: block;
+    padding: 0.1em;
+}
+
+.frac span.bottom {
+    border-top: thin solid black;
+}
+
+.frac span.symbol {
+    display: none;
 }

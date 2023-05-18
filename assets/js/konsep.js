@@ -61,7 +61,7 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
-//Tahapan mari mencoba
+//Tahapan mari mengamati
 let bgny = document.querySelectorAll('.mm1');
 let bgny1 = document.querySelectorAll('.mm2');
 let bgny2 = document.querySelectorAll('.mm3');
@@ -211,3 +211,4 @@ tmblnya2.addEventListener('click', function () {
 })
 
 
+//tahapan mari mencoba
