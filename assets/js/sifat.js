@@ -60,3 +60,5 @@ function empat() {
     document.getElementById("prev").setAttribute("onClick", "javascript: tiga();");
     document.getElementById("mnext").hidden = false;
 }
+
+
