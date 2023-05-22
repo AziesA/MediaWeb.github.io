@@ -68,11 +68,11 @@ function empat() {
 let ganti_soal = document.querySelectorAll('.button');
 let isinya_soal = document.querySelectorAll('.bgisi');
 
-let cnth_soal0 = ['<p>Carilah antiturunan berikut: $\\int{\\frac{3}{4}}dx$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar Integral $\\int{a}&ensp;dx = ax + c$, maka kita memperoleh:</p> <p>$\\int{\\frac{3}{4}}dx$</p> <p>$=\\frac{3}{4}x + c$</p>', '<p>Carilah antiturunan berikut:$\\int{5}&ensp; dx $</p>  <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar integral $\\int{a}&ensp;dx =ax+ c$, maka kita memperoleh: </p> <p><p>$\\int{5}&ensp; dx$ </p> <p>$= 5x + c$</p></p>'];
+let cnth_soal0 = ['<p>Carilah antiturunan berikut: $\\int{\\frac{3}{4}}dx$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar Integral $\\int{a}&ensp;dx = ax + c$, maka kita memperoleh:</p> <p>$\\int{\\frac{3}{4}}dx$</p> <p>$=\\frac{3}{4}x + c$</p>'];
 
 let cnth_soal1 = ['<p>Carilah antiturunan berikut: $\\int{\\frac{1}{x^{2}}}dx$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar integral $\\int{x^n} dx =\\frac{ 1 } { n + 1 } x ^ { n+ 1} + c, n &ne; -1$, maka kita memperoleh:</p> <p> $\\int{\\frac{1}{x^{2}}}dx$</p> <p>$=\\frac{1}{-2}x^{-2+1} +c$</p> <p>$=-x^{-1} + c$</p> <p>$=-\\frac{1}{x} + c$</p>'];
 
-let cnth_soal2 = ['<p>\\[=y^2 \\times y^2\\]</p> <p> \\[ = y ^ {2 + 2}\\] </p> <p > \\[ = y ^ 4\\] </p>', '<p>\\[=x^5 \\times x^3\\]</p> <p> \\[ = x ^ {5 + 3}\\] </p> <p > \\[ = x ^ 8\\] </p>', '<p>\\[=x^3 \\times x\\]</p> <p> \\[ = x ^ {3 + 1}\\] </p> <p > \\[ = x ^ 4\\] </p>', '<p>\\[=x \\times x^2\\]</p> <p> \\[ = x ^ {1 + 2}\\] </p> <p > \\[ = x ^ 3\\] </p>', '<p>\\[=y \\times y\\]</p> <p> \\[ = y ^ {1 + 1}\\] </p> <p > \\[ = y ^ 2\\] </p>'];
+let cnth_soal2 = ['<p><p>Carilah antiturunan berikut: $\\int 3x^{2}$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar integral $\\int ax^{n}dx=\\frac{1}{n+1}x^{n+1} + c, n &ne; -1$ dan manipulasi aljabar, maka diperoleh:</p> <p>$\\int3x^2$</p> <p>$=\\frac{3}{2+1}x^{2+1} + c$</p> <p>$=\\frac{3}{3}x^{3}$</p> <p>$=x^{3} + c$'];
 
 let cnth_soal3 = ['<p>\\[=(x^3)^3\\]</p> <p> \\[ = x ^ {3 \\times 3}\\] </p> <p > \\[ = x ^ 9\\] </p>', '<p>\\[=(y)^3\\]</p> <p> \\[ = y ^ {1 \\times 3}\\] </p> <p > \\[ = y ^ 3\\] </p>', '<p>\\[=(x^2)^2\\]</p> <p> \\[ = x ^ {2 \\times 2}\\] </p> <p > \\[ = x ^ 4\\] </p>', '<p>\\[=(y^2)^3\\]</p> <p> \\[ = y ^ {2 \\times 3}\\] </p> <p > \\[ = y^6\\] </p>', '<p>\\[=(x^2)^4\\]</p> <p> \\[ = x^ {2 \\times 4}\\] </p> <p > \\[ = x^8\\] </p>'];
 
