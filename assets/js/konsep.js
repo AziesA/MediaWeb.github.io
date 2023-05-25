@@ -212,3 +212,64 @@ tmblnya2.addEventListener('click', function () {
 
 
 //tahapan mari mencoba
+
+var p1 = document.getElementById("s1");
+var p2 = document.getElementById("d2");
+var p3 = document.getElementById("t3");
+var benar = 0;
+function ceksmm1() {
+    var soal = document.getElementById("smm1");
+
+    if (soal.value == "7") {
+        document.getElementById("smm1").style = "border:3px solid green; width:3rem;height: 2rem; text-align:center";
+        benar = 3;
+    }
+    else {
+        document.getElementById("smm1").style = "border:3px solid red; width:3rem;height: 2rem; text-align:center";
+    }
+}
+
+
+function hapusdisabled3() {
+    if (benar == 3) {
+        document.getElementById("t3").classList.remove('inputdisabled');
+    } else {
+
+    }
+}
+
+function cekt3() {
+    var tiga = document.getElementById("t3");
+
+    if (tiga.value == "7x7x7" || tiga.value == "7 x 7 x 7") {
+        document.getElementById("t3").style = "border:3px solid green; width:7rem;height: 2rem; text-align:center";
+        benar = 4;
+    }
+    else {
+        document.getElementById("t3").style = "border:3px solid red; width:7rem;height: 2rem; text-align:center";
+    }
+}
+
+function hapusdisabled4() {
+    if (benar == 4) {
+        document.getElementById("hasil1").classList.remove('inputdisabled');
+    } else {
+
+    }
+}
+
+
+function cekhasil1() {
+    var hasil = document.getElementById("hasil1");
+
+    if (hasil.value == "343") {
+        document.getElementById("hasil1").style = "border:3px solid green; width:3.5rem;height: 2rem; text-align:center";
+        var hasil1 = document.getElementById("hasil1").value;
+        document.getElementById("fixhasil").innerHTML = "<b>" + hasil1 + "</b>";
+    }
+    else {
+        document.getElementById("hasil1").style = "border:3px solid red; width:3.5rem;height: 2rem; text-align:center";
+    }
+
+
+}
