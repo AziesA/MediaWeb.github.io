@@ -144,7 +144,7 @@
                     <!-- Content Row -->
                     <div class="row-center  isimateri rounded bg-white bord3" style="height:480px; width: 100%;">
                         <div class="col-lg">
-                            <div id="satu">
+                            <div id="satu" hidden>
                                 <div class="prg text-black">
                                     Pada bagian pertama kita telah mengenal definisi integral dan kaitannya dengan
                                     konsep turunan. Nah kali ini kita akan belajar mengenai sifat-sifat yang dimiliki
@@ -224,7 +224,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="dua" hidden>
+                            <div id="dua">
                                 <div class="prg">
                                     Untuk memperdalam pemahaman kalian mengenai rumus dan sifat-sifat dari integral tak
                                     tentu coba perhatikan contoh beriut.perhatikan beberapa contoh soal dibawah ini!
@@ -327,133 +327,159 @@
                                     </div>
                                     <div id="collapseDua" class="collapse" aria-labelledby="headingDua">
                                         <div class="card-body">
-                                            Some placeholder content for the second accordion panel. This panel is
-                                            hidden by default.
+                                            <div class="">
+                                                <ol type="1">
+                                                    <li>
+                                                        <p>$\int a.f(x)dx$ = $a\int f(x)dx$</p>
+                                                        <p>Contoh:</p>
+                                                        <div class="isiconth">
+                                                            <div class="bgisi">
+                                                                <p>Tentukanlah hasil dari $\int{2x^4\sqrt{x^3}} dx$</p>
+                                                                <p><b>Penyelesaian:</b></p>
+                                                                <p>Dengan menerapkan sifat integral $\int{a . f(x) dx =
+                                                                    a\int{f(x)dx}}$ dan manipulasi aljabar, maka kita
+                                                                    memperoleh:</p>
+                                                                <p> $\int{2x^4\sqrt{x^3}} dx$</p>
+                                                                <p>$=\int{2x^4 . x^{\frac{3}{2}}dx}$</p>
+                                                                <p> $=2\int{x^4. x^{\frac{3}{2}}dx}$</p>
+                                                                <p>$=2\int{x^{4+\frac{3}{2}}}$</p>
+                                                                <p>$=2\int{x^{\frac{11}{2}}}$</p>
+                                                                <p>$=2[\frac{1}{\frac{11}{2}+1}x^{\frac{11}{2}+1}]
+                                                                    + c$</p>
+                                                                <p>$=2[\frac{1}{\frac{13}{2}+1}x^{\frac{13}{2}+1}]+c$
+                                                                </p>
+                                                                <p>$=2[\frac{1}{\frac{13}{2}}x^{\frac{13}{2}}] +
+                                                                    c$</p>
+                                                                <p>$=\frac{4}{13}x^{\frac{13}{2}} + c$</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <p> $\int$ {$f(x)+ g(x)$}$dx$ = $\int f(x)dx$ + $\int g(x)dx $
+                                                        </p>
+                                                        <p>Contoh:</p>
+                                                        <div class="isiconth">
+                                                            <div class="bgisi">
+                                                                <p>Tentukanlah hasil dari $\int{(x+2)^2} dx$</p>
+                                                                <p> <b>Penyelesaian:</b></p>
+                                                                <P>Dengan menerapkan sifat integral $\int{ f(x)+g(x)
+                                                                    }dx=\int{f(x)}dx + \int{g(x)}dx$
+                                                                    dan manipulasi alajabar, maka kita memperoleh:</P>
+                                                                <p> $\int{(x+2)^2} dx$</p>
+                                                                <p>$=\int{(x+2)(x+2)}$</p>
+                                                                <p>$=\int{x^2 + 4x + 4} dx$</p>
+                                                                <p>$=\int{x^2} dx + \int{4x} dx + \int{4}dx$</p>
+                                                                <p>$=\int{x^2} dx + 4\int{x} dx + \int{4}dx$</p>
+                                                                <p>$=\frac{1}{2+1} + 4[\frac{1}{1+1}x^{1+1}] + 4x + c $
+                                                                </p>
+                                                                <p>$=\frac{1}{3}x^3 + \frac{4}{2}x^2 + 4x + c $</p>
+                                                                <p>$=\frac{1}{3}x^3 + 2x^2 + 4x + c $</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <p> $\int{ f(x)-g(x)
+                                                            }dx=\int{f(x)}dx - \int{g(x)}dx$</p>
+                                                        <p>Contoh:</p>
+                                                        <div class="isiconth">
+                                                            <div class="bgisi">
+                                                                <p> Tentukanlah hasil dari
+                                                                    $\int{\frac{x^3-2x}{\sqrt{x^3}}}dx$</p>
+                                                                <p><b> Penyelesaian</b></p>
+                                                                <p>Dengan menerapkan sifat integral $\int{ f(x)-g(x)
+                                                                    }dx=\int{f(x)}dx - \int{g(x)}dx$
+                                                                    dan manipulasi alajabar, maka kita memperoleh:</p>
+                                                                <p> $\int{\frac{x^3-2x}{\sqrt{x^3}}}dx$</p>
+                                                                <p> $=\int{(\frac{x^3}{\sqrt{x}}-\frac{2x}{\sqrt{x}})}dx
+                                                                    $</p>
+                                                                <p>$=\int(x^3 . x^{-\frac{1}{2}}- 2x. x^{-\frac{1}{2}})
+                                                                    dx$</p>
+                                                                <p>$=\int(x^{\frac{5}{2}}- 2x^{\frac{1}{2}}) dx $</p>
+                                                                <p>$=\int{x^{\frac{5}{2}}} dx -
+                                                                    \int{2x^{\frac{1}{2}}}dx$</p>
+                                                                <p>$=\int{x^{\frac{5}{2}}} dx -
+                                                                    2\int{x^{\frac{1}{2}}}dx$</p>
+                                                                <p>$=\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1} -
+                                                                    2[\frac{1}{\frac{1}{2}+1}x^{\frac{1}{2}+1}] + c$</p>
+                                                                <p>$=\frac{1}{\frac{7}{2}}x^{\frac{7}{2}+1} -
+                                                                    \frac{2}{\frac{3}{2}}x^{\frac{7}{2}} + c$</p>
+                                                                <p>$=\frac{2}{7}x^{\frac{7}{2}+1} -
+                                                                    \frac{4}{3}x^{\frac{7}{2}} + c$</p>
+                                                                <p>$=\frac{2}{7}x^{3}\sqrt{x} - \frac{4}{3}x\sqrt{x} + c
+                                                                    $</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-
+                                <br>
+                                <div class="card">
+                                    <div class="card-header" id="headingTiga">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-hitam collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTiga"
+                                                aria-expanded="false" aria-controls="collapseTiga"
+                                                style="font-size: 20px;">
+                                                Contoh Lain
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTiga" class="collapse" aria-labelledby="headingTiga">
+                                        <div class="card-body">
+                                            <div class="">
+                                                <p>Carilah nilai $f(x)$ jika $f'(x) = x^{3} - 4x^{2} + 3$ dan
+                                                    $f(0) = 1$.</p>
+                                                <div class="isiconth">
+                                                    <div class="bgisi">
+                                                        <p><b>Penyelesaian:</b></p>
+                                                        <table style="font-size: 18px; padding: 10px;">
+                                                            <tr>
+                                                                <td>Diketahui </td>
+                                                                <td class="pl-2 pr-2"> : </td>
+                                                                <td> $f'(x) = x^{3} - 4x^{2} +3$, $f(0)=1$</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Ditanya: </td>
+                                                                <td class="pl-2 pr-2"> : </td>
+                                                                <td>Carilah nilai $f(x)?$ </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Dijawab:</td>
+                                                                <td class="pl-2 pr-2"> : </td>
+                                                                <td>$f'(x)=x^{3} - 4x^{2} +3$ maka $f(x) = \int x^{3}
+                                                                    -4x^{2} +
+                                                                    3&ensp;dx$ </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>$F(x) = \int x^3 - 4x^2 + 3&ensp;dx$</p>
+                                                        <p>$=\int x^3 dx - \int 4x^2 dx + \int 3 dx$</p>
+                                                        <p>$=\int x^3dx - 4\int x^2 dx + \int 3 dx$</p>
+                                                        <p>$=\frac{1}{3+1}x^{3+1} + 4[\frac{1}{2+1}x^{2+1}] + 3x + c$
+                                                        </p>
+                                                        <p>$=\frac{1}{4}x^{4} + 4[\frac{1}{3}x^{3}] + 3x + c$</p>
+                                                        <p>$=\frac{1}{4}x^{4} + \frac{4}{3}x^{3} + 3x +c$</p>
+                                                        <p>&rarr; $f(x) = \frac{1}{4}x^{4} - \frac{4}{3}x^{3} + 3x +
+                                                            c$, karena $f(0) = 1$, maka</p>
+                                                        <p>&rarr; $f(0) = \frac{1}{4}(0)^{3} - \frac{4}{3}(0)^{3} + 3(0)
+                                                            + c$</p>
+                                                        <p>&rarr; $1 = 0 - 0 + 0 + c$, berarti c= 1.</p>
+                                                        <p>Jadi, nilai $f(x)$ adalah $f(x) =\frac{1}{4}x^{4} -
+                                                            \frac{4}{3}x^{3} + 3x + 1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div id="tiga" hidden>
-                                <div class="text-truncate  bord4 ">
-                                    <h4 class="h4 text-white pt-3 reds text-center">Contoh soal</h4>
-                                </div><br>
 
-                                <div class="card-text border rounded">
-                                    <div class="card-header bg-red " style="color:black;">
-                                        <ul class="nav nav-tabs card-header-tabs justify-content-center ">
-                                            <li class="nav-item ">
-                                                <a class="nav-link active border m-1 rounded" data-toggle="tab"
-                                                    style="color:black;" href="#contoh5">Contoh
-                                                    1</a>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item ">
-                                                <a class="nav-link border m-1 rounded" data-toggle="tab"
-                                                    style="color:black;" href="#contoh6">Contoh 2</a>
-                                            </li>
-                                            <li class="nav-item ">
-                                                <a class="nav-link border m-1 rounded" data-toggle="tab"
-                                                    style="color:black;" href="#contoh7">Contoh 3</a>
-                                            </li>
-                                            </li>
-                                            <li class="nav-item ">
-                                                <a class="nav-link border m-1 rounded" data-toggle="tab"
-                                                    style="color:black;" href="#contoh8" tabindex="-1"
-                                                    aria-disabled="true">Contoh 4</a>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body border ">
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="contoh5">
-                                                <p class="card-text" style=" font-size: 18px;">
-                                                    1.Tentukanlah hasil dari $\int{2x^4\sqrt{x^3}} dx$
-                                                    <br>
-                                                    <b>Penyelesaian:</b><br>
-                                                    Dengan menerapkan sifat integral $\int{a . f(x) dx =
-                                                    a\int{f(x)dx}}$ dan manipulasi aljabar, maka kita memperoleh:<br>
-                                                    <br>$\int{2x^4\sqrt{x^3}} dx$ <br>= $\int{2x^4 . x^{\frac{3}{2}}dx}$
-                                                    <br>=
-                                                    $ 2\int{x^4. x^{\frac{3}{2}}dx}$ <br>= $2\int{x^{4+\frac{3}{2}}}$
-                                                    <br>
-                                                    = $2\int{x^{\frac{11}{2}}}$<br>=
-                                                    $2[\frac{1}{\frac{11}{2}+1}x^{\frac{11}{2}+1}]
-                                                    + c$<br> = $2[\frac{1}{\frac{13}{2}+1}x^{\frac{13}{2}+1}] +
-                                                    c$<br> = $2[\frac{1}{\frac{13}{2}}x^{\frac{13}{2}}] +
-                                                    c$<br> = $2[\frac{2}{13}x^{\frac{13}{2}}] +
-                                                    c$<br> = $\frac{4}{13}x^{\frac{13}{2}} + c$
-                                                </p>
-
-                                            </div>
-                                            <div class="tab-pane fade" id="contoh6">
-                                                <p class="card-text" style=" font-size: 18px;">
-                                                    2. Tentukanlah hasil dari $\int{(x+2)^2} dx$<br>
-                                                    <b>Penyelesaian:</b><br>
-                                                    Dengan menerapkan sifat integral $\int{ f(x)+g(x)
-                                                    }dx=\int{f(x)}dx + \int{g(x)}dx$
-                                                    dan manipulasi alajabar, maka kita memperoleh:<br>
-                                                    $\int{(x+2)^2} dx$<br> = $\int{(x+2)(x+2)}$<br> = $\int{x^2 + 4x +
-                                                    4} dx$<br> =
-                                                    $\int{x^2} dx + \int{4x} dx + \int{4}dx$<br> = $\int{x^2} dx +
-                                                    4\int{x} dx + \int{4}dx$<br> = $\frac{1}{2+1} +
-                                                    4[\frac{1}{1+1}x^{1+1}] + 4x + c $<br>=$\frac{1}{3}x^3 +
-                                                    \frac{4}{2}x^2 + 4x + c $<br>=$\frac{1}{3}x^3 + 2x^2 + 4x + c $
-                                                </p>
-                                            </div>
-                                            <div class="tab-pane fade" id="contoh7">
-                                                <p class="card-text" style=" font-size: 18px;">
-                                                    3. Tentukanlah hasil dari $\int{\frac{x^3-2x}{\sqrt{x^3}}}dx$<br>
-                                                    <b> Penyelesaian</b><br>
-                                                    Dengan menerapkan sifat integral $\int{ f(x)-g(x)
-                                                    }dx=\int{f(x)}dx - \int{g(x)}dx$
-                                                    dan manipulasi alajabar, maka kita memperoleh:<br>
-                                                    $\int{\frac{x^3-2x}{\sqrt{x^3}}}dx$ <br>
-                                                    = $\int{(\frac{x^3}{\sqrt{x}}-\frac{2x}{\sqrt{x}})}dx $ <br>
-                                                    = $(x^3 . x^{-\frac{1}{2}}- 2x. x^{-\frac{1}{2}}) dx$ <br>
-                                                    = $\int(x^{\frac{5}{2}}- 2x^{\frac{1}{2}}) dx $ <br>
-                                                    = $\int{x^{\frac{5}{2}}} dx - \int{2x^{\frac{1}{2}}}dx$<br>
-                                                    = $\int{x^{\frac{5}{2}}} dx - 2\int{x^{\frac{1}{2}}}dx$<br>
-                                                    = $\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1} -
-                                                    2[\frac{1}{\frac{1}{2}+1}x^{\frac{1}{2}+1}] + c$ <br>
-                                                    = $\frac{1}{\frac{7}{2}}x^{\frac{7}{2}+1} -
-                                                    \frac{2}{\frac{3}{2}}x^{\frac{7}{2}} + c$<br>
-                                                    =$\frac{2}{7}x^{\frac{7}{2}+1} -
-                                                    \frac{4}{3}x^{\frac{7}{2}} + c$<br>
-                                                    = $\frac{2}{7}x^{3}\sqrt{x} - \frac{4}{3}x\sqrt{x} + c $
-                                            </div>
-                                            <div class="tab-pane fade" id="contoh8">
-                                                <p class="card-text" style=" font-size: 18px;">
-                                                    4. Carilah nilai $f(x)$ jika $f'(x) = x^3 - 4x^2 + 3$ dan $f(0) =
-                                                    1$<br>
-                                                    <b> Penyelesaian</b><br>
-                                                    Diketahui : $f'(x) = x^3 - 4x^2 + 3$ , $f(0) = 1$<br>
-                                                    Ditanya : Carilah nilai $f(x)$ ?<br>
-                                                    Dijawab : $f'(x) = x^4 - 4x^2$ maka $ f(x) = \int{x^3 - 4x^2 +
-                                                    3}&ensp;
-                                                    dx$<br>
-                                                    $f(x) = \int x^3 - 4x^2 + 3 &ensp; dx$ <br>
-                                                    = $\int{x^3} dx - \int{4x^2} dx + \int{3} dx $ <br>
-                                                    = $\int{x^3} dx - 4\int{x^2} dx + \int{3} dx $ <br>
-                                                    = $\frac{1}{3+1}x^{3+1} +4[\frac{1}{2+1}x^{2+1}] + 3x + c$<br>
-                                                    = $\frac{1}{4}x^{4} - \frac{4}{3}x^{3} + 3x + c$<br>
-                                                    &rarr; $f(x) = \frac{1}{4}x^{4} - \frac{4}{3}x^{3} + 3x + c$, karena
-                                                    $f(0) = 1$, maka<br>
-                                                    &rarr; $f(0) = \frac{1}{4}(0)^{4} - \frac{4}{3}(0)^{3} + 3(0) +
-                                                    c$<br>
-                                                    &rarr; $1 = 0 - + 0 + c $, berarti $c = 1$.<br>
-                                                    Jadi, nilai $f(x)$ adalah $f(x)=\frac{1}{4}x^{4} - \frac{4}{3}x^{3}
-                                                    + 3x + 1$
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             <div id="empat" hidden>
