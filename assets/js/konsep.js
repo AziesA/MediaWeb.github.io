@@ -211,65 +211,117 @@ tmblnya2.addEventListener('click', function () {
 })
 
 
-//tahapan mari mencoba
 
-var p1 = document.getElementById("s1");
-var p2 = document.getElementById("d2");
-var p3 = document.getElementById("t3");
-var benar = 0;
-function ceksmm1() {
-    var soal = document.getElementById("smm1");
+//mari mencoba
+var benar = 0
+function cekmm1() {
+    var soal = document.getElementById("mm1");
 
-    if (soal.value == "7") {
-        document.getElementById("smm1").style = "border:3px solid green; width:3rem;height: 2rem; text-align:center";
-        benar = 3;
+    if (soal.value == "4") {
+        document.getElementById("mm1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
     }
     else {
-        document.getElementById("smm1").style = "border:3px solid red; width:3rem;height: 2rem; text-align:center";
+        document.getElementById("mm1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_1() {
+    var soal1 = document.getElementById("mm1_1");
+    if (soal1.value == "4") {
+        document.getElementById("mm1_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_2() {
+    var soal1_1 = document.getElementById("mm1_2");
+    if (soal1_1.value == "3") {
+        document.getElementById("mm1_2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_3() {
+    var soal1_2 = document.getElementById("mm1_3");
+    if (soal1_2.value == "1") {
+        document.getElementById("mm1_3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
     }
 }
 
 
-function hapusdisabled3() {
-    if (benar == 3) {
+function cekmm1_4() {
+    var soal1_3 = document.getElementById("mm1_4");
+    if (soal1_3.value == "4") {
+        document.getElementById("mm1_4").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_4").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_5() {
+    var soal1_4 = document.getElementById("mm1_5");
+    if (soal1_4.value == "4") {
+        document.getElementById("mm1_5").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_5").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_6() {
+    var soal1_5 = document.getElementById("mm1_6");
+    if (soal1_5.value == "4") {
+        document.getElementById("mm1_6").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_6").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_7() {
+    var soal1_6 = document.getElementById("mm1_7");
+    if (soal1_6.value == "1") {
+        document.getElementById("mm1_7").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_7").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_8() {
+    var soal1_7 = document.getElementById("mm1_8");
+    if (soal1_7.value == "4") {
+        document.getElementById("mm1_8").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_9").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+var png1 = document.getElementById("pngk1")
+
+
+
+function hapusdisabled1() {
+    if (benar == 0) {
         document.getElementById("t3").classList.remove('inputdisabled');
-    } else {
-
     }
 }
 
-function cekt3() {
-    var tiga = document.getElementById("t3");
-
-    if (tiga.value == "7x7x7" || tiga.value == "7 x 7 x 7") {
-        document.getElementById("t3").style = "border:3px solid green; width:7rem;height: 2rem; text-align:center";
-        benar = 4;
-    }
-    else {
-        document.getElementById("t3").style = "border:3px solid red; width:7rem;height: 2rem; text-align:center";
-    }
-}
-
-function hapusdisabled4() {
-    if (benar == 4) {
-        document.getElementById("hasil1").classList.remove('inputdisabled');
-    } else {
-
-    }
-}
-
-
-function cekhasil1() {
-    var hasil = document.getElementById("hasil1");
-
-    if (hasil.value == "343") {
-        document.getElementById("hasil1").style = "border:3px solid green; width:3.5rem;height: 2rem; text-align:center";
-        var hasil1 = document.getElementById("hasil1").value;
-        document.getElementById("fixhasil").innerHTML = "<b>" + hasil1 + "</b>";
-    }
-    else {
-        document.getElementById("hasil1").style = "border:3px solid red; width:3.5rem;height: 2rem; text-align:center";
-    }
-
-
-}
