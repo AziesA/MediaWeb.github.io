@@ -212,17 +212,17 @@ tmblnya2.addEventListener('click', function () {
 
 
 
-//mari mencoba
+//mari mencoba latihan 1
 var benar = 0
 function cekmm1() {
-    var soal = document.getElementById("mm1");
+    var soal = document.getElementById("smm1");
 
     if (soal.value == "4") {
-        document.getElementById("mm1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("smm1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("mm1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("smm1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
     }
 }
 
@@ -311,17 +311,75 @@ function cekmm1_8() {
         benar = 0;
     }
     else {
+        document.getElementById("mm1_8").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_9() {
+    var soal1_8 = document.getElementById("mm1_9");
+    if (soal1_8.value == "4") {
+        document.getElementById("mm1_9").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
         document.getElementById("mm1_9").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
     }
 }
 
-var png1 = document.getElementById("pngk1")
-
-
-
-function hapusdisabled1() {
-    if (benar == 0) {
-        document.getElementById("t3").classList.remove('inputdisabled');
+function cekmm1_10() {
+    var soal1_9 = document.getElementById("mm1_10");
+    if (soal1_9.value == "3") {
+        document.getElementById("mm1_10").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_10").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
     }
 }
 
+function cekmm1_11() {
+    var soal1_10 = document.getElementById("mm1_11");
+    if (soal1_10.value == "1") {
+        document.getElementById("mm1_11").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_11").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_12() {
+    var soal1_11 = document.getElementById("mm1_12");
+    if (soal1_11.value == "4") {
+        document.getElementById("mm1_12").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_12").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+benar = 0;
+function cekhasil1() {
+    var hasil = document.getElementById("hasil1");
+
+    if (hasil.value == "4") {
+        document.getElementById("hasil1").style = "border:2px solid green; width:20px;height: 20px; text-align:center";
+        document.getElementById("fixhasil").innerHTML = "<span><b>$\\frac{1}{4}x^4$</b></span>";
+
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+
+}
+
+function hapusdisabled1() {
+    if (benar == 0) {
+        document.getElementById("hasil1").classList.remove('inputdisabled');
+    }
+}
+
+//mari mencoba 2

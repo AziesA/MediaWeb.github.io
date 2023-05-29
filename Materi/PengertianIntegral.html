@@ -481,15 +481,29 @@
                                 </div>
                             </div>
                             <div id="empat">
-                                <p class="text-black"><i>*Setelah memperhatikan Contoh Soal cobalah kerjakan
-                                        Soal
-                                        Latihan dengan mengisi kolom yang kosong</i></p>
+
+                                <div class="card-header bg-biru text- font-weight-bold rounded" style="width: 150px;">
+                                    Petunjuk &ensp;<i class="fas fa-chalkboard-teacher" style="color: #000000;"></i>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div style="font-family: lucida sans; font-size: 18px;">
+                                            <ul class="ms-3">
+                                                <li> Isikan jawaban kamu pada kolom yang kosong secara berurutan dari
+                                                    kiri ke kanan disetiap. </li>
+                                                <li> Jika jawaban kamu benar maka kolom tersebut akan berubah menjadi
+                                                    warna hijau. </li>
+                                                <li> Jika jawaban kamu salah maka kolom tersebut akan berubah menjadi
+                                                    warna merah. </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div> <br>
                                 <div class="text-truncate  bord5 ">
                                     <h4 class=" text-white pt-2  blues text-center">Mari Mencoba</h4>
                                 </div><br>
-                                <div class="text-black">
-                                    <p class="font-weight-normal">Carilah antiturunan berikut:</p>
-                                </div>
+
                                 <div class="card-text border rounded">
                                     <div class="card-header bg-biru " style="color:black; ">
                                         <ul class="nav nav-tabs card-header-tabs  ">
@@ -524,14 +538,15 @@
                                                     <ul class="circle">
                                                         <li>
                                                             <p>$\frac{d}{dx}=x$
-                                                                <sup><input type="number" name="smm1" id="mm1"
+                                                                <sup><input type="number" name="smm1" id="smm1"
                                                                         onkeyup="cekmm1()" onchange="hapusdisable1()"
                                                                         placeholder="..."></sup> $=$
-                                                                <input type="number" name="smm1" id="mm1_1"
-                                                                    onkeyup="cekmm1_1()" onchange="hapusdisabled1()"
-                                                                    placeholder="... "> $x$
-                                                                <sup><input type="number" name="smm1" id="mm1_2"
-                                                                        onkeyup="cekmm1_2()" onchange="hapusdisabled1()"
+                                                                <input type="number" name="smm1" class="input"
+                                                                    id="mm1_1" onkeyup="cekmm1_1()"
+                                                                    onchange="hapusdisabled1()" placeholder="... "> $x$
+                                                                <sup><input type="number" name="smm1" class="input"
+                                                                        id="mm1_2" onkeyup="cekmm1_2()"
+                                                                        onchange="hapusdisabled1()" \
                                                                         placeholder="... "></sup></sup>
                                                             </p>
                                                         <li>
@@ -555,22 +570,37 @@
                                                                         id="mm1_8" onkeyup="cekmm1_8()"
                                                                         onchange="hapusdisabled1()"
                                                                         placeholder="... "></span>
-                                                            </div> . <input type="number" placeholder="...">$x$ <sup>
-                                                                <input type="number" placeholder="..."></sup>
-                                                            <span id="pngk1">$4x^3$</span>
+                                                            </div> .<input type="number" name="smm1" id="mm1_9"
+                                                                onkeyup="cekmm1_9()" onchange="hapusdisabled1()"
+                                                                placeholder="... ">$x$ <sup>
+                                                                <input type="number" name="smm1" id="mm1_10"
+                                                                    onkeyup="cekmm1_10()" onchange="hapusdisabled1()"
+                                                                    placeholder="... "></sup>
+
+
                                                             <br>
                                                             Sehingga $\frac{d}{dx}$(
                                                             <div class="frac">
-                                                                <span> <input type="number" placeholder="..."></span>
+                                                                <span> <input type="number" name="smm1" id="mm1_11"
+                                                                        onkeyup="cekmm1_11()"
+                                                                        onchange="hapusdisabled1()"
+                                                                        placeholder="... "></span>
                                                                 <span class="symbol">/</span>
-                                                                <span class="bottom"> <input type="number"
-                                                                        placeholder="..."></span>
-                                                            </div>$x$<sup> <input type="number"
-                                                                    placeholder="..."></sup>) = $x^{3}$
+                                                                <span class="bottom"> <input type="number" name="smm1"
+                                                                        id="mm1_12" onkeyup="cekmm1_12()"
+                                                                        onchange="hapusdisabled1()"
+                                                                        placeholder="... "></span>
+                                                            </div>$x$ <sup><input type="number" class="inputdisabled"
+                                                                    name="hasil" id="hasil1" onkeyup="cekhasil1()"
+                                                                    placeholder="..."></sup>)
+                                                            = $x^{3}$
+
+
+                                                            <br>
                                                         </li>
                                                         <p class="">
                                                             Jadi, antiturunan $y'= \frac{dy}{dx} = x^3$ adalah
-                                                            $\frac{1}{4}x^4$
+                                                            <span id="fixhasil"></span>
                                                         </p>
                                                     </ul>
 
@@ -580,13 +610,14 @@
                                             </div>
                                             <div class="tab-pane fade" id="Latihan2">
                                                 <div class="card-text" style=" font-size: 18px;">
-                                                    <p>2. $y' = \frac {dy}{dx} = 3x^5 $</p>
+                                                    <p>2.Carilah antiturunan $y' = \frac {dy}{dx} = 3x^5 $</p>
                                                     <p> <b>Penyelesaian:</b> <br></p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="Latihan3">
                                                 <div class="card-text" style=" font-size: 18px;">
-                                                    <p>3. $y' = \frac {dy}{dx} = \frac{5}{\sqrt{x}} $</p>
+                                                    <p>3. Carilah antiturunan $y' = \frac {dy}{dx} = \frac{5}{\sqrt{x}}
+                                                        $</p>
                                                     <p>
                                                         <b>Penyelesaian:</b>
                                                     </p>

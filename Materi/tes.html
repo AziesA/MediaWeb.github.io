@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Pembagian</title>
+</head>
+
+<body>
+    <h1>Input Pembagian</h1>
+
+    <label for="input1">Angka Pertama:</label>
+    <input type="number" id="input1">
+
+    <br>
+
+    <label for="input2">Angka Kedua:</label>
+    <input type="number" id="input2">
+
+    <br>
+
+    <button onclick="divideNumbers()">Bagi</button>
+
+    <p id="result"></p>
+
+    <script>
+        function divideNumbers() {
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+
+            var result = parseFloat(input1) / parseFloat(input2);
+
+            document.getElementById("result").innerHTML = "Hasil: " + result;
+        }
+    </script>
+</body>
+
+</html>
