@@ -360,18 +360,17 @@ function cekmm1_12() {
 }
 
 
-benar = 0;
 function cekhasil1() {
     var hasil = document.getElementById("hasil1");
 
     if (hasil.value == "4") {
-        document.getElementById("hasil1").style = "border:2px solid green; width:20px;height: 20px; text-align:center";
-        document.getElementById("fixhasil").innerHTML = "<span><b>$\\frac{1}{4}x^4$</b></span>";
-
+        document.getElementById("hasil1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{1}{4}x^4$</b></span>';
         MathJax.typeset();
     }
     else {
         document.getElementById("hasil1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
     }
 
 }
@@ -382,4 +381,174 @@ function hapusdisabled1() {
     }
 }
 
+
 //mari mencoba 2
+var benar = 0
+function cekmm2() {
+    var soal2 = document.getElementById("smm2");
+
+    if (soal2.value == "6") {
+        document.getElementById("smm2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_1() {
+    var soal2_1 = document.getElementById("smm2_1");
+
+    if (soal2_1.value == "6") {
+        document.getElementById("smm2_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_2() {
+    var soal2_2 = document.getElementById("smm2_2");
+
+    if (soal2_2.value == "5") {
+        document.getElementById("smm2_2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_3() {
+    var soal2_3 = document.getElementById("smm2_3");
+
+    if (soal2_3.value == "1") {
+        document.getElementById("smm2_3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_4() {
+    var soal2_4 = document.getElementById("smm2_4");
+
+    if (soal2_4.value == "6") {
+        document.getElementById("smm2_4").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_4").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_5() {
+    var soal2_5 = document.getElementById("smm2_5");
+
+    if (soal2_5.value == "6") {
+        document.getElementById("smm2_5").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_5").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_6() {
+    var soal2_6 = document.getElementById("smm2_6");
+
+    if (soal2_6.value == "1") {
+        document.getElementById("smm2_6").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_6").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_7() {
+    var soal2_7 = document.getElementById("smm2_7");
+
+    if (soal2_7.value == "6") {
+        document.getElementById("smm2_7").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_7").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_8() {
+    var soal2_8 = document.getElementById("smm2_8");
+
+    if (soal2_8.value == "6") {
+        document.getElementById("smm2_8").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_8").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_9() {
+    var soal2_9 = document.getElementById("smm2_9");
+
+    if (soal2_9.value == "1") {
+        document.getElementById("smm2_9").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_9").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_10() {
+    var soal2_10 = document.getElementById("smm2_10");
+
+    if (soal2_10.value == "6") {
+        document.getElementById("smm2_10").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_10").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil2() {
+    var hasil2 = document.getElementById("hasil2");
+
+    if (hasil2.value == "6") {
+        document.getElementById("hasil2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil2").innerHTML = "<span>$\\frac{1}{6}x^{6}$</span>";
+
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+
+}
+
+function cekmm2_11() {
+    var soal2_11 = document.getElementById("smm2_11");
+
+    if (soal2_11.value == "3") {
+        document.getElementById("smm2_11").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_11").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function hapusdisabled2() {
+    if (benar == 0) {
+        document.getElementById("hasil1").classList.remove('inputdisabled');
+    }
+}

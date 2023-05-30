@@ -11,7 +11,6 @@ input[type=number] {
 }
 
 input {
-    width: 35px;
 
     text-align: center;
 }
@@ -26,6 +25,16 @@ input {
     text-align: center;
 }
 
+.pangkat {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.input {
+    width: 35px;
+    height: 30px;
+}
 
 .border-bottom-mint {
     border-bottom: 0.25rem solid#0f8258 !important;
@@ -55,6 +64,10 @@ input {
 
 .text-hitam {
     color: #000000 !important;
+}
+
+.text-merah {
+    color: #C01B1B !important;
 }
 
 .bg-purple {
