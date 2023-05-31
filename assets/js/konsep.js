@@ -666,3 +666,380 @@ function hapusdisabled2() {
         document.getElementById("hasil2_1").classList.remove('inputdisabled');
     }
 }
+
+//mari mencoba latihan 3
+var benar = 0;
+function cekmm3() {
+    var soal3 = document.getElementById("smm3");
+
+    if (soal3.value == "5") {
+        document.getElementById("smm3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_1() {
+    var soal3_1 = document.getElementById("smm3_1");
+
+    if (soal3_1.value == "1") {
+        document.getElementById("smm3_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil3() {
+    var hasil3 = document.getElementById("hasil3");
+
+    if (hasil3.value == "2") {
+        document.getElementById("hasil3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{-\\frac{1}{2}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
+    }
+}
+
+function cekmm3_2() {
+    var soal3_2 = document.getElementById("smm3_2");
+
+    if (soal3_2.value == "1") {
+        document.getElementById("smm3_2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekhasil3_1() {
+    var hasil3_1 = document.getElementById("hasil3_1");
+
+    if (hasil3_1.value == "2") {
+        document.getElementById("hasil3_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{\\frac{1}{2}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
+    }
+}
+
+
+
+function cekmm3_3() {
+    var soal3_3 = document.getElementById("smm3_3");
+
+    if (soal3_3.value == "1") {
+        document.getElementById("smm3_3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_4() {
+    var soal3_4 = document.getElementById("smm3_4");
+
+    if (soal3_4.value == "2") {
+        document.getElementById("smm3_4").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_4").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_5() {
+    var soal3_5 = document.getElementById("smm3_5");
+
+    if (soal3_5.value == "1") {
+        document.getElementById("smm3_5").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_5").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_6() {
+    var soal3_6 = document.getElementById("smm3_6");
+
+    if (soal3_6.value == "2") {
+        document.getElementById("smm3_6").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_6").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_7() {
+    var soal3_7 = document.getElementById("smm3_7");
+
+    if (soal3_7.value == "1") {
+        document.getElementById("smm3_7").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_7").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_8() {
+    var soal3_8 = document.getElementById("smm3_8");
+
+    if (soal3_8.value == "2") {
+        document.getElementById("smm3_8").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_8").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm3_9() {
+    var soal3_9 = document.getElementById("smm3_9");
+
+    if (soal3_9.value == "2") {
+        document.getElementById("smm3_9").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_9").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm3_10() {
+    var soal3_10 = document.getElementById("smm3_10");
+
+    if (soal3_10.value == "1") {
+        document.getElementById("smm3_10").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_10").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_11() {
+    var soal3_11 = document.getElementById("smm3_11");
+
+    if (soal3_11.value == "2") {
+        document.getElementById("smm3_11").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_11").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm3_12() {
+    var soal3_12 = document.getElementById("smm3_12");
+
+    if (soal3_12.value == "2") {
+        document.getElementById("smm3_12").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_12").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_13() {
+    var soal3_13 = document.getElementById("smm3_13");
+
+    if (soal3_13.value == "1") {
+        document.getElementById("smm3_13").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_13").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_14() {
+    var soal3_14 = document.getElementById("smm3_14");
+
+    if (soal3_14.value == "2") {
+        document.getElementById("smm3_14").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_14").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_15() {
+    var soal3_15 = document.getElementById("smm3_15");
+
+    if (soal3_15.value == "1") {
+        document.getElementById("smm3_15").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_15").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_16() {
+    var soal3_16 = document.getElementById("smm3_16");
+
+    if (soal3_16.value == "2") {
+        document.getElementById("smm3_16").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_16").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm3_17() {
+    var soal3_17 = document.getElementById("smm3_17");
+
+    if (soal3_17.value == "2") {
+        document.getElementById("smm3_17").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_17").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_18() {
+    var soal3_18 = document.getElementById("smm3_18");
+
+    if (soal3_18.value == "1") {
+        document.getElementById("smm3_18").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_18").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil3_2() {
+    var hasil3_2 = document.getElementById("hasil3_2");
+
+    if (hasil3_2.value == "2") {
+        document.getElementById("hasil3_2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_2").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{-\\frac{1}{2}}$</b></span>';
+        document.getElementById("fixhasil3_2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$2x^{\\frac{1}{2}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3_2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_2").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
+    }
+}
+
+function cekmm3_19() {
+    var soal3_19 = document.getElementById("smm3_19");
+
+    if (soal3_19.value == "5") {
+        document.getElementById("smm3_19").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_19").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil3_3() {
+    var hasil3_3 = document.getElementById("hasil3_3");
+
+    if (hasil3_3.value == "5") {
+        document.getElementById("hasil3_3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_3").innerHTML = '<span><b>$2x^{\\frac{1}{2}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3_3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_20() {
+    var soal3_20 = document.getElementById("smm3_20");
+
+    if (soal3_20.value == "10") {
+        document.getElementById("smm3_20").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_20").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm3_21() {
+    var soal3_21 = document.getElementById("smm3_21");
+
+    if (soal3_21.value == "1") {
+        document.getElementById("smm3_21").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_21").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil3_4() {
+    var hasil3_4 = document.getElementById("hasil3_4");
+
+    if (hasil3_4.value == "2") {
+        document.getElementById("hasil3_4").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_4").innerHTML = ' <span><b>$10x^{\\frac{1}{2}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3_4").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm3_22() {
+    var soal3_22 = document.getElementById("smm3_22");
+
+    if (soal3_22.value == "10") {
+        document.getElementById("smm3_22").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_22").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil3_5() {
+    var hasil3_5 = document.getElementById("hasil3_5");
+
+    if (hasil3_5.value == "x") {
+        document.getElementById("hasil3_5").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil3_5").innerHTML = ' <span><b>$10x^{\\sqrt{x}}$</b></span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil3_5").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+
+function hapusdisabled3() {
+    if (benar == 0) {
+        document.getElementById("hasil2").classList.remove('inputdisabled');
+        document.getElementById("hasil2_1").classList.remove('inputdisabled');
+    }
+}

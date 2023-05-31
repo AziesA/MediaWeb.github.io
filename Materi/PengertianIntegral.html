@@ -627,6 +627,7 @@
                                                     <p>2.Carilah antiturunan $y' = \frac {dy}{dx} = 3x^5 $</p>
                                                     <p> <b>Penyelesaian:</b> <br></p>
                                                     <p>$y' = \frac {dy}{dx} = 3x^5 $</p>
+                                                    <br>
                                                     <ul class="circle">
                                                         <li>
                                                             <span>$\frac{d}{dx}$($x$<sup><sup><input type="number"
@@ -636,7 +637,7 @@
                                                                             placeholder="..."></sup></sup>) $=$
                                                                 <input type="number" name="smm2" id="smm2_1"
                                                                     class="input" onkeyup="cekmm2_1()"
-                                                                    onchange="hapusdisable2()" placeholder="...">$x$
+                                                                    onchange="hapusdisable2()" placeholder="..."> $x$
                                                                 <sup><sup>
                                                                         <input type="number" name="smm2" id="smm2_2"
                                                                             class="pangkat" onkeyup="cekmm2_2()"
@@ -770,58 +771,269 @@
                                                     <p>
                                                         <b>Penyelesaian:</b>
                                                     </p>
+                                                    <p>$y' = \frac {dy}{dx} = \frac{5}{\sqrt{x}} $</p>
+                                                    <ul class="circle">
+                                                        <li>
+                                                            <span>Ubah $\frac{dy}{dx}=\frac{5}{\sqrt{x}}$ menjadi
+                                                                perpangkatan biasa yaitu
+                                                                <span>$\frac{dy}{dx} =
+                                                                    $ <input type="number" name="smm3" id="smm3"
+                                                                        class="input" onkeyup="cekmm3()"
+                                                                        onchange="hapusdisable3()"
+                                                                        placeholder="..."></span>$x$<sup> <span
+                                                                        style="font-size: 18px;;">$-$</span><sup>
+                                                                        <div class="frac">
+                                                                            <span><input type="number" name="smm3_1"
+                                                                                    id="smm3_1" class="pangkat"
+                                                                                    onkeyup="cekmm3_1()"
+                                                                                    onchange="hapusdisable3()"
+                                                                                    placeholder="..."></span>
+                                                                            <span class="symbol">/</span>
+                                                                            <span class="bottom"><input type="number"
+                                                                                    class="inputdisabled pangkat"
+                                                                                    name="hasil3" id="hasil3"
+                                                                                    onkeyup="cekhasil3()"
+                                                                                    placeholder="..."></span>
+                                                                        </div>
+                                                                    </sup></sup></span>
+                                                            </p>
+                                                        </li>
+                                                        <li>Abaikan terlebih dahulu koefisiennya</li>
+                                                        <br>
+                                                        <li>
+                                                            <span> ambil fungsi pangkat satu lebih besar daripada
+                                                                <span id="fixhasil3"><input class="input"
+                                                                        disabled></span> yaitu $x$<span><sup><sup>
+                                                                            <div class="frac">
+                                                                                <span><input type="number" name="smm3_2"
+                                                                                        id="smm3_2" class="pangkat"
+                                                                                        onkeyup="cekmm3_2()"
+                                                                                        onchange="hapusdisable3()"
+                                                                                        placeholder="..."></span>
+                                                                                <span class="symbol">/</span>
+                                                                                <span class="bottom"><input
+                                                                                        type="number"
+                                                                                        class="inputdisabled pangkat"
+                                                                                        name="hasil3_1" id="hasil3_1"
+                                                                                        onkeyup="cekhasil3_1()"
+                                                                                        placeholder="..."></span>
+                                                                            </div>
+                                                                        </sup></sup></span>
+                                                            </span>
+                                                        </li>
+                                                        <li> <span>Turunakan fungsi <span id="fixhasil3_1"><input
+                                                                        class="input" disabled></span></span><br><br>
+                                                            <span>$\frac{d}{dx}$($x$<sup><sup>
+                                                                        <div class="frac">
+                                                                            <span><input type="number" name="smm3"
+                                                                                    id="smm3_3" class="pangkat"
+                                                                                    onkeyup="cekmm3_3()"
+                                                                                    onchange="hapusdisable3()"
+                                                                                    placeholder="..."></span>
+                                                                            <span class="symbol">/</span>
+                                                                            <span class="bottom"><input type="number"
+                                                                                    name="smm3" id="smm3_4"
+                                                                                    class="pangkat" onkeyup="cekmm3_4()"
+                                                                                    onchange="hapusdisable3()"
+                                                                                    placeholder="..."></span>
+                                                                    </sup></sup>
                                                 </div>
+                                                </span>)<span> $=$
+                                                    <div class="frac">
+                                                        <span><input type="number" name="smm3" id="smm3_5" class="input"
+                                                                onkeyup="cekmm3_5()" onchange="hapusdisable3()"
+                                                                placeholder="..."></span>
+                                                        <span class="symbol"></span>
+                                                        <span class="bottom"><input type="number" name="smm3"
+                                                                id="smm3_6" class="input" onkeyup="cekmm3_6()"
+                                                                onchange="hapusdisable3()" placeholder="..."></span>
+                                                    </div>
+                                                </span> $x$ <sup><span style="font-size: 18px;;">$-$</span><sup>
+                                                        <div class="frac">
+                                                            <span><input type="number" name="smm3" id="smm3_7"
+                                                                    class="pangkat" onkeyup="cekmm3_7()"
+                                                                    onchange="hapusdisable3()" placeholder="..."></span>
+                                                            <span class="symbol"></span>
+                                                            <span class="bottom"><input type="number" name="smm3"
+                                                                    id="smm3_8" class="pangkat" onkeyup="cekmm3_8()"
+                                                                    onchange="hapusdisable3()" placeholder="..."></span>
+                                                        </div>
+                                                    </sup></sup>
+                                                </li> <br>
+                                                <li>
+                                                    <span>$\frac{d}{dx}$(<input type="number" name="smm3" id="smm3_9"
+                                                            class="input" onkeyup="cekmm3_9()"
+                                                            onchange="hapusdisable3()" placeholder="...">$x$
+                                                        <sup><span style="font-size: 18px;;">$-$</span><sup>
+                                                                <div class="frac">
+                                                                    <span><input type="number" name="smm3" id="smm3_10"
+                                                                            class="pangkat" onkeyup="cekmm3_10()"
+                                                                            onchange="hapusdisable3()"
+                                                                            placeholder="..."></span>
+                                                                    <span class="symbol">/</span>
+                                                                    <span class="bottom"><input type="number"
+                                                                            name="smm3" id="smm3_11" class="pangkat"
+                                                                            onkeyup="cekmm3_11()"
+                                                                            onchange="hapusdisable3()"
+                                                                            placeholder="..."></span>
+                                                                </div>
+                                                            </sup></sup>
+                                                        ) $=$ <span><input type="number" name="smm3" id="smm3_12"
+                                                                class="input" onkeyup="cekmm3_12()"
+                                                                onchange="hapusdisable3()" placeholder="..."> .
+                                                            <div class="frac">
+                                                                <span><input type="number" name="smm3" id="smm3_13"
+                                                                        class="input" onkeyup="cekmm3_13()"
+                                                                        onchange="hapusdisable3()"
+                                                                        placeholder="..."></span>
+                                                                <span class="symbol">/</span>
+                                                                <span class="bottom"><input type="number" name="smm3"
+                                                                        id="smm3_14" class="input" onkeyup="cekmm3_14()"
+                                                                        onchange="hapusdisable3()"
+                                                                        placeholder="..."></span>
+                                                            </div> $x$ <sup><span
+                                                                    style="font-size: 18px;;">$-$</span><sup>
+                                                                    <div class="frac">
+                                                                        <span><input type="number" name="smm3"
+                                                                                id="smm3_15" class="pangkat"
+                                                                                onkeyup="cekmm3_15()"
+                                                                                onchange="hapusdisable3()"
+                                                                                placeholder="..."></span>
+                                                                        <span class="symbol">/</span>
+                                                                        <span class="bottom"><input type="number"
+                                                                                name="smm3" id="smm3_16" class="pangkat"
+                                                                                onkeyup="cekmm3_16()"
+                                                                                onchange="hapusdisable3()"
+                                                                                placeholder="..."></span>
+                                                                    </div>
+                                                                </sup></sup>
+                                                            <br><br>
+                                                            Sehingga $\frac{d}{dx}$(<input type="number" name="smm3"
+                                                                id="smm3_17" class="input" onkeyup="cekmm3_17()"
+                                                                onchange="hapusdisable3()" placeholder="..."> $x$
+                                                            <span>
+                                                                <sup><sup>
+                                                                        <div class="frac">
+                                                                            <span><input type="number" name="smm3"
+                                                                                    id="smm3_18" class="pangkat"
+                                                                                    onkeyup="cekmm3_18()"
+                                                                                    onchange="hapusdisable3()"
+                                                                                    placeholder="..."></span>
+                                                                            <span class="symbol">/</span>
+                                                                            <span class="bottom"><input type="number"
+                                                                                    class="inputdisabled pangkat"
+                                                                                    name="hasil3_2" id="hasil3_2"
+                                                                                    onkeyup="cekhasil3_2()"
+                                                                                    placeholder="..."></span>
+                                                                        </div>
+                                                                    </sup></sup>
+                                                            </span>
+                                                            ) $= x^{-\frac{1}{2}}$
+                                                        </span>
+                                                    </span>
+                                                </li><br>
+                                                <li><span>Sekarang hasil antiturunan <span id="fixhasil3_2"><input
+                                                                class="input" disabled></span> yaitu</span> <span
+                                                        id="fixhasil3_2_1"><input class="input" disabled>
+                                                    </span> kalikan
+                                                    <input type="number" name="smm3" id="smm3_19" class="input"
+                                                        onkeyup="cekmm3_19()" onchange="hapusdisable3()"
+                                                        placeholder="...">
+                                                    dengan<br><br>
+                                                    <span><input type="number" class="inputdisabled input"
+                                                            name="hasil3_3" id="hasil3_3" onkeyup="cekhasil3_3()"
+                                                            placeholder="...">(<span id="fixhasil3_3"><input
+                                                                class="input" disabled></span>) = <input type="number"
+                                                            name="smm3" id="smm3_20" class="input" onkeyup="cekmm3_20()"
+                                                            onchange="hapusdisable3()" placeholder="..."> $x$
+                                                        <span><sup><sup>
+                                                                    <div class="frac">
+                                                                        <span><input type="number" name="smm3"
+                                                                                id="smm3_21" class="pangkat"
+                                                                                onkeyup="cekmm3_21()"
+                                                                                onchange="hapusdisable3()"
+                                                                                placeholder="..."></span>
+                                                                        <span class="symbol">/</span>
+                                                                        <span class="bottom"><input type="number"
+                                                                                class="inputdisabled pangkat"
+                                                                                name="hasil3_4" id="hasil3_4"
+                                                                                onkeyup="cekhasil3_4()"
+                                                                                placeholder="..."></span>
+                                                                    </div>
+                                                                </sup></sup>
+                                                        </span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <p>Ubah hasil turunan $\frac{d}{dx} = $<span id="fixhasil3_4"><input
+                                                                class="input" disabled></span> ke bentuk akar
+                                                        menjandi:<br>
+                                                        <input type="number" name="smm3" id="smm3_22" class="pangkat"
+                                                            onkeyup="cekmm3_22()" onchange="hapusdisable3()"
+                                                            placeholder="..."> <span style="font-size:30px;"> &#8730;
+                                                            <input type="text" class="inputdisabled pangkat"
+                                                                name="hasil3_5" id="hasil3_5" onkeyup="cekhasil3_5()"
+                                                                placeholder="..."></span>
+                                                    </p>
+                                                </li>
+                                                <p class="">
+                                                    Jadi, hasil anntiturunan dari $y'=\frac{d}{dx}=\frac{5}{\sqrt{x}} =
+                                                    $
+                                                    <span id="fixhasil3_5"><input class="input" disabled></span>
                                                 </p>
+                                                </ul>
                                             </div>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                        </div>
 
+                        </div>
                     </div>
 
                 </div>
 
-
-                <!-- /.container-fluid -->
-
             </div>
-            <div class="row ">
-                <div class="col-lg ml-4 mb-sm-4">
-                    <nav aria-label="Page navigation example ">
-                        <ul class="pagination ju">
-                            <li class="page-item disabled" id="btnprev">
-                                <a class="page-link" href="#" id="prev" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a id="btnsatu" class="page-link" onclick="satu()">1</a>
-                            </li>
-                            <li class="page-item"><a id="btndua" class="page-link" onclick="dua()">2</a>
-                            </li>
-                            <li class="page-item"><a id="btntiga" class="page-link" onclick="tiga()">3</a>
-                            </li>
-                            <li class="page-item"><a id="btnempat" class="page-link" onclick="empat()">4</a>
-                            </li>
-                            <li class="page-item" id="btnnext">
-                                <a class="page-link" id="next" href="#" onclick="dua()" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item" hidden id="mnext">
-                                <a class="page-link" id="next" href="../Materi/Notasi.html" aria-label="Next">
-                                    <span aria-hidden="true">Halaman Selanjutnya</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <!-- End of Main Content -->
+
+
+            <!-- /.container-fluid -->
+
         </div>
-        <!-- End of Content Wrapper -->
+        <div class="row ">
+            <div class="col-lg ml-4 mb-sm-4">
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination ju">
+                        <li class="page-item disabled" id="btnprev">
+                            <a class="page-link" href="#" id="prev" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a id="btnsatu" class="page-link" onclick="satu()">1</a>
+                        </li>
+                        <li class="page-item"><a id="btndua" class="page-link" onclick="dua()">2</a>
+                        </li>
+                        <li class="page-item"><a id="btntiga" class="page-link" onclick="tiga()">3</a>
+                        </li>
+                        <li class="page-item"><a id="btnempat" class="page-link" onclick="empat()">4</a>
+                        </li>
+                        <li class="page-item" id="btnnext">
+                            <a class="page-link" id="next" href="#" onclick="dua()" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item" hidden id="mnext">
+                            <a class="page-link" id="next" href="../Materi/Notasi.html" aria-label="Next">
+                                <span aria-hidden="true">Halaman Selanjutnya</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End of Main Content -->
+    </div>
+    <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->

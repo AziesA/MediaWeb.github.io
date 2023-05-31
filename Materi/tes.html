@@ -2,36 +2,20 @@
 <html>
 
 <head>
-    <title>Input Pembagian</title>
+    <style>
+        .superscript-input {
+            font-size: 14px;
+            vertical-align: super;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Input Pembagian</h1>
+    <label for="inputBase">Basis:</label>
+    <input type="text" id="inputBase" class="superscript-input">
 
-    <label for="input1">Angka Pertama:</label>
-    <input type="number" id="input1">
-
-    <br>
-
-    <label for="input2">Angka Kedua:</label>
-    <input type="number" id="input2">
-
-    <br>
-
-    <button onclick="divideNumbers()">Bagi</button>
-
-    <p id="result"></p>
-
-    <script>
-        function divideNumbers() {
-            var input1 = document.getElementById("input1").value;
-            var input2 = document.getElementById("input2").value;
-
-            var result = parseFloat(input1) / parseFloat(input2);
-
-            document.getElementById("result").innerHTML = "Hasil: " + result;
-        }
-    </script>
+    <label for="inputExponent">Pangkat:</label>
+    <input type="text" id="inputExponent" class="superscript-input">
 </body>
 
 </html>
