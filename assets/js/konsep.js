@@ -1027,7 +1027,7 @@ function cekhasil3_5() {
 
     if (hasil3_5.value == "x") {
         document.getElementById("hasil3_5").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3_5").innerHTML = ' <span><b>$10x^{\\sqrt{x}}$</b></span>';
+        document.getElementById("fixhasil3_5").innerHTML = ' <span class="alert alert-success text-hitam"><b>$10\\sqrt{x}$</b></span>';
         MathJax.typeset();
     }
     else {
