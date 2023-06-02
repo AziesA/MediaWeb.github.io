@@ -144,7 +144,7 @@
                     <!-- Content Row -->
                     <div class="row-center  isimateri rounded bg-white bord3" style="height:480px; width: 100%;">
                         <div class="col-lg">
-                            <div id="satu" hidden>
+                            <div id="satu">
                                 <div class="prg text-black">
                                     Pada bagian pertama kita telah mengenal definisi integral dan kaitannya dengan
                                     konsep turunan. Nah kali ini kita akan belajar mengenai sifat-sifat yang dimiliki
@@ -157,6 +157,9 @@
                                 <div class="text-center">
                                     <img src="../assets/img/bentuk_umum.png" class="img-fluid rounded" alt="bentuk_umum"
                                         style="height:50px;width:150px;">
+                                    <div class="btn btn border-purple text-hitam">
+                                        <b>$\int f(x) dx = F(x) + c$</b>
+                                    </div>
                                 </div>
                                 <div class="prg">
                                     dengan: $c$ adalah konstanta pengintegralan<br>
@@ -224,7 +227,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="dua">
+                            <div id="dua" hidden>
                                 <div class="prg">
                                     Untuk memperdalam pemahaman kalian mengenai rumus dan sifat-sifat dari integral tak
                                     tentu coba perhatikan contoh beriut.perhatikan beberapa contoh soal dibawah ini!
@@ -236,16 +239,13 @@
                                 <div class="card">
                                     <div class="card-header" id="headingSatu">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left text-hitam" type="button"
+                                            <button class="btn btn-link btn-ungu text-left text-white" type="button"
                                                 data-toggle="collapse" data-target="#collapseSatu" aria-expanded="true"
-                                                aria-controls="collapseSatu" style="font-size: 20px;"
-                                                ata-container="body" data-placement="right"
-                                                data-content="Right popover">
+                                                aria-controls="collapseSatu" style="font-size: 20px;">
                                                 Rumus
                                             </button>
                                         </h2>
                                     </div>
-
                                     <div id="collapseSatu" class="collapse show" aria-labelledby="headingSatu">
                                         <div class="card-body" style="font-size: 18px;">
                                             <div class="">
@@ -253,17 +253,59 @@
                                                     <li>
                                                         <p>$\int a&ensp;dx = ax + c$</p>
                                                         <p>Contoh:</p>
-                                                        <div class="isiconth">
-                                                            <div class="bgisi">
-                                                                <p>Carilah antiturunan beri kut:$\int{5}&ensp; dx $</p>
-                                                                <p><b>Penyelesaian:</b></p>
-                                                                <p>Dengan menerapkan rumus dasar integral $\int{a}&ensp;
-                                                                    dx =
-                                                                    ax+ c$, maka kita memperoleh: </p>
-                                                                <p>$\int{5}&ensp; dx$ </p>
-                                                                <p>$= 5x + c$</p>
+                                                        <div class="card-text border rounded">
+                                                            <div class="card-header bg-red " style="color:black;">
+                                                                <ul
+                                                                    class="nav nav-tabs card-header-tabs justify-content-center ">
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link active border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh1">Contoh
+                                                                            1</a>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh2">Contoh 2</a>
+                                                                    </li>
+
+                                                                </ul>
                                                             </div>
-                                                            <div class="button jarak_atas">Contoh lain</div>
+                                                            <div class="card-body border ">
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane fade show active" id="contoh1">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <div class="bgisi">
+                                                                                <p>Carilah antiturunan beri
+                                                                                    kut:$\int{5}&ensp; dx $</p>
+                                                                                <p><b>Penyelesaian:</b></p>
+                                                                                <p>Dengan menerapkan rumus dasar
+                                                                                    integral $\int{a}&ensp;
+                                                                                    dx =
+                                                                                    ax+ c$, maka kita memperoleh: </p>
+                                                                                <p>$\int{5}&ensp; dx$ </p>
+                                                                                <p>$= 5x + c$</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh2">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <p>Carilah antiturunan berikut:
+                                                                                $\int{\frac{3}{4}}dx$</p>
+                                                                            <p><b>Penyelesaian:</b></p>
+                                                                            <p>Dengan menerapkan rumus dasar Integral
+                                                                                $\int{a}&ensp;dx = ax + c$, maka kita
+                                                                                memperoleh:</p>
+                                                                            <p>$\int{\frac{3}{4}}dx$</p>
+                                                                            <p>$=\frac{3}{4}x + c$</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                     <br>
@@ -271,20 +313,65 @@
                                                         <p> $\int{x^n} dx =
                                                             \frac{1}{n+1}x^{n+1} + c, n &ne; -1$ </p>
                                                         <p>Contoh:</p>
-                                                        <div class="isiconth">
-                                                            <div class="bgisi">
-                                                                <p> Carilah antiturunan berikut: $\int x^{3}&ensp;dx$
-                                                                </p>
-                                                                <p><b>Penyelesaian:</b></p>
-                                                                <p>Dengan menerapkan rumus dasar integral $\int{x^n} dx
-                                                                    =
-                                                                    \frac{1}{n+1}x^{n+1} + c, n &ne; -1$, maka kita
-                                                                    memperoleh: </p>
-                                                                <p>$\int{x^3}&ensp; dx$ </p>
-                                                                <p>$= \frac{1}{3+1}x^{3+1} + c$</p>
-                                                                <p>$= \frac{1}{4}x^4 + c $</p>
+                                                        <div class="card-text border rounded">
+                                                            <div class="card-header bg-red " style="color:black;">
+                                                                <ul
+                                                                    class="nav nav-tabs card-header-tabs justify-content-center ">
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link active border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh2_1">Contoh
+                                                                            1</a>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh2_2">Contoh 2</a>
+                                                                    </li>
+
+                                                                </ul>
                                                             </div>
-                                                            <div class="button jarak_atas">Contoh lain</div>
+                                                            <div class="card-body border ">
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane fade show active"
+                                                                        id="contoh2_1">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <p> Carilah antiturunan berikut: $\int
+                                                                                x^{3}&ensp;dx$
+                                                                            </p>
+                                                                            <p><b>Penyelesaian:</b></p>
+                                                                            <p>Dengan menerapkan rumus dasar
+                                                                                integral $\int{x^n} dx
+                                                                                =
+                                                                                \frac{1}{n+1}x^{n+1} + c, n &ne;
+                                                                                -1$, maka kita
+                                                                                memperoleh: </p>
+                                                                            <p>$\int{x^3}&ensp; dx$ </p>
+                                                                            <p>$= \frac{1}{3+1}x^{3+1} + c$</p>
+                                                                            <p>$= \frac{1}{4}x^4 + c $</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh2_2">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <p>Carilah antiturunan berikut:
+                                                                                $\int{\frac{1}{x^{2}}}dx$</p>
+                                                                            <p><b>Penyelesaian:</b></p>
+                                                                            <p>Dengan menerapkan rumus dasar integral
+                                                                                $\int{x^n} dx =\frac{ 1 } { n + 1 } x
+                                                                                ^ { n+ 1} + c, n &ne; -1$, maka kita
+                                                                                memperoleh:</p>
+                                                                            <p> $\int{\frac{1}{x^{2}}}dx$</p>
+                                                                            <p>$=\frac{1}{-2}x^{-2+1} +c$</p>
+                                                                            <p>$=-x^{-1} + c$</p>
+                                                                            <p>$=-\frac{1}{x} + c$</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                     <br>
@@ -292,34 +379,93 @@
                                                         $\int{ax^n} dx =
                                                         \frac{1}{n+1}x^{x+1} + c, n &ne; -1$ </p>
                                                         <p>Contoh:</p>
-                                                        <div class="isiconth">
-                                                            <div class="bgisi">
-                                                                <p> Carilah antiturunan berikut: $\int x^{3}&ensp;dx$
-                                                                </p>
-                                                                <p><b>Penyelesaian:</b></p>
-                                                                <p>Dengan menerapkan rumus dasar integral $\int{ax^n} dx
-                                                                    =
-                                                                    \frac{1}{n+1}x^{x+1} + c, n &ne; -1$ , maka kita
-                                                                    memperoleh: </p>
-                                                                <p> $\int{2\sqrt{x}}&ensp;dx$</p>
-                                                                <p>$= \int{2x^{\frac{1}{2}}}$ </p>
-                                                                <p>$= \frac{3}{\frac{1}{2}+1}x^{\frac{1}{2}+1} + c$ </p>
-                                                                <p>$= \frac{2}{\frac{3}{2}}x^{\frac{3}{2}} + c$ </p>
-                                                                <p>$= \frac{4}{3}x^{\frac{3}{2}} +c$ </p>
-                                                                <p>$= \frac{4}{3}x\sqrt{x}+ c$</p>
+                                                        <div class="card-text border rounded">
+                                                            <div class="card-header bg-red " style="color:black;">
+                                                                <ul
+                                                                    class="nav nav-tabs card-header-tabs justify-content-center ">
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link active border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh3_1">Contoh
+                                                                            1</a>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item ">
+                                                                        <a class="nav-link border m-1 rounded"
+                                                                            data-toggle="tab" style="color:black;"
+                                                                            href="#contoh3_2">Contoh 2</a>
+                                                                    </li>
+
+                                                                </ul>
                                                             </div>
-                                                            <div class="button jarak_atas">Contoh lain</div>
+                                                            <div class="card-body border ">
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane fade show active"
+                                                                        id="contoh3_1">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <p> Carilah antiturunan berikut: $\int
+                                                                                x^{3}&ensp;dx$
+                                                                            </p>
+                                                                            <p><b>Penyelesaian:</b></p>
+                                                                            <p>Dengan menerapkan rumus dasar integral
+                                                                                $\int{ax^n} dx
+                                                                                =
+                                                                                \frac{1}{n+1}x^{x+1} + c, n &ne; -1$ ,
+                                                                                maka kita
+                                                                                memperoleh: </p>
+                                                                            <p> $\int{2\sqrt{x}}&ensp;dx$</p>
+                                                                            <p>$= \int{2x^{\frac{1}{2}}}$ </p>
+                                                                            <p>$=
+                                                                                \frac{3}{\frac{1}{2}+1}x^{\frac{1}{2}+1}
+                                                                                + c$ </p>
+                                                                            <p>$= \frac{2}{\frac{3}{2}}x^{\frac{3}{2}} +
+                                                                                c$ </p>
+                                                                            <p>$= \frac{4}{3}x^{\frac{3}{2}} +c$ </p>
+                                                                            <p>$= \frac{4}{3}x\sqrt{x}+ c$</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="contoh3_2">
+                                                                        <div class="card-text"
+                                                                            style=" font-size: 18px;">
+                                                                            <p>Carilah antiturunan berikut: $\int
+                                                                                3x^{2}$</p>
+                                                                            <p><b>Penyelesaian:</b></p>
+                                                                            <p>Dengan menerapkan rumus dasar integral
+                                                                                $\\int ax^{n}dx=\frac{1}{n+1}x^{n+1} +
+                                                                                c, n &ne; -1$ dan manipulasi aljabar,
+                                                                                maka diperoleh:</p>
+                                                                            <p>$\int3x^2$</p>
+                                                                            <p>$=\frac{3}{2+1}x^{2+1} + c$</p>
+                                                                            <p>$=\frac{3}{3}x^{3}$</p>
+                                                                            <p>$=x^{3} + c$</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
                                                         </div>
+
+
                                                     </li>
                                                 </ol>
+
                                             </div>
+                                            <center>
+                                                <button class="btn btn-link btn-ungu text-left text-white" type="button"
+                                                    data-toggle="collapse" data-target="#collapseSatu"
+                                                    aria-expanded="true" aria-controls="collapseSatu"
+                                                    style="font-size: 20px;">
+                                                    Tutup Tab
+                                                </button>
+                                            </center>
                                         </div>
                                     </div>
                                 </div><br>
                                 <div class="card">
                                     <div class="card-header" id="headingDua">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left text-hitam collapsed"
+                                            <button class="btn btn-link btn-ungu text-left text-white collapsed"
                                                 type="button" data-toggle="collapse" data-target="#collapseDua"
                                                 aria-expanded="false" aria-controls="collapseDua"
                                                 style="font-size: 20px;">
@@ -416,6 +562,14 @@
                                                     </li>
                                                 </ol>
                                             </div>
+                                            <center> <button
+                                                    class="btn btn-link btn-ungu text-left text-white collapsed"
+                                                    type="button" data-toggle="collapse" data-target="#collapseDua"
+                                                    aria-expanded="false" aria-controls="collapseDua"
+                                                    style="font-size: 20px;">
+                                                    Tutup Tab
+                                                </button></center>
+
                                         </div>
                                     </div>
                                 </div>
@@ -423,7 +577,7 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTiga">
                                         <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left text-hitam collapsed"
+                                            <button class="btn btn-link btn-ungu text-left text-white collapsed"
                                                 type="button" data-toggle="collapse" data-target="#collapseTiga"
                                                 aria-expanded="false" aria-controls="collapseTiga"
                                                 style="font-size: 20px;">
@@ -474,7 +628,15 @@
                                                         <p>Jadi, nilai $f(x)$ adalah $f(x) =\frac{1}{4}x^{4} -
                                                             \frac{4}{3}x^{3} + 3x + 1$</p>
                                                     </div>
-                                                </div>
+                                                </div><br>
+                                                <center>
+                                                    <button class="btn btn-link btn-ungu text-left text-white collapsed"
+                                                        type="button" data-toggle="collapse" data-target="#collapseTiga"
+                                                        aria-expanded="false" aria-controls="collapseTiga"
+                                                        style="font-size: 20px;">
+                                                        Tutup Tab
+                                                    </button>
+                                                </center>
                                             </div>
                                         </div>
                                     </div>
