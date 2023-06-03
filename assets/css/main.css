@@ -35,10 +35,28 @@ input {
     font-size: 16px;
 }
 
+.pangkat2 {
+    width: 40px;
+    height: 25px;
+    font-size: 16px;
+}
+
 .input {
     width: 35px;
     height: 30px;
 }
+
+
+.input1 {
+    width: 40px;
+    height: 30px;
+}
+
+.input2 {
+    width: 40px;
+    height: 30px;
+}
+
 
 .border-bottom-mint {
     border-bottom: 0.25rem solid#0f8258 !important;

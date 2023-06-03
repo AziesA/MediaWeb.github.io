@@ -62,72 +62,117 @@ function empat() {
 }
 
 
-//ganti2 contoh soal
+// mari menboca 1 latihan 1
 
-// ganti soal
-let ganti_soal = document.querySelectorAll('.button');
-let isinya_soal = document.querySelectorAll('.bgisi');
+var benar = 0;
+function cekhasil1() {
+    var hasil1 = document.getElementById("hasil1");
 
-let cnth_soal0 = ['<p>Carilah antiturunan berikut: $\\int{\\frac{3}{4}}dx$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar Integral $\\int{a}&ensp;dx = ax + c$, maka kita memperoleh:</p> <p>$\\int{\\frac{3}{4}}dx$</p> <p>$=\\frac{3}{4}x + c$</p>'];
-
-let cnth_soal1 = ['<p>Carilah antiturunan berikut: $\\int{\\frac{1}{x^{2}}}dx$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar integral $\\int{x^n} dx =\\frac{ 1 } { n + 1 } x ^ { n+ 1} + c, n &ne; -1$, maka kita memperoleh:</p> <p> $\\int{\\frac{1}{x^{2}}}dx$</p> <p>$=\\frac{1}{-2}x^{-2+1} +c$</p> <p>$=-x^{-1} + c$</p> <p>$=-\\frac{1}{x} + c$</p>'];
-
-let cnth_soal2 = ['<p><p>Carilah antiturunan berikut: $\\int 3x^{2}$</p> <p><b>Penyelesaian:</b></p> <p>Dengan menerapkan rumus dasar integral $\\int ax^{n}dx=\\frac{1}{n+1}x^{n+1} + c, n &ne; -1$ dan manipulasi aljabar, maka diperoleh:</p> <p>$\\int3x^2$</p> <p>$=\\frac{3}{2+1}x^{2+1} + c$</p> <p>$=\\frac{3}{3}x^{3}$</p> <p>$=x^{3} + c$'];
-
-
-let kondisi0, kondisi1, kondisi2 = 100;
-
-for (let i = 0; i < ganti_soal.length; i++) {
-    ganti_soal[i].addEventListener('click', function () {
-
-        if (i == 0) {
-            // console.log(Math.floor(Math.random() * cnth_soal0.length));
-            let acang_angka = Math.floor(Math.random() * cnth_soal0.length);
-            if (acang_angka != kondisi0) {
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal0[acang_angka];
-                kondisi0 = acang_angka;
-            } else {
-                let acang_angka = Math.floor(Math.random() * cnth_soal0.length);
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal0[acang_angka];
-                kondisi0 = acang_angka;
-            }
-
-        }
-
-        if (i == 1) {
-            // console.log(Math.floor(Math.random() * cnth_soal0.length));
-            let acang_angka = Math.floor(Math.random() * cnth_soal1.length);
-            if (acang_angka != kondisi1) {
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal1[acang_angka];
-                kondisi1 = acang_angka;
-            } else {
-                let acang_angka = Math.floor(Math.random() * cnth_soal1.length);
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal1[acang_angka];
-                kondisi1 = acang_angka;
-            }
-        }
-
-        if (i == 2) {
-            // console.log(Math.floor(Math.random() * cnth_soal0.length));
-            let acang_angka = Math.floor(Math.random() * cnth_soal2.length);
-            if (acang_angka != kondisi2) {
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal2[acang_angka];
-                kondisi2 = acang_angka;
-            } else {
-                let acang_angka = Math.floor(Math.random() * cnth_soal2.length);
-                console.log(acang_angka);
-                isinya_soal[i].innerHTML = cnth_soal2[acang_angka];
-                kondisi2 = acang_angka;
-            }
-        }
-
-
+    if (hasil1.value == "12x") {
+        document.getElementById("hasil1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        var hasil1 = document.getElementById("hasil1").value;
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$12x + c $ </span>';
         MathJax.typeset();
-    })
+    }
+    else {
+        document.getElementById("hasil1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
 
+    }
 }
+
+
+function hapusdisabled1() {
+    if (benar == 0) {
+        document.getElementById("hasil1").classList.remove('inputdisabled');
+    }
+}
+
+//mari mencoba 1 latihan 2
+
+function cekmm2() {
+    var soal2 = document.getElementById("smm2");
+
+    if (soal2.value == "5") {
+        document.getElementById("smm2").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_1() {
+    var soal2_1 = document.getElementById("smm2_1");
+
+    if (soal2_1.value == "1+1" || soal2_1.value == "1 + 1") {
+        document.getElementById("smm2_1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_2() {
+    var soal2_2 = document.getElementById("smm2_2");
+
+    if (soal2_2.value == "1+1" || soal2_2.value == "1 + 1") {
+        document.getElementById("smm2_2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_3() {
+    var soal2_3 = document.getElementById("smm2_3");
+
+    if (soal2_3.value == "5") {
+        document.getElementById("smm2_3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_4() {
+    var soal2_4 = document.getElementById("smm2_4");
+
+    if (soal2_4.value == "2") {
+        document.getElementById("smm2_4").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_4").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil2() {
+    var hasil2 = document.getElementById("hasil2");
+
+    if (hasil2.value == "2") {
+        document.getElementById("hasil2").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        var hasil2 = document.getElementById("hasil2").value;
+        document.getElementById("fixhasil2").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{5}{2}x^{2} + c$</b> </span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil2").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+
+    }
+}
+
+
+function hapusdisabled2() {
+    if (benar == 0) {
+        document.getElementById("hasil2").classList.remove('inputdisabled');
+    }
+}
+
+//mari mencoba 1 latihan 3
