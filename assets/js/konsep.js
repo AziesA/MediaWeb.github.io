@@ -725,12 +725,11 @@ function cekhasil3() {
 
     if (hasil3.value == "2") {
         document.getElementById("hasil3").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{-\\frac{1}{2}}$</b></span>';
+        document.getElementById("fixhasil3").innerHTML = '<span><b>$x^{-\\frac{1}{2}}$</b></span>';
         MathJax.typeset();
     }
     else {
         document.getElementById("hasil3").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
     }
 }
 
@@ -752,12 +751,11 @@ function cekhasil3_1() {
 
     if (hasil3_1.value == "2") {
         document.getElementById("hasil3_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{\\frac{1}{2}}$</b></span>';
+        document.getElementById("fixhasil3_1").innerHTML = '<span><b>$x^{\\frac{1}{2}}$</b></span>';
         MathJax.typeset();
     }
     else {
         document.getElementById("hasil3_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
     }
 }
 
@@ -964,13 +962,12 @@ function cekhasil3_2() {
 
     if (hasil3_2.value == "2") {
         document.getElementById("hasil3_2").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3_2").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{-\\frac{1}{2}}$</b></span>';
-        document.getElementById("fixhasil3_2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$2x^{\\frac{1}{2}}$</b></span>';
+        document.getElementById("fixhasil3_2").innerHTML = '<span><b>$x^{-\\frac{1}{2}}$</b></span>';
+        document.getElementById("fixhasil3_2_1").innerHTML = '<spa><b>$2x^{\\frac{1}{2}}$</b></spa>';
         MathJax.typeset();
     }
     else {
         document.getElementById("hasil3_2").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
-        document.getElementById("fixhasil3_2").innerHTML = '<span class="alert alert-danger text-hitam"><b>Jawaban Salah</b></span>';
     }
 }
 
