@@ -495,6 +495,19 @@ function cekmm2_8() {
     }
 }
 
+function cekmm2_8_1() {
+    var soal2_8_1 = document.getElementById("smm2_8_1");
+
+    if (soal2_8_1.value == "5") {
+        document.getElementById("smm2_8_1").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_8_1").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
 function cekmm2_9() {
     var soal2_9 = document.getElementById("smm2_9");
 
@@ -643,6 +656,20 @@ function cekmm2_19() {
         document.getElementById("smm2_19").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
     }
 }
+
+
+function cekmm2_20() {
+    var soal2_20 = document.getElementById("smm2_20");
+
+    if (soal2_20.value == "2") {
+        document.getElementById("smm2_20").style = "border:2px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_20").style = "border:2px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
 
 function cekhasil2_1() {
     var hasil2_1 = document.getElementById("hasil2_1");
