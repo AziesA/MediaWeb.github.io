@@ -2,20 +2,27 @@
 <html>
 
 <head>
-    <style>
-        .superscript-input {
-            font-size: 14px;
-            vertical-align: super;
-        }
-    </style>
+    <title>Contoh Game</title>
 </head>
 
 <body>
-    <label for="inputBase">Basis:</label>
-    <input type="text" id="inputBase" class="superscript-input">
+    <h1>Selamat datang di permainan ini!</h1>
+    <form autocomplete="off"></form>
+    <div id="pertanyaan1">
+        <p>Pertanyaan 1: Apa ibukota Indonesia?</p>
+        <input type="text" id="jawabanInput1" autocomplete="off">
+        <button onclick="periksaJawaban1()">Periksa</button>
+    </div>
 
-    <label for="inputExponent">Pangkat:</label>
-    <input type="text" id="inputExponent" class="superscript-input">
+    <div id="pertanyaan2" style="display: none;">
+        <p>Pertanyaan 2: Apa warna buah jeruk?</p>
+        <input type="text" id="jawabanInput2">
+        <button onclick="periksaJawaban2()">Periksa</button>
+    </div>
+
+    <div id="hasilJawaban"></div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -700,7 +700,8 @@
                                                     <p><b>Penyelesaian:</b> </p>
                                                     <p>$\int{12} &ensp;dx = $ <span> <input type="text"
                                                                 class="inputdisabled input2" name="hasil1" id="hasil1"
-                                                                onkeyup="cekhasil1()" placeholder="..."> $ + c$</span>
+                                                                onkeyup="cekhasil1()" placeholder="..."
+                                                                autocomplete="off"> $ + c$</span>
                                                     </p>
                                                     <p> Jadi, hasil integral dari $\int{12} &ensp;dx$ adalah <span
                                                             id="fixhasil1"><input class="input" disabled></span></p>
@@ -737,7 +738,8 @@
                                                                     onchange="hapusdisable2()" placeholder="..."></span>
                                                         </div> $x$ <sup><sup><input type="text"
                                                                     class="inputdisabled pangkat" name="hasil2"
-                                                                    id="hasil2" onkeyup="cekhasil2()" placeholder="...">
+                                                                    id="hasil2" onkeyup="cekhasil2()" placeholder="..."
+                                                                    autocomplete="off">
                                                             </sup></sup> $+c$
                                                     </span><br><br>
                                                     <p> Jadi, hasil integral dari $\int x^{-5} &ensp;dx$ adalah <span
@@ -913,6 +915,35 @@
                                                 <div class="card-text" style=" font-size: 18px;">
                                                     <p>$1$. Tentukan nilai dari $\int{(2x^4 - 4x^6 + 1)}dx$</p>
                                                     <p><b>Penyelesaian:</b></p>
+                                                    <p>$\int{(2x^4 - 4x^6 + 1)}dx$</p>
+                                                    <div id="pertanyaan1">
+                                                        <form autocomplete="off">
+                                                            <p>$=\int$ <input type="text" id="jawabanInput1"
+                                                                    class="input" placeholder="...">$x$
+                                                                <sup><sup><input type="text" id="jawabanInput1"
+                                                                            class="pangkat"
+                                                                            placeholder="..."></sup></sup>$dx$
+                                                                $-\int$ <input type="text" id="jawabanInput1"
+                                                                    class="input" placeholder="...">$x$
+                                                                <sup><sup><input type="text" id="jawabanInput1"
+                                                                            class="pangkat"
+                                                                            placeholder="..."></sup></sup>$dx$
+                                                                $+\int$ <input type="text" id="jawabanInput1"
+                                                                    class="input" placeholder="...">$x$
+                                                                <sup><sup><input type="text" id="jawabanInput1"
+                                                                            class="pangkat"
+                                                                            placeholder="..."></sup></sup>$dx$
+                                                            </p>
+                                                        </form> &ensp;<button
+                                                            onclick="periksaJawaban1()">Periksa</button>
+
+                                                    </div>
+
+                                                    <div id="pertanyaan2" style="display: none;">
+                                                        <p>Pertanyaan 2: Apa warna buah jeruk?</p>
+                                                        <input type="text" id="jawabanInput2">
+                                                        <button onclick="periksaJawaban2()">Periksa</button>
+                                                    </div>
                                                 </div>
 
 
@@ -921,6 +952,7 @@
                                                 <div class="card-text" style=" font-size: 18px;">
                                                     <p>$2$. Tentukan nilai dari $\int{3x^2 + 7\sqrt{x}}dx$</p>
                                                     <p> <b>Penyelesaian:</b> </p>
+
                                                 </div>
 
 
