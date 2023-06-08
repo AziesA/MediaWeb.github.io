@@ -53,7 +53,12 @@ input {
 }
 
 .input2 {
-    width: 40px;
+    width: 50px;
+    height: 30px;
+}
+
+.input3 {
+    width: 130px;
     height: 30px;
 }
 

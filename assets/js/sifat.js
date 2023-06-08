@@ -439,7 +439,7 @@ function cekhasil4() {
 
     if (hasil4.value == "3") {
         document.getElementById("hasil4").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        var hasil3 = document.getElementById("hasil4").value;
+        var hasil4 = document.getElementById("hasil4").value;
         document.getElementById("fixhasil4").innerHTML = '<span class="alert alert-success text-hitam"><b>$3x^{3} + c$</b> </span>';
         MathJax.typeset();
     }
@@ -457,3 +457,6 @@ function hapusdisabled4() {
         document.getElementById("hasil3").classList.remove('inputdisabled');
     }
 }
+
+
+
