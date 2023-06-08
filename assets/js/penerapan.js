@@ -159,3 +159,177 @@ function cekmm1_9() {
         document.getElementById("smm1_9").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
     }
 }
+
+function cekmm1_10() {
+    var soal1_10 = document.getElementById("smm1_10");
+
+    if (soal1_10.value == "3") {
+        document.getElementById("smm1_10").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_10").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_11() {
+    var soal1_11 = document.getElementById("smm1_11");
+
+    if (soal1_11.value == "3") {
+        document.getElementById("smm1_11").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_11").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_12() {
+    var soal1_12 = document.getElementById("smm1_12");
+
+    if (soal1_12.value == "3") {
+        document.getElementById("smm1_12").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_12").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_13() {
+    var soal1_13 = document.getElementById("smm1_13");
+
+    if (soal1_13.value == "2") {
+        document.getElementById("smm1_13").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_13").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+var benar = 0;
+function cekhasil1() {
+    var hasil1 = document.getElementById("hasil1");
+
+    if (hasil1.value == "12") {
+        document.getElementById("hasil1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        var hasil1 = document.getElementById("hasil1").value;
+        document.getElementById("fixhasil1").innerHTML = '<span> $ 3Q^{3} + 3Q^{2} - 12Q + k $ </span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil1_1() {
+    var hasil1_1 = document.getElementById("hasil1_1");
+
+    if (hasil1_1.value == "1000" || hasil1_1.value == "1.000") {
+        document.getElementById("hasil1_1").style = "border:3px solid green; width:140px;height: 30px; text-align:center";
+        var hasil1_1 = document.getElementById("hasil1_1").value;
+        document.getElementById("fixhasil1_1").innerHTML = '<span> $ 1.000 $ </span>';
+        document.getElementById("fixhasil1_1_1").innerHTML = '<span> $ 1.000 $ </span>';
+        document.getElementById("fixhasil1_1_2").innerHTML = '<span> $ 1.000 $ </span>';
+
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil1_1").style = "border:3px solid red; width:140px;height: 30px; text-align:center";
+    }
+}
+
+function hapusdisabled1() {
+    if (benar == 0) {
+        document.getElementById("hasil1").classList.remove('inputdisabled');
+        document.getElementById("hasil1_1").classList.remove('inputdisabled');
+    }
+}
+
+function cekmm1_14() {
+    var soal1_14 = document.getElementById("smm1_14");
+
+    if (soal1_14.value == "3002988112" || soal1_14.value == "3.002.988.112") {
+        document.getElementById("smm1_14").style = "border:3px solid green; width:140px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_14").style = "border:3px solid red; width:140px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_15() {
+    var soal1_15 = document.getElementById("smm1_15");
+
+    if (soal1_15.value == "3") {
+        document.getElementById("smm1_15").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_15").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_16() {
+    var soal1_16 = document.getElementById("smm1_16");
+
+    if (soal1_16.value == "3") {
+        document.getElementById("smm1_16").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_16").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_17() {
+    var soal1_17 = document.getElementById("smm1_17");
+
+    if (soal1_17.value == "3") {
+        document.getElementById("smm1_17").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_17").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_18() {
+    var soal1_18 = document.getElementById("smm1_18");
+
+    if (soal1_18.value == "2") {
+        document.getElementById("smm1_18").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_18").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm1_19() {
+    var soal1_19 = document.getElementById("smm1_19");
+
+    if (soal1_19.value == "12") {
+        document.getElementById("smm1_19").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm1_19").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekhasil1_2() {
+    var hasil1_2 = document.getElementById("hasil1_2");
+
+    if (hasil1_2.value == "112") {
+        document.getElementById("hasil1_2").style = "border:3px solid green; width:140px;height: 30px; text-align:center";
+        var hasil1_2 = document.getElementById("hasil1_2").value;
+        document.getElementById("fixhasil1_2").innerHTML = '<span> $ 3Q^{3} + 3Q^{2} - 12Q + 112 $ </span>';
+
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil1_2").style = "border:3px solid red; width:140px;height: 30px; text-align:center";
+    }
+}
