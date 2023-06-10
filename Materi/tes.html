@@ -2,27 +2,97 @@
 <html>
 
 <head>
-    <title>Contoh Game</title>
+    <style>
+        /* Gaya untuk tampilan formulir */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Selamat datang di permainan ini!</h1>
-    <form autocomplete="off"></form>
-    <div id="pertanyaan1">
-        <p>Pertanyaan 1: Apa ibukota Indonesia?</p>
-        <input type="text" id="jawabanInput1" autocomplete="off">
-        <button onclick="periksaJawaban1()">Periksa</button>
-    </div>
+    <form id="quizForm">
+        <div class="form-group">
+            <label for="soal1">Soal 1: Apa ibu kota Indonesia?</label>
+            <select id="soal1" onchange="checkAnswer(this.id, 'pertanyaan2')">
+                <option value="">Pilih jawaban:</option>
+                <option value="a">a) Jakarta</option>
+                <option value="b">b) Bandung</option>
+                <option value="c">c) Surabaya</option>
+            </select>
+        </div>
 
-    <div id="pertanyaan2" style="display: none;">
-        <p>Pertanyaan 2: Apa warna buah jeruk?</p>
-        <input type="text" id="jawabanInput2">
-        <button onclick="periksaJawaban2()">Periksa</button>
-    </div>
+        <div class="form-group" id="pertanyaan2" style="display: none;">
+            <label for="soal2">Soal 2: Siapa presiden pertama Indonesia?</label>
+            <select id="soal2" onchange="checkAnswer(this.id, 'pertanyaan3')">
+                <option value="">Pilih jawaban:</option>
+                <option value="a">a) Soekarno</option>
+                <option value="b">b) Soeharto</option>
+                <option value="c">c) Joko Widodo</option>
+            </select>
+        </div>
 
-    <div id="hasilJawaban"></div>
+        <div class="form-group" id="pertanyaan3" style="display: none;">
+            <label for="soal3">Soal 3: Apa ibu kota Jepang?</label>
+            <select id="soal3">
+                <option value="">Pilih jawaban:</option>
+                <option value="a">a) Tokyo</option>
+                <option value="b">b) Kyoto</option>
+                <option value="c">c) Osaka</option>
+            </select>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Tambahkan pertanyaan lainnya di sini -->
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkAnswer(currentQuestionId, nextQuestionId) {
+            const currentQuestion = document.getElementById(currentQuestionId);
+            const nextQuestion = document.getElementById(nextQuestionId);
+
+            if (currentQuestion.value !== '') {
+                nextQuestion.style.display = 'block';
+
+            }
+        }
+
+        const quizForm = document.getElementById('quizForm');
+
+        quizForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Mencegah pengiriman formulir
+
+            const answers = {
+                soal1: document.getElementById('soal1').value,
+                soal2: document.getElementById('soal2').value,
+                soal3: document.getElementById('soal3').value
+                // Tambahkan ID dan pertanyaan lainnya di sini
+            };
+
+            // Memeriksa jawaban yang dipilih
+            if (answers.soal1 && answers.soal2 && answers.soal3) {
+                const jawabanSoal1 = answers.soal1;
+                const jawabanSoal2 = answers.soal2;
+                const jawabanSoal3 = answers.soal3;
+
+                // Contoh pemeriksaan jawaban
+                if (jawabanSoal1 === 'a' && jawabanSoal2 === 'a' && jawabanSoal3 === 'a') {
+                    alert('Semua jawaban benar!');
+                } else {
+                    alert('Jawaban salah!');
+                }
+            } else {
+                alert('Mohon lengkapi semua jawaban!');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -16,6 +16,3 @@ window.MathJax = {
     document.head.appendChild(script);
 })();
 
-$(function () {
-    $('[data-toggle="popover"]').popover()
-})

@@ -2,6 +2,9 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 
+let loop1;
+let kkm1 = 0;
+
 function kkmSuccess(items1) {
     kkm1 = items1.val()[0]['kkm'];
 }
@@ -11,7 +14,6 @@ function handleError(error) {
 }
 
 let jawabB = [];
-
 // function aktif(){
 //     if(namaS != null && kelasS != null){
 //         const dataKuis1 = document.getElementById('dataKuis1');
@@ -274,10 +276,10 @@ function cekKuis1TO() {
         }
     }
 
-    document.setItem("nkuis1", nilai);
-    var namaS = document.getItem('nama');
-    var kelasS = document.getItem('kelas');
-    var sekolahS = document.getItem('sekolah');
+    localStorage.setItem("nkuis1", nilai);
+    var namaS = localStorage.getItem('nama');
+    var kelasS = localStorage.getItem('kelas');
+    var sekolahS = localStorage.getItem('sekolah');
 
 
     if (nilai < kkm1) {

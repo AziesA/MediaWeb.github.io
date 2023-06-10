@@ -323,13 +323,299 @@ function cekhasil1_2() {
     var hasil1_2 = document.getElementById("hasil1_2");
 
     if (hasil1_2.value == "112") {
-        document.getElementById("hasil1_2").style = "border:3px solid green; width:140px;height: 30px; text-align:center";
+        document.getElementById("hasil1_2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
         var hasil1_2 = document.getElementById("hasil1_2").value;
         document.getElementById("fixhasil1_2").innerHTML = '<span> $ 3Q^{3} + 3Q^{2} - 12Q + 112 $ </span>';
 
         MathJax.typeset();
     }
     else {
-        document.getElementById("hasil1_2").style = "border:3px solid red; width:140px;height: 30px; text-align:center";
+        document.getElementById("hasil1_2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
     }
 }
+
+//mari mencoba latihan 2
+function cekmm2() {
+    var soal2 = document.getElementById("smm2");
+
+    if (soal2.value == "-10") {
+        document.getElementById("smm2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_1() {
+    var soal2_1 = document.getElementById("smm2_1");
+
+    if (soal2_1.value == "22") {
+        document.getElementById("smm2_1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_2() {
+    var soal2_2 = document.getElementById("smm2_2");
+
+    if (soal2_2.value == "0") {
+        document.getElementById("smm2_2").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_3() {
+    var soal2_3 = document.getElementById("smm2_3");
+
+    if (soal2_3.value == "20") {
+        document.getElementById("smm2_3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_4() {
+    var soal2_4 = document.getElementById("smm2_4");
+
+    if (soal2_4.value == "-10") {
+        document.getElementById("smm2_4").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_4").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_5() {
+    var soal2_5 = document.getElementById("smm2_5");
+
+    if (soal2_5.value == "22") {
+        document.getElementById("smm2_5").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_5").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_6() {
+    var soal2_6 = document.getElementById("smm2_6");
+
+    if (soal2_6.value == "-5") {
+        document.getElementById("smm2_6").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_6").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_7() {
+    var soal2_7 = document.getElementById("smm2_7");
+
+    if (soal2_7.value == "2") {
+        document.getElementById("smm2_7").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_7").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_8() {
+    var soal2_8 = document.getElementById("smm2_8");
+
+    if (soal2_8.value == "22") {
+        document.getElementById("smm2_8").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_8").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_9() {
+    var soal2_9 = document.getElementById("smm2_9");
+
+    if (soal2_9.value == "20") {
+        document.getElementById("smm2_9").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_9").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_10() {
+    var soal2_10 = document.getElementById("smm2_10");
+
+    if (soal2_10.value == "-5") {
+        document.getElementById("smm2_10").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_10").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_11() {
+    var soal2_11 = document.getElementById("smm2_11");
+
+    if (soal2_11.value == "2") {
+        document.getElementById("smm2_11").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_11").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_12() {
+    var soal2_12 = document.getElementById("smm2_12");
+
+    if (soal2_12.value == "22") {
+        document.getElementById("smm2_12").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_12").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_13() {
+    var soal2_13 = document.getElementById("smm2_13");
+
+    if (soal2_13.value == "20") {
+        document.getElementById("smm2_13").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_13").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_14() {
+    var soal2_14 = document.getElementById("smm2_14");
+
+    if (soal2_14.value == "-5") {
+        document.getElementById("smm2_14").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_14").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+
+function cekmm2_15() {
+    var soal2_15 = document.getElementById("smm2_15");
+
+    if (soal2_15.value == "0") {
+        document.getElementById("smm2_15").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_15").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_16() {
+    var soal2_16 = document.getElementById("smm2_16");
+
+    if (soal2_16.value == "2") {
+        document.getElementById("smm2_16").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_16").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_17() {
+    var soal2_17 = document.getElementById("smm2_17");
+
+    if (soal2_17.value == "22") {
+        document.getElementById("smm2_17").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_17").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cekmm2_18() {
+    var soal2_18 = document.getElementById("smm2_18");
+
+    if (soal2_18.value == "0") {
+        document.getElementById("smm2_18").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_18").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var benar = 0;
+function cekhasil2() {
+    var hasil2 = document.getElementById("hasil2");
+
+    if (hasil2.value == "20") {
+        document.getElementById("hasil2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        var hasil2 = document.getElementById("hasil2").value;
+        document.getElementById("fixhasil2").innerHTML = '<span> $ -5t^{2} + 22t + 20$ </span>';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("hasil2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+    }
+}
+
+
+
+
