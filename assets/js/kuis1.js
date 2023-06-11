@@ -1,5 +1,19 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyBY9TbMQvuzu2mctXDQoxS6Yu_Ay9LdDLQ",
+    authDomain: "integral-a8369.firebaseapp.com",
+    projectId: "integral-a8369",
+    storageBucket: "integral-a8369.appspot.com",
+    messagingSenderId: "117612072270",
+    appId: "1:117612072270:web:f4d87e836a83c689b1e21f",
+    measurementId: "G-836R45GP7V"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.database();
+const dbkkm = db.ref('db_kkm/').on('value', kkmSuccess, handleError)
 
 
 let loop1;
@@ -32,6 +46,9 @@ function mulai1() {
     let kelas1 = document.getElementById('kelas').value;
     let sekolah1 = document.getElementById('sekolah').value;
 
+    localStorage.setItem('nama', nama1);
+    localStorage.setItem('kelas', kelas1);
+    localStorage.setItem('sekolah', sekolah1);
 
     const errNama = document.getElementById('errNama');
     const errKelas = document.getElementById('errKelas');
@@ -333,10 +350,10 @@ function cekKuis1() {
             }
         }
 
-        document.setItem("nkuis1", nilai);
-        var namaS = document.getItem('nama');
-        var kelasS = document.getItem('kelas');
-        var sekolahS = document.getItem('sekolah');
+        localStorage.setItem("nkuis1", nilai);
+        var namaS = localStorage.getItem('nama');
+        var kelasS = localStorage.getItem('kelas');
+        var sekolahS = localStorage.getItem('sekolah');
 
 
         if (nilai < kkm1) {

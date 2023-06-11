@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kuis Integral Tak Tentu Fungsi Aljabar dan Sifat-Sifatnya</title>
+    <title>Kuis Pengertian Integral</title>
 
     <!-- Custom fonts for this template-->
     <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -60,12 +60,13 @@
                     <i class="fa-solid fa-1"></i>
                     <span>Pengertian Integral</span>
                 </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="../Materi/PengertianIntegral.html">1.1. Konsep
                             Integral</a>
                         <a class="collapse-item " href="../Materi/Notasi.html">1.2. Notasi Integral</a>
-                        <a class="collapse-item " href="../Materi/kuis1.html">Kuis 1</a>
+                        <a class="collapse-item active" href="../Materi/kuis1.html">Kuis 1</a>
                     </div>
                 </div>
             </li>
@@ -77,11 +78,10 @@
                     <i class="fa-solid fa-2"></i>
                     <span>Integral Tak Tentu Fungsi Aljabar dan Sifat-Sifatnya</span>
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                    data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="../Materi/SifatIntegral.html">Materi</a>
-                        <a class="collapse-item active" href="../Materi/kuis2.html">Kuis 2</a>
+                        <a class="collapse-item" href="../Materi/kuis2.html">Kuis 2</a>
                     </div>
                 </div>
             </li>
@@ -131,7 +131,7 @@
                 <nav class="navbar navbar-expand navbar-light bg-light topbar mb-4 static-top justify-content-center"
                     style=" box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); ">
                     <!-- Page Heading -->
-                    <h4 class="h3 mt-2 grays">Kuis Integral Tak Tentu Funsi Aljabar dan Sifat-Sifatnya</h4>
+                    <h4 class="h3 mt-2 grays">Kuis Pengertian Integral</h4>
 
                 </nav>
                 <!-- End of Topbar -->
@@ -141,7 +141,7 @@
 
                     <!-- Content Row -->
                     <div id="dataKuis1">
-                        <div class="row bord3" style="height: 500px; width: 100%;">
+                        <div class="row bord3" style="height: 530px; width: 100%;">
                             <div class="mb-1 col-sm-6 bg-white border border-purple isimateri">
                                 <div class="h5 font-weight-bold">
                                     <div class="ml-3 mb-3 mr-3">
@@ -201,7 +201,8 @@
                                                                 <td>:</td>
                                                                 <td><input type="text" id="nama" name="nama"
                                                                         style="width: 100%;"
-                                                                        placeholder="Masukkan Nama Anda"></td>
+                                                                        placeholder="Masukkan Nama Anda"
+                                                                        autocomplete="off"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"><span id="errNama">
@@ -234,7 +235,8 @@
                                                                 <td>:</td>
                                                                 <td><input type="text" id="sekolah" name="sekolah"
                                                                         style="width: 100%;"
-                                                                        placeholder="Masukkan Sekolah Anda"></td>
+                                                                        placeholder="Masukkan Sekolah Anda"
+                                                                        autocomplete="off"></td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="3"><span id="errSekolah">
@@ -337,7 +339,7 @@
                         <div class="row bord3" style="height: 500px; width: 100%; margin-top: -15px;">
                             <div class="mb-1 col-sm bg-white border border-purple isimateri">
                                 <div class="h5 font-weight-bold">
-                                    <div class="h3 text-center" style="font-weight: normal;">Hasil Kuis 2</div>
+                                    <div class="h3 text-center" style="font-weight: normal;">Hasil Kuis 1</div>
                                     <hr style="border-top: 3px dashed rgb(58, 16, 120);">
                                     <div id="hasilL" class="hasil" style="font-weight: normal;" hidden>
                                         <center>
@@ -490,6 +492,11 @@
                 </div>
             </div>
 
+
+
+
+
+
             <!-- Bootstrap core JavaScript-->
             <script src="../assets/vendor/jquery/jquery.min.js"></script>
             <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -508,10 +515,15 @@
             <script src="../assets/js/demo/chart-area-demo.js"></script>
             <script src="../assets/js/demo/chart-pie-demo.js"></script>
 
+            <!-- SDK Firebase -->
+            <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
 
             <!-- script main-->
             <script src="../assets/js/main.js"></script>
             <script src="../assets/js/kuis2.js"></script>
+            <script src="../assets/js/simpan1.js"></script>
 </body>
 
 </html>
