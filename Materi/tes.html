@@ -17,81 +17,47 @@
 </head>
 
 <body>
-    <form id="quizForm">
-        <div class="form-group">
-            <label for="soal1">Soal 1: Apa ibu kota Indonesia?</label>
-            <select id="soal1" onchange="checkAnswer(this.id, 'pertanyaan2')">
-                <option value="">Pilih jawaban:</option>
-                <option value="a">a) Jakarta</option>
-                <option value="b">b) Bandung</option>
-                <option value="c">c) Surabaya</option>
-            </select>
-        </div>
+    <form>
+        <label for="option1">
+            <input type="radio" name="answer" id="option1" value="option1" /> Pilihan 1
+        </label>
+        <br />
+        <label for="option2">
+            <input type="radio" name="answer" id="option2" value="option2" /> Pilihan 2
+        </label>
+        <br />
+        <label for="option3">
+            <input type="radio" name="answer" id="option3" value="option3" /> Pilihan 3
+        </label>
+        <br />
+        <button type="button" onclick="checkAnswer()">Cek Jawaban</button>
+    </form>
 
-        <div class="form-group" id="pertanyaan2" style="display: none;">
-            <label for="soal2">Soal 2: Siapa presiden pertama Indonesia?</label>
-            <select id="soal2" onchange="checkAnswer(this.id, 'pertanyaan3')">
-                <option value="">Pilih jawaban:</option>
-                <option value="a">a) Soekarno</option>
-                <option value="b">b) Soeharto</option>
-                <option value="c">c) Joko Widodo</option>
-            </select>
-        </div>
-
-        <div class="form-group" id="pertanyaan3" style="display: none;">
-            <label for="soal3">Soal 3: Apa ibu kota Jepang?</label>
-            <select id="soal3">
-                <option value="">Pilih jawaban:</option>
-                <option value="a">a) Tokyo</option>
-                <option value="b">b) Kyoto</option>
-                <option value="c">c) Osaka</option>
-            </select>
-        </div>
-
-        <!-- Tambahkan pertanyaan lainnya di sini -->
-
-        <input type="submit" value="Submit">
     </form>
 
     <script>
-        function checkAnswer(currentQuestionId, nextQuestionId) {
-            const currentQuestion = document.getElementById(currentQuestionId);
-            const nextQuestion = document.getElementById(nextQuestionId);
+        function checkAnswer() {
+            var selectedOption = document.querySelector('input[name="answer"]:checked');
 
-            if (currentQuestion.value !== '') {
-                nextQuestion.style.display = 'block';
-
+            if (selectedOption && selectedOption.value === "option1") {
+                // Jawaban benar
+                hideRadioButton();
+            } else {
+                // Jawaban salah atau tidak ada yang dipilih
+                alert("Jawaban Anda salah!");
             }
         }
 
-        const quizForm = document.getElementById('quizForm');
+        function hideRadioButton() {
+            var radioButtons = document.querySelectorAll('input[name="answer"]');
 
-        quizForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Mencegah pengiriman formulir
-
-            const answers = {
-                soal1: document.getElementById('soal1').value,
-                soal2: document.getElementById('soal2').value,
-                soal3: document.getElementById('soal3').value
-                // Tambahkan ID dan pertanyaan lainnya di sini
-            };
-
-            // Memeriksa jawaban yang dipilih
-            if (answers.soal1 && answers.soal2 && answers.soal3) {
-                const jawabanSoal1 = answers.soal1;
-                const jawabanSoal2 = answers.soal2;
-                const jawabanSoal3 = answers.soal3;
-
-                // Contoh pemeriksaan jawaban
-                if (jawabanSoal1 === 'a' && jawabanSoal2 === 'a' && jawabanSoal3 === 'a') {
-                    alert('Semua jawaban benar!');
-                } else {
-                    alert('Jawaban salah!');
-                }
-            } else {
-                alert('Mohon lengkapi semua jawaban!');
+            for (var i = 0; i < radioButtons.length; i++) {
+                radioButtons[i].style.display = "none";
             }
-        });
+
+            alert("Jawaban Anda benar!");
+        }
+
     </script>
 </body>
 

@@ -337,3 +337,7 @@ ul.circle {
     display: inline-block;
     margin-right: 10px;
 }
+
+.radio-label {
+    display: none;
+}

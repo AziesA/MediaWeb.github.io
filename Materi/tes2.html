@@ -116,3 +116,47 @@
 </body>
 
 </html>
+
+*\
+//latihan 1
+function checkAnswer(currentQuestionId, nextQuestionId) {
+const currentQuestion = document.getElementById(currentQuestionId);
+const nextQuestion = document.getElementById(nextQuestionId);
+
+if (currentQuestion.value !== '') {
+nextQuestion.style.display = 'block';
+
+}
+
+}
+
+const quizForm = document.getElementById('quizForm');
+
+quizForm.addEventListener('submit', function (event) {
+event.preventDefault(); // Mencegah pengiriman formulir
+
+const answers = {
+soal1: document.getElementById('soal1').value,
+soal2: document.getElementById('soal2').value,
+soal3: document.getElementById('soal3').value
+// Tambahkan ID dan pertanyaan lainnya di sini
+};
+
+// Memeriksa jawaban yang dipilih
+if (answers.soal1 && answers.soal2 && answers.soal3) {
+const jawabanSoal1 = answers.soal1;
+const jawabanSoal2 = answers.soal2;
+const jawabanSoal3 = answers.soal3;
+
+// Contoh pemeriksaan jawaban
+if (jawabanSoal1 === 'a' && jawabanSoal2 === 'a' && jawabanSoal3 === 'a') {
+alert('Semua jawaban benar!');
+} else {
+alert('Jawaban salah!');
+}
+} else {
+alert('Mohon lengkapi semua jawaban!');
+}
+MathJax.typeset();
+});
+/*

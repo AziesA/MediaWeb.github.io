@@ -461,45 +461,66 @@ function hapusdisabled4() {
 
 
 //mari mencoba 2 
+//latihan1
+function cekjwb1() {
+    var a = document.getElementById("a1");
+    var b = document.getElementById("b2");
+    var c = document.getElementById("c3");
+    var d = document.getElementById("c4");
+    var e = document.getElementById("a5");
 
-//latihan 1
-function checkAnswer(currentQuestionId, nextQuestionId) {
-    const currentQuestion = document.getElementById(currentQuestionId);
-    const nextQuestion = document.getElementById(nextQuestionId);
+    if (a.checked) {
+        document.getElementById("step1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int 2x^{4} dx -\\int 4x^{6} dx + \\int 1dx$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("step1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
 
-    if (currentQuestion.value !== '') {
-        nextQuestion.style.display = 'block';
+    if (b.checked) {
+        document.getElementById("step2").innerHTML = '<span class="alert alert-success text-hitam"><b>$2\\int x^{4}dx - 4\\int x^{6} dx + \\int 1 dx$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("step2").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
 
+    if (c.checked) {
+        document.getElementById("step3").innerHTML = '<span class="alert alert-success text-hitam"><b>$2[\\frac{1}{4+1}x^{4+1}] -  4[\\frac{ 1 } { 6 + 1 } x ^ { 6+1 }]+ x + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("step3").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (d.checked) {
+        document.getElementById("step4").innerHTML = '<span class="alert alert-success text-hitam"><b>$2[\\frac{1}{5}x^{5}] - 4[\\frac{ 1 } { 7 } x ^ { 7}]+ x + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("step4").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+    if (e.checked) {
+        document.getElementById("step5").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{2}{5}x^{5} - \\frac{ 4 } { 7 } x ^ { 7}+ x + c$</b > </span > ';
+        document.getElementById("step5_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{2}{5}x^{5} - \\frac{ 4 } { 7 } x ^ { 7}+ x + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("step5").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
 
 }
 
-const quizForm = document.getElementById('quizForm');
+//latihan2
+function cekjwb2() {
+    var a1 = document.getElementById("1b");
 
-quizForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Mencegah pengiriman formulir
-
-    const answers = {
-        soal1: document.getElementById('soal1').value,
-        soal2: document.getElementById('soal2').value,
-        soal3: document.getElementById('soal3').value
-        // Tambahkan ID dan pertanyaan lainnya di sini
-    };
-
-    // Memeriksa jawaban yang dipilih
-    if (answers.soal1 && answers.soal2 && answers.soal3) {
-        const jawabanSoal1 = answers.soal1;
-        const jawabanSoal2 = answers.soal2;
-        const jawabanSoal3 = answers.soal3;
-
-        // Contoh pemeriksaan jawaban
-        if (jawabanSoal1 === 'a' && jawabanSoal2 === 'a' && jawabanSoal3 === 'a') {
-            alert('Semua jawaban benar!');
-        } else {
-            alert('Jawaban salah!');
-        }
-    } else {
-        alert('Mohon lengkapi semua jawaban!');
+    if (a1.checked) {
+        document.getElementById("1step").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int3x^2 dx + \\int7\\sqrt{x^{5}} &ensp;dx$</b > </span > ';
+        MathJax.typeset();
     }
-    MathJax.typeset();
-});
+    else {
+        document.getElementById("1step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+}
