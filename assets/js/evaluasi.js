@@ -1,9 +1,26 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyCASR8gaa3D1RHdnHKHEgig0EsBi3REVx0",
+    authDomain: "mediaintegral-8f7a9.firebaseapp.com",
+    databaseURL: "https://mediaintegral-8f7a9-default-rtdb.firebaseio.com",
+    projectId: "mediaintegral-8f7a9",
+    storageBucket: "mediaintegral-8f7a9.appspot.com",
+    messagingSenderId: "386390463917",
+    appId: "1:386390463917:web:e9107edca2463698f0fd24",
+    measurementId: "G-VYFS16WK8H"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
+const db = firebase.database();
+const dbkkm = db.ref('db_kkm/').on('value', kkmSuccess, handleError)
+
+let loop1;
+let kkm1 = 0;
 
 function kkmSuccess(items1) {
-    kkm1 = items1.val()[0]['kkm'];
+    kkm1 = items1.val()[3]['kkm'];
 }
 
 function handleError(error) {
@@ -30,6 +47,10 @@ function mulai1() {
     let kelas1 = document.getElementById('kelas').value;
     let sekolah1 = document.getElementById('sekolah').value;
 
+    //Local Storage
+    localStorage.setItem("nama", nama1);
+    localStorage.setItem('kelas', kelas1);
+    localStorage.setItem('sekolah', sekolah1);
 
     const errNama = document.getElementById('errNama');
     const errKelas = document.getElementById('errKelas');
@@ -112,7 +133,6 @@ function listsoal1() {
             }
             MathJax.typeset();
         }
-
         xhr.open('get', url);
         xhr.send();
     }
@@ -163,8 +183,8 @@ function listsoal1() {
     });
 
     countDownDate = new Date().getTime();
-    //waktu 60 menit 
-    countDownDate += 3604000;
+    //waktu 15 menit
+    countDownDate += 1802000;
 
     var x = setInterval(function () {
         var now = new Date().getTime();
@@ -324,6 +344,7 @@ function cek20(pilih) {
     document.getElementById("soal20").classList.add('active', 'btn-primary');
     document.getElementById("soal20").classList.remove('btn-light');
 }
+
 $(function () {
     setInterval(cek, 1000);
 });
@@ -340,14 +361,14 @@ function cekKuis1TO() {
     hasil1.hidden = false;
     for (let a = 0; a < jawabB.length; a++) {
         if (kuis1[a] == jawabB[a]) {
-            nilai = nilai + 20;
+            nilai = nilai + 5;
         }
     }
 
-    document.setItem("nkuis1", nilai);
-    var namaS = document.getItem('nama');
-    var kelasS = document.getItem('kelas');
-    var sekolahS = document.getItem('sekolah');
+    localStorage.setItem("nkuis1", nilai);
+    var namaS = localStorage.getItem('nama');
+    var kelasS = localStorage.getItem('kelas');
+    var sekolahS = localStorage.getItem('sekolah');
 
 
     if (nilai < kkm1) {
@@ -397,14 +418,14 @@ function cekKuis1() {
                 latihan1.hidden = true;
                 const hasil1 = document.getElementById('hasilKuis1');
                 hasil1.hidden = false;
-                nilai = nilai + 10;
+                nilai = nilai + 20;
             }
         }
 
-        document.setItem("nkuis1", nilai);
-        var namaS = document.getItem('nama');
-        var kelasS = document.getItem('kelas');
-        var sekolahS = document.getItem('sekolah');
+        localStorage.setItem("nkuis1", nilai);
+        var namaS = localStorage.getItem('nama');
+        var kelasS = localStorage.getItem('kelas');
+        var sekolahS = localStorage.getItem('sekolah');
 
 
         if (nilai < kkm1) {

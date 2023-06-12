@@ -913,46 +913,24 @@
                                                     <p>$1$. Tentukan nilai dari $\int{(2x^4 - 4x^6 + 1)}dx$</p>
                                                     <p><b>Penyelesaian:</b></p>
                                                     <p>$\int{(2x^4 - 4x^6 + 1)}dx$</p>
-
-                                                    <div class="form-group">
-                                                        <label for="soal1">$=$</label>
-                                                        <select id="soal1"
-                                                            onchange="checkAnswer(this.id, 'pertanyaan2')">
-                                                            <option value="">Pilih jawaban:</option>
-                                                            <option value="a">$\int 2x^4$
-                                                            </option>
-                                                            <option value="b">b) Bandung</option>
-                                                            <option value="c">c) Surabaya</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" id="pertanyaan2" style="display: none;">
-                                                        <label for="soal2">Soal 2: Siapa presiden pertama
-                                                            Indonesia?</label>
-                                                        <select id="soal2"
-                                                            onchange="checkAnswer(this.id, 'pertanyaan3')">
-                                                            <option value="">Pilih jawaban:</option>
-                                                            <option value="a">a) Soekarno</option>
-                                                            <option value="b">b) Soeharto</option>
-                                                            <option value="c">c) Joko Widodo</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" id="pertanyaan3" style="display: none;">
-                                                        <label for="soal3">Soal 3: Apa ibu kota Jepang?</label>
-                                                        <select id="soal3">
-                                                            <option value="">Pilih jawaban:</option>
-                                                            <option value="a">a) Tokyo</option>
-                                                            <option value="b">b) Kyoto</option>
-                                                            <option value="c">c) Osaka</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <!-- Tambahkan pertanyaan lainnya di sini -->
-
-                                                    <input type="submit" value="Submit">
+                                                    <form>
+                                                        <p>$=$ <input class="input3" disabled></p>
+                                                        <div class="radio-container">
+                                                            <input type="radio" id="a1" name="fav_language" value="a1">
+                                                            <label for="a1">$\int 2x^{4} dx - \int 4x^{6} dx + \int 1
+                                                                dx$</label><br>
+                                                        </div>
+                                                        <div class="radio-container">
+                                                            <input type="radio" id="b1" name="fav_language" value="b1">
+                                                            <label for="css">$\int 2x^4 - 4x^6 + 1 dx$</label><br>
+                                                        </div>
+                                                        <div class="radio-container">
+                                                            <input type="radio" id="c1" name="fav_language" value="c1">
+                                                            <label for="c1">$\int 2x^{4} - \int 4x^{6} +
+                                                                \int 1
+                                                                dx$</label><br>
+                                                        </div>
                                                     </form>
-
 
 
 

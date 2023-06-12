@@ -31,8 +31,8 @@
         "soal": "Selesaikan integral berikut $\\int{\\sqrt{x^{5}}}dx= ...$",
         "a": "$\\frac{2}{7}x^{3}\\sqrt{x} + c $",
         "b": "$-\\frac{2}{7}x^{-3}\\sqrt{x} + c $",
-        "c": "$\\frac{2}{7}x^{\\frac{2}{7}}$",
-        "d": "$\\frac{7}{2}x^{\\frac{2}{7}}$",
+        "c": "$\\frac{2}{7}x^{\\frac{2}{7}} + c $",
+        "d": "$\\frac{7}{2}x^{\\frac{2}{7}} + c$",
         "jawaban": "a"
     },
     {

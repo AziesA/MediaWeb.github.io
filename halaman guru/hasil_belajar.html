@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Halaman Guru</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/fontawesome-free/css/all.min_2.css" rel="stylesheet" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- styles main-->
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/font.css" rel="stylesheet">
+    <link rel="icon" href="../assets/img/integral_sign.png" type="image/gif" sizes="16x16">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-purple sidebar sidebar-dark accordion border-right" id="accordionSidebar">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="mt-3 text-center d-none d-md-inline justify-content-center">
+                <button class="fas fa-bars border-0 float-left bg-purple text-white" style="width: auto;"
+                    id="sidebarToggle"> Daftar Isi </button>
+            </div>
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../homepage.html">
+                <div class="sidebar-brand-icon">
+                    <img src="../assets/img/integral_sign.png" style="height:40px;width:40px;">
+                </div>
+                <div class="sidebar-brand-text mx-3">Integral</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" style="cursor:auto;" href="dashboard.html">
+                    <i class="fas fa-columns"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kkm.html">
+                    <i class="fas fa-fw fa-sliders-h"></i>
+                    <span>Set KKM</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Hasil Belajar
+            </div>
+
+            <!-- Evaluasi -->
+            <li class="nav-item active">
+                <a id="hasilbelajar" class="nav-link" href="hasil_belajar.html">
+                    <i class="fas fa-fw fa-file-signature"></i>
+                    <span>Hasil Belajar</span></a>
+            </li>
+            <!-- Evaluasi -->
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h1 class="h3 mb-0 text-gray-800">Halaman Guru</h1>
+                    </div>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Content Row -->
+                    <div class="row" style="height: 500px; width: 100%;">
+                        <div class="mb-1 col-sm bg-white border border-primary isicontent3">
+                            <div class="h5 font-weight-bold">
+                                <div class="card-body">
+                                    <center>
+                                        <div class="card-title-md">
+                                            <label for="sekolah">Sekolah :
+                                                <select id="sekolah" name="sekolah" class="mundur"
+                                                    aria-placeholder="-PILIH SEKOLAH-">
+                                                    <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                                    <option value="1">SMAN 1 Jenamas</option>
+                                                </select>
+                                            </label>
+
+                                            <label for="kelas">Kelas :
+                                                <select id="kelas" name="kelas" class="mundur"
+                                                    aria-placeholder="-PILIH KELAS-">
+                                                    <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                                    <option value="1">IX A</option>
+                                                    <option value="2">IX B</option>
+                                                    <option value="3">IX C</option>
+                                                    <option value="4">IX D</option>
+                                                    <option value="5">IX E</option>
+                                                    <option value="6">IX F</option>
+                                                    <option value="7">IX G</option>
+                                                </select>
+                                            </label>
+
+                                            <label for="hasil">Hasil :
+                                                <select id="kuis" name="kuis" class="mundur">
+                                                    <option value="0" selected="selected">-- PILIH KUIS--</option>
+                                                    <option value="db_kuis1/">KUIS 1</option>
+                                                    <option value="db_kuis2/">KUIS 2</option>
+                                                    <option value="db_kuis3/">KUIS 3</option>
+                                                    <option value="db_Evaluasi/">EVALUASI</option>
+                                                </select>
+                                            </label>
+
+
+                                            <button type="button" class="cari btn btn-primary" onclick="mencari()"><i
+                                                    class="fas fa-search"></i>&nbsp;&nbsp;Cari</button>
+                                            <button type="button" class="cari btn btn-primary download"
+                                                onclick="downloadfile()"><i
+                                                    class="fas fa-download"></i>&nbsp;&nbsp;Download</button>
+                                        </div>
+                                    </center>
+                                    <br>
+                                    <table id='table_wrapper' class="table">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="ukr1">Nama</td>
+                                                <th class="ukr3">Kelas</td>
+                                                <th class="ukr1">Sekolah</td>
+                                                <th class="ukr3">Skor</td>
+                                                <th class="ukr2">Hari</td>
+                                                <th class="ukr2">Waktu</td>
+                                                <th class="ukr4">Hapus</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="disini"></tbody>
+                                    </table>
+                                    <br>
+                                    <center class="center">
+                                    </center>
+                                    <p class=" clear"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <!-- <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; QE 2021</span>
+                    </div>
+                </div>
+            </footer> -->
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Modal Download -->
+    <div class="modal fade" id="ModalDownload" tabindex="-1" role="dialog" aria-labelledby="ModalDownloadTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body bg-danger text-white">
+                    Data masih kosong! Silahkan klik tombol Cari
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Filter -->
+    <div class="modal fade" id="ModalFilter" tabindex="-1" role="dialog" aria-labelledby="ModalFilterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body bg-danger text-white">
+                    Tentukan filter pencarian!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus -->
+    <div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="ModalHapusTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title text-center" id="ModalHapusTitle">Konfirmasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menghapus data?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                    <button type="button" onclick="" class="btn btn-primary yakin">Yakin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus Semua-->
+    <div class="modal fade" id="ModalHapusAll" tabindex="-1" role="dialog" aria-labelledby="ModalHapusAllTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title text-center" id="ModalHapusAllTitle">Konfirmasi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menghapus semua data?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+                    <button type="button" onclick="" class="btn btn-primary yakinAll">Yakin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../assets/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../assets/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../assets/js/demo/chart-area-demo.js"></script>
+    <script src="../assets/js/demo/chart-pie-demo.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/hasil.js"></script>
+
+</body>
+
+</html>

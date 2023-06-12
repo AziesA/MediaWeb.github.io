@@ -332,3 +332,8 @@ ul.circle {
     font-size: 16px;
     cursor: pointer;
 }
+
+.radio-container {
+    display: inline-block;
+    margin-right: 10px;
+}

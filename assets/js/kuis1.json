@@ -2,10 +2,10 @@
     {
         "id": 1,
         "soal": "Tentukan antiturunan dari fungsi-fungsi berikut $F(x)= 2x$ =...",
-        "a": "2",
+        "a": "$2$",
         "b": "$2x^2$",
         "c": "$x$",
-        "d": "$2x^-2$",
+        "d": "$2x^{-2}$",
         "jawaban": "A"
     },
     {
@@ -67,7 +67,7 @@
         "soal": "Carilah antiturunan berikut $y’ = \\frac{dy}{dx}=x^{\\frac{1}{2}}$ =...",
         "a": "$y=\\frac{2}{3}x^{\\frac{3}{2}}$",
         "b": "$y=-\\frac{2}{3}x^{\\frac{3}{2}}$",
-        "c": "$y=x^{\\frac{3}{2}}$$",
+        "c": "$y=x^{\\frac{3}{2}}$",
         "d": "$y=-x^{\\frac{3}{2}}$",
         "jawaban": "A"
     },

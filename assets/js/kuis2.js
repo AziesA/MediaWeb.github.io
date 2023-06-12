@@ -1,20 +1,20 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBY9TbMQvuzu2mctXDQoxS6Yu_Ay9LdDLQ",
-    authDomain: "integral-a8369.firebaseapp.com",
-    projectId: "integral-a8369",
-    storageBucket: "integral-a8369.appspot.com",
-    messagingSenderId: "117612072270",
-    appId: "1:117612072270:web:f4d87e836a83c689b1e21f",
-    measurementId: "G-836R45GP7V"
+    apiKey: "AIzaSyCASR8gaa3D1RHdnHKHEgig0EsBi3REVx0",
+    authDomain: "mediaintegral-8f7a9.firebaseapp.com",
+    databaseURL: "https://mediaintegral-8f7a9-default-rtdb.firebaseio.com",
+    projectId: "mediaintegral-8f7a9",
+    storageBucket: "mediaintegral-8f7a9.appspot.com",
+    messagingSenderId: "386390463917",
+    appId: "1:386390463917:web:e9107edca2463698f0fd24",
+    measurementId: "G-VYFS16WK8H"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 const dbkkm = db.ref('db_kkm/').on('value', kkmSuccess, handleError)
-
 
 let loop1;
 let kkm1 = 0;
@@ -28,6 +28,7 @@ function handleError(error) {
 }
 
 let jawabB = [];
+
 // function aktif(){
 //     if(namaS != null && kelasS != null){
 //         const dataKuis1 = document.getElementById('dataKuis1');
@@ -46,7 +47,8 @@ function mulai1() {
     let kelas1 = document.getElementById('kelas').value;
     let sekolah1 = document.getElementById('sekolah').value;
 
-    localStorage.setItem('nama', nama1);
+    //Local Storage
+    localStorage.setItem("nama", nama1);
     localStorage.setItem('kelas', kelas1);
     localStorage.setItem('sekolah', sekolah1);
 
@@ -108,7 +110,7 @@ function mulai1() {
         const dataKuis1 = document.getElementById('dataKuis1');
         dataKuis1.hidden = true;
 
-        const latihan1 = document.getElementById('kuis2');
+        const latihan1 = document.getElementById('kuis1');
         latihan1.hidden = false;
 
         listsoal1();
@@ -131,7 +133,6 @@ function listsoal1() {
             }
             MathJax.typeset();
         }
-
         xhr.open('get', url);
         xhr.send();
     }
@@ -167,12 +168,13 @@ function listsoal1() {
         document.getElementById("id8").hidden = true;
         document.getElementById("id9").hidden = true;
         document.getElementById("id10").hidden = true;
+
     }, () => {
 
     });
 
     countDownDate = new Date().getTime();
-    //waktu 30 menit 
+    //waktu 15 menit
     countDownDate += 1802000;
 
     var x = setInterval(function () {
@@ -273,6 +275,7 @@ function cek10(pilih) {
     document.getElementById("soal10").classList.add('active', 'btn-primary');
     document.getElementById("soal10").classList.remove('btn-light');
 }
+
 $(function () {
     setInterval(cek, 1000);
 });
@@ -283,13 +286,13 @@ function cek() {
 }
 
 function cekKuis1TO() {
-    const latihan1 = document.getElementById('kuis2');
+    const latihan1 = document.getElementById('kuis1');
     latihan1.hidden = true;
     const hasil1 = document.getElementById('hasilKuis1');
     hasil1.hidden = false;
     for (let a = 0; a < jawabB.length; a++) {
         if (kuis1[a] == jawabB[a]) {
-            nilai = nilai + 20;
+            nilai = nilai + 10;
         }
     }
 
@@ -342,11 +345,11 @@ function cekKuis1() {
         $('#ModalSubmit1').modal('hide')
         for (let a = 0; a < jawabB.length; a++) {
             if (kuis1[a] == jawabB[a]) {
-                const latihan1 = document.getElementById('kuis2');
+                const latihan1 = document.getElementById('kuis1');
                 latihan1.hidden = true;
                 const hasil1 = document.getElementById('hasilKuis1');
                 hasil1.hidden = false;
-                nilai = nilai + 10;
+                nilai = nilai + 20;
             }
         }
 

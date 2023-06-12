@@ -112,7 +112,7 @@
         "soal": "Tentukanlah hasil dari $\\int(\\frac{4}{4x}) dx$ = ...",
         "a": "$\\frac{4}{x} + 2x^2 + c$",
         "b": "$\\frac{2}{x} + x^2 + c$",
-        "c": "$\\frac{-4]{x} + 2x^2 + c$",
+        "c": "$\\frac{-4}{x} + 2x^2 + c$",
         "d": "$\\frac{-2}{x} + x^2 + c$",
         "jawaban": "c"
     },

@@ -1,7 +1,7 @@
-const dbkuis1 = db.ref('db_kuis3/').on('value', kuis1Success, handleError)
+const dbkuis3 = db.ref('db_kuis3/').on('value', kuis3Success, handleError)
 let pk1 = 0;
 var counter = 0;
-function kuis1Success(items1) {
+function kuis3Success(items1) {
     pk1 = items1.val().length;
     counter = pk1;
 }
