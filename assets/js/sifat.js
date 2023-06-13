@@ -514,6 +514,13 @@ function cekjwb1() {
 //latihan2
 function cekjwb2() {
     var a1 = document.getElementById("1b");
+    var b1 = document.getElementById("2a")
+    var c1 = document.getElementById("3a")
+    var d1 = document.getElementById("4c")
+    var e1 = document.getElementById("5c")
+    var f1 = document.getElementById("6b")
+
+
 
     if (a1.checked) {
         document.getElementById("1step").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int3x^2 dx + \\int7\\sqrt{x^{5}} &ensp;dx$</b > </span > ';
@@ -523,4 +530,43 @@ function cekjwb2() {
         document.getElementById("1step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
 
+    if (b1.checked) {
+        document.getElementById("2step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3\\int x^2 dx + 7\\int\\sqrt{ x ^ { 5} } dx$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("2step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (c1.checked) {
+        document.getElementById("3step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3\\int x^2 dx + 7\\int x^{\\frac{5}{2}} dx$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("3step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (d1.checked) {
+        document.getElementById("4step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3[\\frac{1}{2+1}x^{2+1}] + 7[\\frac{1}{\\frac{5}{2}+1}x^{\\frac{5}{2}+1}] + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("4step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (e1.checked) {
+        document.getElementById("5step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3[\\frac{1}{3}x^{3}] + 7[\\frac{1}{\\frac{7}{2}}x^{\\frac{7}{2}}] + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("5step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (f1.checked) {
+        document.getElementById("6step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3[\\frac{1}{3}x^{3}] + 7[\\frac{1}{\\frac{7}{2}}x^{\\frac{7}{2}}] + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("6step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
 }
