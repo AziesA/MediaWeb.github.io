@@ -598,7 +598,7 @@ function cekjwb3() {
     var d_1 = document.getElementById("b_4");
     var e_1 = document.getElementById("a_5");
     var f_1 = document.getElementById("a_6");
-    var g_1 = document.getElementById("a_7");
+    var g_1 = document.getElementById("c_7");
 
     if (a_1.checked) {
         document.getElementById("stp1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int (2x-5)(2x-5)dx$</b > </span > ';
@@ -656,4 +656,40 @@ function cekjwb3() {
     else {
         document.getElementById("stp7").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
+}
+
+
+//Latihan 3
+function cekjwb4() {
+    var satu = document.getElementById("1_a");
+    var dua = document.getElementById("2_b");
+    var tiga = document.getElementById("3_a");
+
+    if (satu.checked) {
+        document.getElementById("ste1").innerHTML = '<span class="alert alert-success text-hitam"><b> $x^4 - 3x^2 + 5$ </b > </span > ';
+        document.getElementById("ste1_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^4 - 3x^2 + 5$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (dua.checked) {
+        document.getElementById("ste2").innerHTML = '<span class="alert alert-success text-hitam"><b> 2</b > </span > ';
+        document.getElementById("ste2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>2</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste2").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (tiga.checked) {
+        document.getElementById("ste3").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\int(x^4 - 3x^2 + 5)dx$</b > </span > ';
+        document.getElementById("ste3_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int(x^4 - 3x^2 + 5)dx$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste3").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
 }
