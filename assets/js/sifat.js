@@ -663,7 +663,13 @@ function cekjwb3() {
 function cekjwb4() {
     var satu = document.getElementById("1_a");
     var dua = document.getElementById("2_b");
-    var tiga = document.getElementById("3_a");
+    var tiga = document.getElementById("3_b");
+    var empt = document.getElementById("4_b");
+    var lima = document.getElementById("5_a");
+    var enam = document.getElementById("6_a");
+    var tjuh = document.getElementById("7_b");
+
+
 
     if (satu.checked) {
         document.getElementById("ste1").innerHTML = '<span class="alert alert-success text-hitam"><b> $x^4 - 3x^2 + 5$ </b > </span > ';
@@ -676,7 +682,7 @@ function cekjwb4() {
 
     if (dua.checked) {
         document.getElementById("ste2").innerHTML = '<span class="alert alert-success text-hitam"><b> 2</b > </span > ';
-        document.getElementById("ste2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>2</b > </span > ';
+        document.getElementById("ste2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$f(0)=2$</b > </span > ';
         MathJax.typeset();
     }
     else {
@@ -691,5 +697,40 @@ function cekjwb4() {
     else {
         document.getElementById("ste3").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
+
+    if (empt.checked) {
+        document.getElementById("ste4").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\frac{1}{5}x^{5} - x^3 + 5x + c$</b > </span > ';
+        document.getElementById("ste4_1").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\frac{1}{5}x^{5} - x^3 + 5x + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste4").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (lima.checked) {
+        document.getElementById("ste5").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\frac{1}{5}(0)^{5} - (0)^{3} + 5(0) + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste5").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (enam.checked) {
+        document.getElementById("ste6").innerHTML = '<span class="alert alert-success text-hitam"><b> $0 - 0 + 0 + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste6").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
+    if (tjuh.checked) {
+        document.getElementById("ste7").innerHTML = '<span class="alert alert-success text-hitam"><b> $2$</b > </span > ';
+        document.getElementById("ste7_1").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\frac{1}{5}x^{5} - x^3 + 5x + 2$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("ste7").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
 
 }

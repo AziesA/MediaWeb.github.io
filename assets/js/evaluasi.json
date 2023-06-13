@@ -6,16 +6,16 @@
         "b": "$x^2$",
         "c": "$2x^2$",
         "d": "$2x^{-2}$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 2,
-        "soal": "Tentukan antiturunan dari fungsi-fungsi berikut $F(x) = 4x^{-1} + 6 = ...$",
+        "soal": "Tentukan antiturunan dari fungsi-fungsi Berikut $F(x) = 4x^{-1} + 6 = ...$",
         "a": "$2x^2$",
         "b": "$-2x^{-2}$",
         "c": "$4x^{2}$",
         "d": "$-4x^{-2}$",
-        "jawaban": "d"
+        "jawaban": "D"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "b": "$\\frac{1}{5}x^5$",
         "c": "$\\frac{1}{3}x^6$",
         "d": "$\\frac{1}{3}x^6$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "b": "$y = \\frac{1}{2}x^2$",
         "c": "$y = x^{-2}$",
         "d": "$y = -x^{-2}$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "b": "$\\frac{1}{5}x^6$",
         "c": "$\\frac{1}{4}x^6$",
         "d": "$\\frac{1}{3}x^6$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "b": "$x^2 \\sqrt{x}$",
         "c": "$x \\sqrt{x}$",
         "d": "$x \\sqrt{x}$",
-        "jawaban": "c"
+        "jawaban": "C"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "b": "$\\frac{1}{4}x^4 + x^3 + 7x + c $",
         "c": "$\\frac{1}{4}x^4 + x^3 - 7x + c $",
         "d": "$\\frac{1}{4}x^4 - x^3 + 7 + c $",
-        "jawaban": "c"
+        "jawaban": "C"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "b": "$\\frac{3}{2}x\\sqrt{x} + 2\\sqrt{x} + 6x + c$",
         "c": "$3x\\sqrt{x} + 2\\sqrt{x} + 6x + c$",
         "d": "$\\frac{3}{4}x\\sqrt{x} + 2\\sqrt{x} + 6x + c$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "b": "$\\frac{16}{x} - 2x^3 +c$",
         "c": "$\\frac{8}{x} + 2x^3 + c$",
         "d": "$\\frac{8}{x} - x^3 + c$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "b": "$x^2 -2\\sqrt{x} + c$",
         "c": "$\\frac{1}{2}x^2 + 2\\sqrt{x} + c$",
         "d": "$\\frac{1}{2}x^2 - 2\\sqrt{x} + c$",
-        "jawaban": "d"
+        "jawaban": "D"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "b": "$\\frac{2}{3}x^3 + \\frac{1}{2x} - 2x + c$",
         "c": "$\\frac{4}{3}x^3 - \\frac{1}{4x} + 2x + c$",
         "d": "$\\frac{4}{2}x^3 - \\frac{1}{4x} + 2x + c$",
-        "jawaban": "d"
+        "jawaban": "D"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "b": "$\\frac{2}{3}x^3 - \\frac{3}{2}x^2 + 5x + c$",
         "c": "$\\frac{3}{2}x^3 + \\frac{2}{3}x^2 + 5x + c$",
         "d": "$\\frac{2}{3}x^3 - \\frac{3}{2}x^2 + 5x + c$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "b": "$\\frac{2}{x} + x^2 + c$",
         "c": "$\\frac{-4}{x} + 2x^2 + c$",
         "d": "$\\frac{-2}{x} + x^2 + c$",
-        "jawaban": "c"
+        "jawaban": "C"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "b": "$\\frac{1}{2}x^4 - 6x^3 + x^2 - 8x + c$",
         "c": "$\\frac{1}{2}x^4 - 3x^2 + x^2 - 8x + c$",
         "d": "$\\frac{1}{2}x^2 - 6x^3 - 2x^2 - 8x + c$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "b": "$3x^3 - 6x^2 + 2x + 11$",
         "c": "$3x^3 - 3x^2 + x + 11$",
         "d": "$3x^3 - 3x^2 - x + 11$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 16,
@@ -141,7 +141,7 @@
         "b": "$x^3 + x^2 + 6$",
         "c": "$x^3 + x^2 + 5$",
         "d": "$x^3 + x^2 + 4$",
-        "jawaban": "c"
+        "jawaban": "C"
     },
     {
         "id": 17,
@@ -150,7 +150,7 @@
         "b": "$2x^4 - 4x^3 + \\frac{3}{2}x^2 + 2$",
         "c": "$2x^4 - 4x^3 + \\frac{3}{2}x^2 + 3$",
         "d": "$2x^4 - 4x^3 + \\frac{3}{2}x^2 + 4$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 18,
@@ -159,7 +159,7 @@
         "b": "$S(t) = 2t^2 +2$",
         "c": "$S(t) = 2t^2 + 2t + 3$",
         "d": "$S(t) = 2t^2 + 4$",
-        "jawaban": "b"
+        "jawaban": "B"
     },
     {
         "id": 19,
@@ -168,7 +168,7 @@
         "b": "$S(t) = \\frac{1}{3}t^3 + \\frac{1}{2}t^2 -4t +$",
         "c": "$S(t) = \\frac{1}{3}t^2 + \\frac{1}{2}t - 2t + \\frac{23}{6}$",
         "d": "$S(t) = \\frac{1}{2}t^3 + \\frac{1}{3}t^2 2t + \\frac{23}{6}$",
-        "jawaban": "a"
+        "jawaban": "A"
     },
     {
         "id": 20,
@@ -177,6 +177,6 @@
         "b": "$TC = \\frac{1}{3}Q^3 - 4Q^2 - 12Q + 8$",
         "c": "$TC = \\frac{1}{3}Q^3 - 2Q^2 + 12Q + 8$",
         "d": "$TC = \\frac{1}{3}Q^3 + 2Q^2 + 12Q + 8$",
-        "jawaban": "c"
+        "jawaban": "C"
     }
 ]
