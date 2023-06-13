@@ -295,7 +295,7 @@ function cekKuis1() {
                 latihan1.hidden = true;
                 const hasil1 = document.getElementById('hasilKuis1');
                 hasil1.hidden = false;
-                nilai = nilai + 20;
+                nilai = nilai + 50;
             }
         }
 
