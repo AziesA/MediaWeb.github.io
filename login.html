@@ -22,10 +22,10 @@
     <!-- Custom styles for this template-->
     <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- styles main-->
-    <link href="../assets/css/main.css" rel="stylesheet">
-    <link href="../assets/css/font.css" rel="stylesheet">
-    <link href="../assets/css/button.css" rel="stylesheet">
-    <link rel="icon" href="../assets/img/integral_sign.png" type="image/gif" sizes="16x16">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font.css" rel="stylesheet">
+    <link href="assets/css/button.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/integral_sign.png" type="image/gif" sizes="16x16">
 
 
 </head>
@@ -53,13 +53,14 @@ background-size: 100% 100%;">
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="text" id="username" name="username"
-                                                class="form-control form-control-user" placeholder="Masukkan ID"
-                                                autocomplete="off">
+                                            <label for="username" class="text-info">User id:</label><br>
+                                            <input type="text" name="username" id="username" class="form-control"
+                                                placeholder="Masukkan ID" autocomplete="off">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                name="password" id="password" placeholder="Password">
+                                            <label for="password" class="text-info">Password:</label><br>
+                                            <input type="password" name="password" id="password" class="form-control"
+                                                placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -71,8 +72,10 @@ background-size: 100% 100%;">
                                         <hr>
 
                                         <center>
+
                                             <a class="custom-btn btn-7" href="index.html"><span>Kembali</span></a>
-                                            <button class="custom-btn btn-3" onclick="loginguru()"><span>Login
+                                            <button type="submit" class="custom-btn btn-3" onclick="loginguru()"
+                                                name="submit" value="LOGIN"><span>Login
                                                     In</span></button>
                                         </center>
 
@@ -93,14 +96,14 @@ background-size: 100% 100%;">
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../assets/js/sb-admin-2.min.js"></script>
-    <script src="../assets/js/sb-admin-2.js"></script>
-
+    <script src="assets/js/sb-admin-2.min.js"></script>
 
 
 
