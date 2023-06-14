@@ -1,13 +1,10 @@
-
-
 function loginguru() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-    let username = document.getElementById("username");
-    let password = document.getElementById("password");
-
-    if (username.value === "guru1" && password.value === "guru1") {
-        window.location.href = "dashboard.html"
+    if (username === "guru1" && password === "guru1") {
+        location.href = "halamanguru/dashboard.html";
     } else {
-        alert("masukan id dan password")
+        alert("Masukkan ID dan password yang benar.");
     }
 }
