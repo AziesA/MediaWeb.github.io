@@ -23,9 +23,10 @@ a {
   align-items: center;
   width: 100%;
   height: 60%;
-  background: url("../img/awannew.webp");
+  background: url("../img/bg.webp");
   background-size: 150%;
   background-position: center;
+  background-repeat: no-repeat;
   transition: 0.5s;
 }
 
@@ -61,7 +62,7 @@ h2 {
   border: none;
   outline: none;
   color: #fff;
-  background: #77B1E2;
+  background: #554CCD;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -103,7 +104,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #77B1E2;
+  background: #554CCD;
   left: 0;
   top: 0;
   border-radius: 10px;
