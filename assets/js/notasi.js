@@ -47,8 +47,8 @@ function cekhasil1() {
     if (hasil1.value == "10") {
         document.getElementById("hasil1").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
         var hasil1 = document.getElementById("hasil1").value;
-        document.getElementById("fixhasil1").innerHTML = '<span>$\\frac{10}{10}x^{9}$</span>';
-        document.getElementById("fixhasil1_1").innerHTML = '<span>$\\frac{10}{9+1}x^{9+1}$</span>';
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{10}x^{9}$</span>';
+        document.getElementById("fixhasil1_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{9+1}x^{9+1}$</span>';
         MathJax.typeset();
     }
     else {
@@ -76,8 +76,9 @@ function cekhasil2() {
     if (hasil2.value == "11") {
         document.getElementById("hasil2").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
         var hasil2 = document.getElementById("hasil2").value;
-        document.getElementById("fixhasil2").innerHTML = '<span>$-36x^{11}$</span>';
-        document.getElementById("fixhasil2_1").innerHTML = '<span>$\\frac{-36}{12}x^{12}$</span>';
+        document.getElementById("fixhasil2").innerHTML = '<span class="alert alert-success text-hitam">$-36x^{11}$</span>';
+        document.getElementById("fixhasil2_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{-36}{12}x^{12}$</span>';
+        document.getElementById("fixhasil2_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{-36}{11+1}x^{1+1}$</span>';
         MathJax.typeset();
     }
     else {
@@ -169,8 +170,8 @@ function cekhasil3() {
     if (hasil3.value == "3") {
         document.getElementById("hasil3").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
         var hasil3 = document.getElementById("hasil3").value;
-        document.getElementById("fixhasil3").innerHTML = '<span>$\\frac{12}{3}x^{3}$</span>';
-        document.getElementById("fixhasil3_1").innerHTML = '<span>$\\frac{12}{2+1}x^{2+1}$</span>';
+        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{12}{3}x^{3}$</span>';
+        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{12}{2+1}x^{2+1}$</span>';
         MathJax.typeset();
     }
     else {
@@ -222,8 +223,9 @@ function cekhasil4() {
     if (hasil4.value == "4") {
         document.getElementById("hasil4").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
         var hasil4 = document.getElementById("hasil4").value;
-        document.getElementById("fixhasil4").innerHTML = '<span>$20x^4 $ </span>';
-        document.getElementById("fixhasil4_1").innerHTML = '<span>$\\frac{20}{5}x^{5}$</span>';
+        document.getElementById("fixhasil4").innerHTML = '<span class="alert alert-success text-hitam">$20x^4 $ </span>';
+        document.getElementById("fixhasil4_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{20}{5}x^{5}$</span>';
+        document.getElementById("fixhasil4_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{20}{4+1}x^{4+1}$</span>';
         MathJax.typeset();
     }
     else {
@@ -333,10 +335,10 @@ function cekhasil5() {
     if (hasil5.value == "3") {
         document.getElementById("hasil5").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
         var hasil5 = document.getElementById("hasil5").value;
-        document.getElementById("fixhasil5").innerHTML = '<span>$\\frac{2}{3}x^{-\\frac{2}{3}} $ </span>';
-        document.getElementById("fixhasil5_1").innerHTML = '<span>$\\frac{6}{3}x^{\\frac{1}{3}} $ </span>';
-        document.getElementById("fixhasil5_2").innerHTML = '<span>$\\frac{\\frac{2}{3}}{\\frac{1}{3}}x^{\\frac{1}{3}} $ </span>';
-        document.getElementById("fixhasil5_3").innerHTML = '<span>$\\frac{\\frac{2}{3}}{-\\frac{2}{3}+1}x^{\\frac{2}{3}+1} $ </span>';
+        document.getElementById("fixhasil5").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{2}{3}x^{-\\frac{2}{3}} $ </span>';
+        document.getElementById("fixhasil5_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{6}{3}x^{\\frac{1}{3}} $ </span>';
+        document.getElementById("fixhasil5_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{\\frac{2}{3}}{\\frac{1}{3}}x^{\\frac{1}{3}} $ </span>';
+        document.getElementById("fixhasil5_3").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{\\frac{2}{3}}{-\\frac{2}{3}+1}x^{\\frac{2}{3}+1} $ </span>';
 
         MathJax.typeset();
     }
