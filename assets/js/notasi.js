@@ -47,7 +47,7 @@ function cekhasil1() {
     if (hasil1.value == "10") {
         document.getElementById("hasil1").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
         var hasil1 = document.getElementById("hasil1").value;
-        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{10}x^{9}$</span>';
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{10}x^{10}$</span>';
         document.getElementById("fixhasil1_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{9+1}x^{9+1}$</span>';
         MathJax.typeset();
     }
