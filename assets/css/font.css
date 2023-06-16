@@ -35,6 +35,11 @@ h4 {
     base-palette: 1;
 }
 
+@font-palette-values --Orange {
+    font-family: Rocher;
+    base-palette: 8;
+}
+
 
 .blues {
     font-palette: --Blues;
@@ -54,4 +59,8 @@ h4 {
 
 .reds {
     font-palette: --Reds;
+}
+
+.orange {
+    font-palette: --Orange;
 }
