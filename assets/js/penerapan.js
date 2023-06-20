@@ -10,6 +10,14 @@ function satu() {
     document.getElementById("btntiga").classList.remove('active');
     document.getElementById("next").setAttribute("onClick", "javascript: dua();");
 
+    const listItems = document.querySelectorAll('.page-item');
+    listItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
+
+    // Tambahkan kelas "active" pada elemen <li> yang terkait dengan halaman satu
+    document.getElementById('btnsatu').parentElement.classList.add('active');
+
 }
 
 function dua() {
@@ -24,6 +32,15 @@ function dua() {
     document.getElementById("next").setAttribute("onClick", "javascript: tiga();");
     document.getElementById("prev").setAttribute("onClick", "javascript: satu();");
 
+
+    const listItems = document.querySelectorAll('.page-item');
+    listItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
+
+    // Tambahkan kelas "active" pada elemen <li> yang terkait dengan halaman dua
+    document.getElementById('btndua').parentElement.classList.add('active');
+
 }
 
 function tiga() {
@@ -37,6 +54,15 @@ function tiga() {
     document.getElementById("btntiga").classList.add('active');
     document.getElementById("prev").setAttribute("onClick", "javascript: dua();");
     document.getElementById("mnext").hidden = false;
+
+    // Hapus kelas "active" dari semua elemen <li>
+    const listItems = document.querySelectorAll('.page-item');
+    listItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
+
+    // Tambahkan kelas "active" pada elemen <li> yang terkait dengan halaman tiga
+    document.getElementById('btntiga').parentElement.classList.add('active');
 }
 
 //mari mencoba latihan 1
