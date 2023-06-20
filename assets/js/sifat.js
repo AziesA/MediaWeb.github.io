@@ -472,7 +472,6 @@ function cekjwb1() {
     if (a.checked) {
         document.getElementById("step1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int 2x^{4} dx -\\int 4x^{6} dx + \\int 1dx$</b > </span > ';
         MathJax.typeset();
-        hideRadioButton()
     }
     else {
         document.getElementById("step1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';

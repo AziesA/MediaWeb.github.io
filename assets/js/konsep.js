@@ -61,6 +61,7 @@ function empat() {
     document.getElementById("mnext").hidden = false;
 }
 
+
 //Tahapan mari mengamati
 let bgny = document.querySelectorAll('.mm1');
 let bgny1 = document.querySelectorAll('.mm2');
