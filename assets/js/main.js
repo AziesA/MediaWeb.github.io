@@ -16,20 +16,6 @@ window.MathJax = {
     document.head.appendChild(script);
 })();
 
-var openButton = document.getElementById('openButton');
-var closeButton = document.getElementById('closeButton');
-var popupContainer = document.getElementById('popupContainer');
-
-openButton.addEventListener('click', function () {
-    popupContainer.style.display = 'block';
-});
-
-closeButton.addEventListener('click', function () {
-    popupContainer.style.display = 'none';
-});
-
-window.addEventListener('click', function (event) {
-    if (event.target === popupContainer) {
-        popupContainer.style.display = 'none';
-    }
-});
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})

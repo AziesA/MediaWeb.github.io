@@ -69,6 +69,10 @@ h2 {
   border-radius: 10px;
 }
 
+.glow-on-hover:hover {
+  color: #48ff00;
+}
+
 .glow-on-hover:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -87,11 +91,14 @@ h2 {
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #d0fa00;
+
 }
 
 .glow-on-hover:active:after {
   background: transparent;
+  color: #d0fa00;
+
 }
 
 .glow-on-hover:hover:before {
