@@ -2,56 +2,32 @@
 <html>
 
 <head>
-    <title>Penanda Pagination</title>
-    <style>
-        #pagination a {
-            color: blue;
-            margin: 0 5px;
-            text-decoration: none;
-        }
-
-        #pagination a.active {
-            font-weight: bold;
-        }
-    </style>
+    <title>Text-to-Speech</title>
 </head>
 
 <body>
-    <div id="pagination"></div>
+    <button id="speak-button">Speak</button>
 
     <script>
-        function buatPenandaPagination(totalHalaman, halamanAktif) {
-            var pagination = document.getElementById("pagination");
-            var html = "";
+        // Memanggil objek SpeechSynthesisUtterance
+        const speechUtterance = new SpeechSynthesisUtterance();
 
-            if (halamanAktif > 1) {
-                html += '<a href="#" onclick="ubahHalaman(' + (halamanAktif - 1) + ')">&laquo;</a>';
-            }
+        // Kalimat yang akan diucapkan
+        const sentence = "integral f(x) terhadap x";
 
-            for (var halaman = 1; halaman <= totalHalaman; halaman++) {
-                if (halaman === halamanAktif) {
-                    html += '<a class="active" href="#" onclick="ubahHalaman(' + halaman + ')">' + halaman + '</a>';
-                } else {
-                    html += '<a href="#" onclick="ubahHalaman(' + halaman + ')">' + halaman + '</a>';
-                }
-            }
+        // Memperoleh referensi elemen HTML
+        const speakButton = document.getElementById("speak-button");
 
-            if (halamanAktif < totalHalaman) {
-                html += '<a href="#" onclick="ubahHalaman(' + (halamanAktif + 1) + ')">&raquo;</a>';
-            }
-
-            pagination.innerHTML = html;
+        // Fungsi untuk mengucapkan teks
+        function speakText() {
+            // Mengatur teks yang akan diucapkan
+            speechUtterance.text = sentence;
+            // Mengucapkan teks
+            speechSynthesis.speak(speechUtterance);
         }
 
-        function ubahHalaman(halaman) {
-            console.log("Halaman yang dipilih:", halaman);
-            // Lakukan operasi yang sesuai, misalnya mengganti konten halaman
-        }
-
-        var totalHalaman = 10;
-        var halamanAktif = 1;
-
-        buatPenandaPagination(totalHalaman, halamanAktif);
+        // Menambahkan event listener ke tombol Speak
+        speakButton.addEventListener("click", speakText);
     </script>
 </body>
 

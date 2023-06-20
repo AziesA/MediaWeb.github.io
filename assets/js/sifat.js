@@ -108,14 +108,14 @@ var benar = 0;
 function cekhasil1() {
     var hasil1 = document.getElementById("hasil1");
 
-    if (hasil1.value == "12x") {
-        document.getElementById("hasil1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+    if (hasil1.value == "12") {
+        document.getElementById("hasil1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
         var hasil1 = document.getElementById("hasil1").value;
         document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$12x + c $ </span>';
         MathJax.typeset();
     }
     else {
-        document.getElementById("hasil1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("hasil1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
         document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
 
     }
