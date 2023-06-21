@@ -2,32 +2,57 @@
 <html>
 
 <head>
-    <title>Text-to-Speech</title>
+    <title>Contoh Reset Jawaban</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <button id="speak-button">Speak</button>
+    <h1>Contoh Reset Jawaban</h1>
+
+    <form>
+        <div>
+            <input type="radio" name="Latihan1" id="option1" value="A">
+            <label for="option1">Pilihan A</label>
+        </div>
+        <div>
+            <input type="radio" name="Latihan1" id="option2" value="B">
+            <label for="option2">Pilihan B</label>
+        </div>
+        <div>
+            <input type="radio" name="Latihan1" id="option3" value="C">
+            <label for="option3">Pilihan C</label>
+        </div>
+    </form>
+
+    <div id="reset-container"></div>
 
     <script>
-        // Memanggil objek SpeechSynthesisUtterance
-        const speechUtterance = new SpeechSynthesisUtterance();
+        function resetAnswers() {
+            var radioButtons = document.querySelectorAll('input[name="Latihan1"]');
 
-        // Kalimat yang akan diucapkan
-        const sentence = "integral f(x) terhadap x";
+            radioButtons.forEach(function (radioButton) {
+                radioButton.checked = false;
+                radioButton.style.display = "inline-block";
 
-        // Memperoleh referensi elemen HTML
-        const speakButton = document.getElementById("speak-button");
-
-        // Fungsi untuk mengucapkan teks
-        function speakText() {
-            // Mengatur teks yang akan diucapkan
-            speechUtterance.text = sentence;
-            // Mengucapkan teks
-            speechSynthesis.speak(speechUtterance);
+                var label = document.querySelector('label[for="' + radioButton.id + '"]');
+                if (label) {
+                    label.style.display = "inline-block";
+                }
+            });
         }
 
-        // Menambahkan event listener ke tombol Speak
-        speakButton.addEventListener("click", speakText);
+        // Membuat tombol reset
+        var resetButton = document.createElement("button");
+        resetButton.innerHTML = "Reset Jawaban";
+        resetButton.addEventListener("click", resetAnswers);
+
+        // Menambahkan tombol reset ke dalam elemen yang sesuai pada halaman
+        var container = document.getElementById("reset-container");
+        container.appendChild(resetButton);
     </script>
 </body>
 

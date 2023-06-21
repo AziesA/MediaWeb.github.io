@@ -512,6 +512,7 @@ function cekjwb1() {
     if (a.checked) {
         document.getElementById("step1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int 2x^{4} dx -\\int 4x^{6} dx + \\int 1dx$</b > </span > ';
         MathJax.typeset();
+
     }
     else {
         document.getElementById("step1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
@@ -548,8 +549,34 @@ function cekjwb1() {
     else {
         document.getElementById("step5").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
-
+    hideRadioButton();
 }
+
+function resetRadioButtons() {
+    var radioButtons = document.querySelectorAll('input[name="Latihan1"]');
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        var radioButton = radioButtons[i];
+        radioButton.checked = false;
+        radioButton.style.display = "";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "inline-block";
+        }
+    }
+
+    document.getElementById("step1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step2").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step3").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step4").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step5").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step5_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("Pembahasan1").innerHTML = '<input class="input3" disabled>';
+}
+
+
+
 
 //latihan2
 function cekjwb2() {
@@ -627,7 +654,7 @@ function cekjwb2() {
     else {
         document.getElementById("8step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
-
+    hideRadioButton2()
 }
 
 //Latihan 3
@@ -696,7 +723,10 @@ function cekjwb3() {
     else {
         document.getElementById("stp7").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
+
+    hideRadioButton3()
 }
+
 
 
 //Latihan 3
@@ -776,11 +806,63 @@ function cekjwb4() {
 }
 
 
-
+//menghilangkan radio butoon jika sudah jawaban di cek
 function hideRadioButton() {
     var radioButtons = document.querySelectorAll('input[name="Latihan1"]');
 
+
     for (var i = 0; i < radioButtons.length; i++) {
-        radioButtons[i].style.display = "none";
+        var radioButton = radioButtons[i];
+        radioButton.style.display = "none";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "none";
+        }
+    }
+}
+
+function hideRadioButton2() {
+    var radioButtons2 = document.querySelectorAll('input[name="Latihan2"]');
+
+
+    for (var i = 0; i < radioButtons2.length; i++) {
+        var radioButton = radioButtons2[i];
+        radioButton.style.display = "none";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "none";
+        }
+    }
+}
+
+function hideRadioButton3() {
+    var radioButtons3 = document.querySelectorAll('input[name="Latihan3"]');
+
+
+    for (var i = 0; i < radioButtons3.length; i++) {
+        var radioButton = radioButtons3[i];
+        radioButton.style.display = "none";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "none";
+        }
+    }
+}
+
+function hideRadioButton4() {
+    var radioButtons4 = document.querySelectorAll('input[name="Latihan4"]');
+
+
+    for (var i = 0; i < radioButtons4.length; i++) {
+        var radioButton = radioButtons4[i];
+        radioButton.style.display = "none";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "none";
+        }
     }
 }
