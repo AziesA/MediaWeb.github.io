@@ -40,16 +40,6 @@ function mencari() {
         kelasfix = "IX A";
     } else if (kelasnya.value == "2") {
         kelasfix = "IX B";
-    } else if (kelasnya.value == "3") {
-        kelasfix = "IX C";
-    } else if (kelasnya.value == "4") {
-        kelasfix = "IX D";
-    } else if (kelasnya.value == "5") {
-        kelasfix = "IX E";
-    } else if (kelasnya.value == "6") {
-        kelasfix = "IX F";
-    } else if (kelasnya.value == "7") {
-        kelasfix = "IX G";
     }
 
     if (sekolahnya.value == "1") {
