@@ -20,7 +20,7 @@ let loop1;
 let kkm1 = 0;
 
 function kkmSuccess(items1) {
-    kkm1 = items1.val()[0]['kkm'];
+    kkm1 = items1.val()[2]['kkm'];
 }
 
 function handleError(error) {
