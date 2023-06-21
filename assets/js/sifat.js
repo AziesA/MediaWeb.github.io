@@ -657,6 +657,35 @@ function cekjwb2() {
     hideRadioButton2()
 }
 
+function resetRadioButtons2() {
+    var radioButtons = document.querySelectorAll('input[name="Latihan2"]');
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        var radioButton = radioButtons[i];
+        radioButton.checked = false;
+        radioButton.style.display = "";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "inline-block";
+        }
+    }
+
+    document.getElementById("1step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("2step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("3step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("4step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("5step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("6step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("7step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("8step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("step8_1").innerHTML = '<input class="input3" disabled>';
+}
+
+
+
+
+
 //Latihan 3
 function cekjwb3() {
     var a_1 = document.getElementById("a_1");
@@ -726,6 +755,31 @@ function cekjwb3() {
 
     hideRadioButton3()
 }
+
+function resetRadioButtons3() {
+    var radioButtons = document.querySelectorAll('input[name="Latihan3"]');
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        var radioButton = radioButtons[i];
+        radioButton.checked = false;
+        radioButton.style.display = "";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "inline-block";
+        }
+    }
+
+    document.getElementById("stp1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp2").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp3").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp4").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp5").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp6").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp7").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("stp7_1").innerHTML = '<input class="input3" disabled>';
+}
+
 
 
 
@@ -801,9 +855,39 @@ function cekjwb4() {
     else {
         document.getElementById("ste7").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
+    hideRadioButton4()
+}
+
+function resetRadioButtons4() {
+    var radioButtons = document.querySelectorAll('input[name="Latihan4"]');
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        var radioButton = radioButtons[i];
+        radioButton.checked = false;
+        radioButton.style.display = "";
+
+        var label = document.querySelector('label[for="' + radioButton.id + '"]');
+        if (label) {
+            label.style.display = "inline-block";
+        }
+    }
+
+    document.getElementById("ste1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste1_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste12").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste12_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste3").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste3_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste14_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste15").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste16").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste17").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste17_1").innerHTML = '<input class="input3" disabled>';
 
 
 }
+
+
 
 
 //menghilangkan radio butoon jika sudah jawaban di cek
