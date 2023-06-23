@@ -183,6 +183,19 @@ tmblnya2.addEventListener('click', function () {
 
 //mari mencoba latihan 1
 var benar = 0
+
+function cekmm1_0() {
+    var soal_0 = document.getElementById("mm1_0");
+
+    if (soal_0.value == "4") {
+        document.getElementById("mm1_0").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm1_0").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
 function cekmm1() {
     var soal = document.getElementById("smm1");
 
@@ -353,6 +366,19 @@ function hapusdisabled1() {
 
 //mari mencoba 2
 var benar = 0
+
+function cekmm2_0() {
+    var soal2_0 = document.getElementById("smm2");
+
+    if (soal2_0.value == "6") {
+        document.getElementById("smm2_0").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm2_0").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
 function cekmm2() {
     var soal2 = document.getElementById("smm2");
 
@@ -390,6 +416,35 @@ function cekmm2_2() {
         document.getElementById("smm2_2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
     }
 }
+
+
+function cemm2_3() {
+    var soal2_3 = document.getElementById("mm2_3");
+
+    if (soal2_3.value == "1") {
+        document.getElementById("mm2_3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm2_3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+function cemm2_4() {
+    var soal2_4 = document.getElementById("mm2_4");
+
+    if (soal2_4.value == "6") {
+        document.getElementById("mm2_4").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("mm2_4").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
+
+
+
 
 function cekmm2_3() {
     var soal2_3 = document.getElementById("smm2_3");
