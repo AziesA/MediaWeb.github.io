@@ -146,11 +146,11 @@ function cekmm2_1() {
     var soal2_1 = document.getElementById("smm2_1");
 
     if (soal2_1.value == "-5+1" || soal2_1.value == "-5 + 1") {
-        document.getElementById("smm2_1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm2_1").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm2_1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm2_1").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 
@@ -159,11 +159,11 @@ function cekmm2_2() {
     var soal2_2 = document.getElementById("smm2_2");
 
     if (soal2_2.value == "-5+1" || soal2_2.value == "-5 + 1") {
-        document.getElementById("smm2_2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm2_2").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm2_2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm2_2").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 
@@ -234,11 +234,11 @@ function cekmm3_1() {
     var soal3_1 = document.getElementById("smm3_1");
 
     if (soal3_1.value == "-4+1" || soal3_1.value == "-4 + 1") {
-        document.getElementById("smm3_1").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm3_1").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm3_1").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm3_1").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 
@@ -246,11 +246,11 @@ function cekmm3_2() {
     var soal3_2 = document.getElementById("smm3_2");
 
     if (soal3_2.value == "-4+1" || soal3_2.value == "-4 + 1") {
-        document.getElementById("smm3_2").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm3_2").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm3_2").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm3_2").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 
@@ -403,11 +403,11 @@ function cekmm4_6() {
     var soal4_6 = document.getElementById("smm4_6");
 
     if (soal4_6.value == "2+1" || soal4_6.value == "2 + 1") {
-        document.getElementById("smm4_6").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm4_6").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm4_6").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm4_6").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 
@@ -415,11 +415,11 @@ function cekmm4_7() {
     var soal4_7 = document.getElementById("smm4_7");
 
     if (soal4_7.value == "2+1" || soal4_7.value == "2 + 1") {
-        document.getElementById("smm4_7").style = "border:3px solid green; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm4_7").style = "border:3px solid green; width:50px;height: 30px; text-align:center";
         benar = 0;
     }
     else {
-        document.getElementById("smm4_7").style = "border:3px solid red; width:40px;height: 30px; text-align:center";
+        document.getElementById("smm4_7").style = "border:3px solid red; width:50px;height: 30px; text-align:center";
     }
 }
 

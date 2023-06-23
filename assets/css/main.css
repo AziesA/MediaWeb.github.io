@@ -36,13 +36,13 @@ input {
 .pangkat {
     width: 25px;
     height: 25px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .pangkat2 {
     width: 40px;
     height: 25px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .input {
@@ -53,19 +53,19 @@ input {
 
 
 .input1 {
-    font-size: 16px;
+    font-size: 20px;
     width: 40px;
     height: 30px;
 }
 
 .input2 {
-    font-size: 16px;
+    font-size: 20px;
     width: 50px;
     height: 30px;
 }
 
 .input3 {
-    font-size: 16px;
+    font-size: 20px;
     width: 140px;
     height: 30px;
 }

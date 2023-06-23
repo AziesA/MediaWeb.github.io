@@ -168,7 +168,7 @@ function listsoal1() {
 
     countDownDate = new Date().getTime();
     //waktu 15 menit
-    countDownDate += 901000;
+    countDownDate += 1802000;
 
     var x = setInterval(function () {
         var now = new Date().getTime();
@@ -222,6 +222,7 @@ function cek2(pilih) {
     document.getElementById("soal2").classList.remove('btn-light');
 }
 
+
 $(function () {
     setInterval(cek, 1000);
 });
@@ -238,7 +239,7 @@ function cekKuis1TO() {
     hasil1.hidden = false;
     for (let a = 0; a < jawabB.length; a++) {
         if (kuis1[a] == jawabB[a]) {
-            nilai = nilai + 50;
+            nilai = nilai + 10;
         }
     }
 
@@ -295,7 +296,7 @@ function cekKuis1() {
                 latihan1.hidden = true;
                 const hasil1 = document.getElementById('hasilKuis1');
                 hasil1.hidden = false;
-                nilai = nilai + 50;
+                nilai = nilai + 20;
             }
         }
 
@@ -349,15 +350,30 @@ function soal1() {
     document.getElementById("soalPrev").hidden = true;
     document.getElementById("id1").hidden = false;
     document.getElementById("id2").hidden = true;
+    document.getElementById("id3").hidden = true;
+    document.getElementById("id4").hidden = true;
+    document.getElementById("id5").hidden = true;
+    document.getElementById("id6").hidden = true;
+    document.getElementById("id7").hidden = true;
+    document.getElementById("id8").hidden = true;
+    document.getElementById("id9").hidden = true;
+    document.getElementById("id10").hidden = true;
     document.getElementById("soalNext").setAttribute("onClick", "javascript: soal2();");
 }
-
 
 function soal2() {
     indeks.innerHTML = 2;
     document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = true;
+    document.getElementById("soalNext").hidden = false;
     document.getElementById("id1").hidden = true;
     document.getElementById("id2").hidden = false;
+    document.getElementById("id3").hidden = true;
+    document.getElementById("id4").hidden = true;
+    document.getElementById("id5").hidden = true;
+    document.getElementById("id6").hidden = true;
+    document.getElementById("id7").hidden = true;
+    document.getElementById("id8").hidden = true;
+    document.getElementById("id9").hidden = true;
+    document.getElementById("id10").hidden = true;
     document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal1();");
 }
