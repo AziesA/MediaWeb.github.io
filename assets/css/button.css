@@ -101,6 +101,7 @@ button {
     height: 2px;
 }
 
+
 .btn-3 span:hover:before {
     height: 100%;
 }
@@ -109,6 +110,11 @@ button {
     width: 100%;
 }
 
+
+.btn-3:active span {
+    color: #ff0000;
+    /* Replace with your desired color */
+}
 
 /* button lain */
 
@@ -196,4 +202,8 @@ button {
 
 .btn-7 span:hover:after {
     width: 100%;
+}
+
+button.selected {
+    color: red;
 }

@@ -562,7 +562,7 @@ function resetRadioButtons() {
 
         var label = document.querySelector('label[for="' + radioButton.id + '"]');
         if (label) {
-            label.style.display = "inline-block";
+            label.style.display = "block";
         }
     }
 
@@ -586,7 +586,10 @@ function cekjwb2() {
     var d1 = document.getElementById("4c");
     var e1 = document.getElementById("5c");
     var f1 = document.getElementById("6b");
+    var f1_1 = document.getElementById("6_1b");
     var g1 = document.getElementById("7a");
+    var g_1 = document.getElementById("7_1a");
+    var g_2 = document.getElementById("7_2b");
     var h1 = document.getElementById("8c");
 
 
@@ -638,13 +641,31 @@ function cekjwb2() {
         document.getElementById("6step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
 
+    if (f1_1.checked) {
+        document.getElementById("6_1step").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{3} + 7.\\frac{2}{7}x^{\\frac{7}{2}} + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("6_1step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
     if (g1.checked) {
-        document.getElementById("7step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3x^{3} + \\frac{7}{\\frac{7}{2}}x^{\\frac{7}{2}} + c$</b > </span > ';
+        document.getElementById("7step").innerHTML = '<span class="alert alert-success text-hitam"><b>$3x^{3} + \\frac{14}{7}x^{\\frac{7}{2}} + c$</b > </span > ';
         MathJax.typeset();
     }
     else {
         document.getElementById("7step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
     }
+
+
+    if (g_2.checked) {
+        document.getElementById("7_2step").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^3 + 7x^{\\frac{7}{2}} + c$</b > </span > ';
+        MathJax.typeset();
+    }
+    else {
+        document.getElementById("7_2step").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+    }
+
 
     if (h1.checked) {
         document.getElementById("8step").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^{3} + 7x^{3}\\sqrt{x} + c$</b > </span > ';
@@ -667,7 +688,7 @@ function resetRadioButtons2() {
 
         var label = document.querySelector('label[for="' + radioButton.id + '"]');
         if (label) {
-            label.style.display = "inline-block";
+            label.style.display = "block";
         }
     }
 
@@ -677,9 +698,11 @@ function resetRadioButtons2() {
     document.getElementById("4step").innerHTML = '<input class="input3" disabled>';
     document.getElementById("5step").innerHTML = '<input class="input3" disabled>';
     document.getElementById("6step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("6_1step").innerHTML = '<input class="input3" disabled>';
     document.getElementById("7step").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("7_2step").innerHTML = '<input class="input3" disabled>';
     document.getElementById("8step").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("step8_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("8_1step").innerHTML = '<input class="input3" disabled>';
 }
 
 

@@ -144,7 +144,7 @@
                     <!-- Content Row -->
                     <div class="row-center  isimateri rounded bg-white bord3" style="height:530px; width: 100%;">
                         <div class="col-lg">
-                            <div id="satu">
+                            <div id="satu" hidden>
                                 <div class="prg text-black">
                                     Pada bagian pertama kita telah mengenal definisi integral dan kaitannya dengan
                                     konsep turunan. Nah kali ini kita akan belajar mengenai sifat-sifat yang dimiliki
@@ -294,8 +294,8 @@
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
                                                                             <div class="bgisi">
-                                                                                <p>Carilah antiturunan beri
-                                                                                    kut:$\int{5}&ensp; dx $</p>
+                                                                                <p>Hitunglah integral dari
+                                                                                    $\int{5}&ensp; dx $</p>
                                                                                 <p><b>Penyelesaian:</b></p>
                                                                                 <p>Dengan menerapkan rumus dasar
                                                                                     integral $\int{a}&ensp;
@@ -303,13 +303,16 @@
                                                                                     ax+ c$, maka kita memperoleh: </p>
                                                                                 <p>$\int{5}&ensp; dx$ </p>
                                                                                 <p>$= 5x + c$</p>
+                                                                                <p>Jadi, hasil integral dari $\int
+                                                                                    5&ensp; dx$
+                                                                                    adalah $5x +c$</p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="tab-pane fade" id="contoh2">
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
-                                                                            <p>Carilah antiturunan berikut:
+                                                                            <p>Hitunglah integral dari
                                                                                 $\int{\frac{3}{4}}dx$</p>
                                                                             <p><b>Penyelesaian:</b></p>
                                                                             <p>Dengan menerapkan rumus dasar Integral
@@ -317,6 +320,9 @@
                                                                                 memperoleh:</p>
                                                                             <p>$\int{\frac{3}{4}}dx$</p>
                                                                             <p>$=\frac{3}{4}x + c$</p>
+                                                                            <p>Jadi, hasil integral dari
+                                                                                $\int{\frac{3}{4}}dx$ adalah
+                                                                                $\frac{3}{4}x + c$ </p>
                                                                         </div>
                                                                     </div>
 
@@ -354,7 +360,7 @@
                                                                         id="contoh2_1">
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
-                                                                            <p> Carilah antiturunan berikut: $\int
+                                                                            <p> Hitunglah integral dari $\int
                                                                                 x^{3}&ensp;dx$
                                                                             </p>
                                                                             <p><b>Penyelesaian:</b></p>
@@ -367,12 +373,14 @@
                                                                             <p>$\int{x^3}&ensp; dx$ </p>
                                                                             <p>$= \frac{1}{3+1}x^{3+1} + c$</p>
                                                                             <p>$= \frac{1}{4}x^4 + c $</p>
+                                                                            <p>Jadi, hasil integral dari $\int x^3$
+                                                                                adalah $\frac{1}{4}x^4 + c$</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="tab-pane fade" id="contoh2_2">
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
-                                                                            <p>Carilah antiturunan berikut:
+                                                                            <p>Hitunglah integral dari
                                                                                 $\int{\frac{1}{x^{2}}}dx$</p>
                                                                             <p><b>Penyelesaian:</b></p>
                                                                             <p>Dengan menerapkan rumus dasar integral
@@ -383,6 +391,9 @@
                                                                             <p>$=\frac{1}{-2}x^{-2+1} +c$</p>
                                                                             <p>$=-x^{-1} + c$</p>
                                                                             <p>$=-\frac{1}{x} + c$</p>
+                                                                            <p>Jadi, hasil integral dari
+                                                                                $\int{\frac{1}{x^{2}}}dx$ adalah
+                                                                                $=-\frac{1}{x} + c$</p>
                                                                         </div>
                                                                     </div>
 
@@ -420,8 +431,8 @@
                                                                         id="contoh3_1">
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
-                                                                            <p> Carilah antiturunan berikut: $\int
-                                                                                x^{3}&ensp;dx$
+                                                                            <p> Hitunglah integral dari $\int
+                                                                                2\sqrt{x}&ensp;dx$
                                                                             </p>
                                                                             <p><b>Penyelesaian:</b></p>
                                                                             <p>Dengan menerapkan rumus dasar integral
@@ -433,10 +444,11 @@
                                                                             <p> $\int{2\sqrt{x}}&ensp;dx$</p>
                                                                             <p>$= \int{2x^{\frac{1}{2}}}$ </p>
                                                                             <p>$=
-                                                                                \frac{3}{\frac{1}{2}+1}x^{\frac{1}{2}+1}
+                                                                                \frac{2}{\frac{1}{2}+1}x^{\frac{1}{2}+1}
                                                                                 + c$ </p>
                                                                             <p>$= \frac{2}{\frac{3}{2}}x^{\frac{3}{2}} +
                                                                                 c$ </p>
+                                                                            <p>$=2.\frac{2}{3}x^{\frac{3}{2}}$</p>
                                                                             <p>$= \frac{4}{3}x^{\frac{3}{2}} +c$ </p>
                                                                             <p>$= \frac{4}{3}x\sqrt{x}+ c$</p>
                                                                         </div>
@@ -444,8 +456,8 @@
                                                                     <div class="tab-pane fade" id="contoh3_2">
                                                                         <div class="card-text"
                                                                             style=" font-size: 18px;">
-                                                                            <p>Carilah antiturunan berikut: $\int
-                                                                                3x^{2}$</p>
+                                                                            <p>Hitunglah integral dari $\int
+                                                                                3x^{2} dx$</p>
                                                                             <p><b>Penyelesaian:</b></p>
                                                                             <p>Dengan menerapkan rumus dasar integral
                                                                                 $\\int ax^{n}dx=\frac{1}{n+1}x^{n+1} +
@@ -514,7 +526,12 @@
                                                                 </p>
                                                                 <p>$=2[\frac{1}{\frac{13}{2}}x^{\frac{13}{2}}] +
                                                                     c$</p>
+                                                                <p>$= \frac{2}{\frac{13}{2}}x^{\frac{13}{2}} + c$</p>
+                                                                <p>$=2.\frac{2}{13}x^{\frac{13}{2}}$</p>
                                                                 <p>$=\frac{4}{13}x^{\frac{13}{2}} + c$</p>
+                                                                <p>$=\frac{4}{13}x^{6}\sqrt{x} + c$</p>
+                                                                <p>Jadi, hasil dari $\int{2x^4\sqrt{x^3}} dx$ adalah
+                                                                    $=\frac{4}{13}x^{6}\sqrt{x} + c$</p>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -539,6 +556,9 @@
                                                                 </p>
                                                                 <p>$=\frac{1}{3}x^3 + \frac{4}{2}x^2 + 4x + c $</p>
                                                                 <p>$=\frac{1}{3}x^3 + 2x^2 + 4x + c $</p>
+                                                                <p>Jadi, hasil dari $\int$ {$f(x)+ g(x)$}$dx$ = $\int
+                                                                    f(x)dx$ + $\int g(x)dx $ adalah $=\frac{1}{3}x^3 +
+                                                                    2x^2 + 4x + c $</p>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -567,24 +587,32 @@
                                                                     2\int{x^{\frac{1}{2}}}dx$</p>
                                                                 <p>$=\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1} -
                                                                     2[\frac{1}{\frac{1}{2}+1}x^{\frac{1}{2}+1}] + c$</p>
-                                                                <p>$=\frac{1}{\frac{7}{2}}x^{\frac{7}{2}+1} -
-                                                                    \frac{2}{\frac{3}{2}}x^{\frac{7}{2}} + c$</p>
-                                                                <p>$=\frac{2}{7}x^{\frac{7}{2}+1} -
+                                                                <p>$=\frac{1}{\frac{7}{2}}x^{\frac{7}{2}} -
+                                                                    \frac{2}{\frac{3}{2}}x^{\frac{3}{2}} + c$</p>
+                                                                <p>$=1.\frac{2}{7}x^{\frac{7}{2}} -
+                                                                    2.\frac{2}{3}x^{\frac{3}{2}} + c$</p>
+                                                                <p>$=\frac{2}{7}x^{\frac{7}{2}} -
                                                                     \frac{4}{3}x^{\frac{7}{2}} + c$</p>
                                                                 <p>$=\frac{2}{7}x^{3}\sqrt{x} - \frac{4}{3}x\sqrt{x} + c
+                                                                    $</p>
+                                                                <p>Jadi, hasil dari
+                                                                    $\int{\frac{x^3-2x}{\sqrt{x^3}}}dx$ adalah
+                                                                    $=\frac{2}{7}x^{3}\sqrt{x} - \frac{4}{3}x\sqrt{x} +
+                                                                    c
                                                                     $</p>
                                                             </div>
                                                         </div>
                                                     </li>
                                                 </ol>
                                             </div>
-                                            <center> <button
-                                                    class="btn btn-link btn-ungu text-left text-white collapsed"
+                                            <center>
+                                                <button class="btn btn-link btn-ungu text-left text-white collapsed"
                                                     type="button" data-toggle="collapse" data-target="#collapseDua"
                                                     aria-expanded="false" aria-controls="collapseDua"
                                                     style="font-size: 20px;">
                                                     Tutup Tab
-                                                </button></center>
+                                                </button>
+                                            </center>
 
                                         </div>
                                     </div>
@@ -905,7 +933,7 @@
 
                             </div>
 
-                            <div id="empat" hidden>
+                            <div id="empat">
                                 <div class="card-header bg-biru text- font-weight-bold rounded" style="width: 150px;">
                                     Petunjuk &ensp;<i class="fas fa-chalkboard-teacher" style="color: #000000;"></i>
                                 </div>
@@ -965,107 +993,119 @@
                                                     <form>
                                                         <p>$=$ <span id="step1"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+
+                                                        <label class="kontainer" for="a1">$\int 2x^{4} dx - \int 4x^{6}
+                                                            dx + \int 1 dx$
                                                             <input type="radio" id="a1" name="Latihan1" value="a1">
-                                                            <label for="a1">$\int 2x^{4} dx - \int 4x^{6} dx + \int 1
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+
+                                                        <label class="kontainer" for="b1">$\int 2x^4 - 4x^6 + 1 dx$
                                                             <input type="radio" id="b1" name="Latihan1" value="b1">
-                                                            <label for="b1">$\int 2x^4 - 4x^6 + 1 dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label class="kontainer" for="c1">$\int 2x^{4} - \int 4x^{6} +
+                                                            \int 1 dx$
                                                             <input type="radio" id="c1" name="Latihan1" value="c1">
-                                                            <label for="c1">$\int 2x^{4} - \int 4x^{6} +
-                                                                \int 1
-                                                                dx$</label><br>
-                                                        </div>
-                                                    </form><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="step2"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+
+                                                        <label class="kontainer" for="a2">$\int 2x^{4} - \int 4x^{6}
+                                                            + \int 1 dx$
                                                             <input type="radio" id="a2" name="Latihan1" value="a2">
-                                                            <label for="a2">$2\int2x^{4}dx - \int 4x^{6}dx + \int 1
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label class="kontainer" for="b2">$2\int x^{4}dx - 4\int x^{6}
+                                                            dx + \int 1 dx$
                                                             <input type="radio" id="b2" name="Latihan1" value="b2">
-                                                            <label for="b2">$2\int x^{4}dx - 4\int x^{6} dx + \int 1 dx
-                                                                $</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label class="kontainer" for="c2">$\int 2x^{4} - 4\int x^{6} +
+                                                            \int 1 dx$
                                                             <input type="radio" id="c2" name="Latihan1" value="c2">
-                                                            <label for="c2">$\int 2x^{4} - 4\int x^{6} +
-                                                                \int 1
-                                                                dx$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="step3"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
-                                                            <input type="radio" id="a3" name="Latihan1" value="a3">
-                                                            <label for="a3">$\frac{1}{4+1}x^{4+1} -
-                                                                \frac{1}{6+1}x^{6+1} + x + c $</label><br>
-                                                        </div>
-                                                        <div class="">
-                                                            <input type="radio" id="b3" name="Latihan1" value="b3">
-                                                            <label for="b3">$2[\frac{1}{4+1}x^{4+1}] -
-                                                                [\frac{1}{6+1}x^{6+1}] + x + c
-                                                                $</label><br>
-                                                        </div>
-                                                        <div class="">
-                                                            <input type="radio" id="c3" name="Latihan1" value="c3">
-                                                            <label for="c3">$2[\frac{1}{4+1}x^{4+1}] -
-                                                                4[\frac{1}{6+1}x^{6+1}] + x + c$</label><br>
-                                                        </div>
-                                                    </form><br>
 
+                                                        <label for="a3" class="kontainer">$\frac{1}{4+1}x^{4+1} -
+                                                            \frac{1}{6+1}x^{6+1} + x + c $
+                                                            <input type="radio" id="a3" name="Latihan1" value="a3">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="b3" class="kontainer">$2[\frac{1}{4+1}x^{4+1}] -
+                                                            [\frac{1}{6+1}x^{6+1}] + x + c $
+                                                            <input type="radio" id="b3" name="Latihan1" value="b3">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c3" class="kontainer">$2[\frac{1}{4+1}x^{4+1}] -
+                                                            4[\frac{1}{6+1}x^{6+1}] + x + c$
+                                                            <input type="radio" id="c3" name="Latihan1" value="c3">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="step4"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a4" class="kontainer">$2[\frac{1}{7}x^{7}] -
+                                                            4[\frac{1}{5}x^{5}] + x + c $
                                                             <input type="radio" id="a4" name="Latihan1" value="a4">
-                                                            <label for="a4">$2[\frac{1}{7}x^{7}] -
-                                                                4[\frac{1}{5}x^{5}] + x + c $</label><br>
-                                                        </div>
-                                                        <div class="">
-                                                            <input type="radio" id="b4" name="Latihan1" value="b4">
-                                                            <label for="b4">$[\frac{1}{5}x^{5}] -
-                                                                [\frac{1}{7}x^{7}] + x + c
-                                                                $</label><br>
-                                                        </div>
-                                                        <div class="">
-                                                            <input type="radio" id="c4" name="Latihan1" value="c4">
-                                                            <label for="c4">$2[\frac{1}{5}x^{5}] -
-                                                                4[\frac{1}{7}x^{7}] + x + c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
 
-                                                    </form><br>
+                                                        <label for="b4" class="kontainer">$[\frac{1}{5}x^{5}] -
+                                                            [\frac{1}{7}x^{7}] + x + c
+                                                            $
+                                                            <input type="radio" id="b4" name="Latihan1" value="b4">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c4" class="kontainer">$2[\frac{1}{5}x^{5}] -
+                                                            4[\frac{1}{7}x^{7}] + x + c$
+                                                            <input type="radio" id="c4" name="Latihan1" value="c4">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="step5"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a5" class="kontainer">$\frac{2}{7}x^{7} -
+                                                            \frac{4}{7}x^{5} + x + c $
                                                             <input type="radio" id="a5" name="Latihan1" value="a5">
-                                                            <label for="a5">$\frac{2}{7}x^{7} -
-                                                                \frac{4}{7}x^{5} + x + c $</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="b5" class="kontainer">$\frac{1}{5}x^{5} -
+                                                            \frac{1}{7}x^{7} + x + c $
                                                             <input type="radio" id="b5" name="Latihan1" value="b5">
-                                                            <label for="b5">$\frac{1}{5}x^{5} -
-                                                                \frac{1}{7}x^{7} + x + c
-                                                                $</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c5" class="kontainer">$\frac{1}{10}x^{5} -
+                                                            \frac{1}{7}x^{7} + x + c$
                                                             <input type="radio" id="c5" name="Latihan1" value="c5">
-                                                            <label for="c5">$\frac{1}{10}x^{5} -
-                                                                \frac{1}{7}x^{7} + x + c$</label><br>
-                                                        </div>
-                                                    </form><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form>
                                                     <p>Jadi nilai dari $\int (2x^4 - 4x^6 + 1)dx$ adalah <span
                                                             id="step5_1"><input class="input3" disabled></p>
-                                                    <a onclick="cekjwb1()" class="btn btn-ungu text-white">Cek
+                                                    <a onclick="cekjwb1()" class="btn btn-success text-white">Cek
                                                         Jawaban</a>
                                                     <a id="resetButton" class="btn btn-danger"
                                                         onclick="resetRadioButtons()">Reset Jawaban</a>
@@ -1080,164 +1120,243 @@
                                                     <form>
                                                         <p>$=$ <span id="1step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="1a" class="kontainer">$\int3x^2 +
+                                                            7\sqrt{x}&ensp;dx$
                                                             <input type="radio" id="1a" name="Latihan2" value="1a">
-                                                            <label for="1a">$\int3x^2 + 7\sqrt{x}&ensp;dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="1b" class="kontainer">$\int3x^2 dx +
+                                                            \int7\sqrt{x^{5}} &ensp;dx$
                                                             <input type="radio" id="1b" name="Latihan2" value="1b">
-                                                            <label for="1b">$\int3x^2 dx +
-                                                                \int7\sqrt{x^{5}} &ensp;dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="1c" class="kontainer">$\int 3x^{2} + \int
+                                                            7\sqrt{x^5}$
                                                             <input type="radio" id="1c" name="Latihan2" value="1c">
-                                                            <label for="1c">$\int 3x^{2} + \int 7\sqrt{x^5}$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="2step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+
+                                                        <label for="2a" class="kontainer">$3\int x^2 dx + 7\int
+                                                            \sqrt{x^{5}}&ensp; dx$
                                                             <input type="radio" id="2a" name="Latihan2" value="2a">
-                                                            <label for="2a">$3\int x^2 dx + 7\int
-                                                                \sqrt{x^{5}}&ensp; dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="2b" class="kontainer">$3\int x^2 + 7\int
+                                                            \sqrt{x^{5}}&ensp; dx$
                                                             <input type="radio" id="2b" name="Latihan2" value="2b">
-                                                            <label for="2b">$3\int x^2 + 7\int
-                                                                \sqrt{x^{5}}&ensp; dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="2c" class="kontainer">$3\int x^2 + 7\int
+                                                            \sqrt{x^{5}}&ensp; $
                                                             <input type="radio" id="2c" name="Latihan2" value="2c">
-                                                            <label for="2c">$3\int x^2 + 7\int
-                                                                \sqrt{x^{5}}&ensp; $</label><br>
-                                                        </div>
-                                                    </form><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="3step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="3a" class="kontainer">$3\int x^2 dx + 7\int
+                                                            x^{\frac{5}{2}}&ensp; dx$
                                                             <input type="radio" id="3a" name="Latihan2" value="3a">
-                                                            <label for="3a">$3\int x^2 dx + 7\int
-                                                                x^{\frac{5}{2}}&ensp; dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="3b" class="kontainer">$3\int x^2 dx + 7\int
+                                                            x^{\frac{2}{5}}&ensp; dx$
                                                             <input type="radio" id="3b" name="Latihan2" value="3b">
-                                                            <label for="3b">$3\int x^2 dx + 7\int
-                                                                x^{\frac{2}{5}}&ensp; dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="3c" class="kontainer">$3\int x^2 dx + 7\int
+                                                            x^{5}dx&ensp; $
                                                             <input type="radio" id="3c" name="Latihan2" value="3c">
-                                                            <label for="3c">$3\int x^2 dx + 7\int
-                                                                x^{5}dx&ensp; $</label><br>
-                                                        </div>
-                                                    </form><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="4step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="4a" class="kontainer">$\frac{1}{2+1}x^{2+1} +
+                                                            \frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1} +
+                                                            c$
                                                             <input type="radio" id="4a" name="Latihan2" value="4a">
-                                                            <label for="4a">$\frac{1}{2+1}x^{2+1} +
-                                                                \frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="4b" class="kontainer">$3[\frac{1}{2+1}x^{2+1}] -
+                                                            7[\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1}] +
+                                                            c$
                                                             <input type="radio" id="4b" name="Latihan2" value="4b">
-                                                            <label for="4b">$3[\frac{1}{2+1}x^{2+1}] -
-                                                                7[\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1}] +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="4c" class="kontainer">$3[\frac{1}{2+1}x^{2+1}] +
+                                                            7[\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1}] +
+                                                            c$
                                                             <input type="radio" id="4c" name="Latihan2" value="4c">
-                                                            <label for="4c">$3[\frac{1}{2+1}x^{2+1}] +
-                                                                7[\frac{1}{\frac{5}{2}+1}x^{\frac{5}{2}+1}] +
-                                                                c$</label><br>
-                                                        </div>
-                                                    </form><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form>
+                                                    <br>
                                                     <form>
                                                         <p>$=$ <span id="5step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="5a" class="kontainer">$\frac{1}{2}x^{2} +
+                                                            \frac{1}{\frac{5}{2}}x^{\frac{5}{2}} +
+                                                            c$
                                                             <input type="radio" id="5a" name="Latihan2" value="5a">
-                                                            <label for="5a">$\frac{1}{2}x^{2} +
-                                                                \frac{1}{\frac{5}{2}}x^{\frac{5}{2}} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="5b" class="kontainer">$3[\frac{1}{2}x^{2}] -
+                                                            7[\frac{1}{\frac{5}{2}}x^{\frac{5}{2}}] +
+                                                            c$
                                                             <input type="radio" id="5b" name="Latihan2" value="5b">
-                                                            <label for="5b">$3[\frac{1}{2}x^{2}] -
-                                                                7[\frac{1}{\frac{5}{2}}x^{\frac{5}{2}}] +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="5c" class="kontainer">$3[\frac{1}{3}x^{3}] +
+                                                            7[\frac{1}{\frac{7}{2}}x^{\frac{7}{2}}] +
+                                                            c$
                                                             <input type="radio" id="5c" name="Latihan2" value="5c">
-                                                            <label for="5c">$3[\frac{1}{3}x^{3}] +
-                                                                7[\frac{1}{\frac{7}{2}}x^{\frac{7}{2}}] +
-                                                                c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="6step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="6a" class="kontainer">$\frac{1}{3}x^{3} +
+                                                            \frac{1}{\frac{7}{2}}x^{\frac{7}{2}} +
+                                                            c$
                                                             <input type="radio" id="6a" name="Latihan2" value="6a">
-                                                            <label for="6a">$\frac{1}{3}x^{3} +
-                                                                \frac{1}{\frac{7}{2}}x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="6b" class="kontainer">$\frac{3}{3}x^{3} +
+                                                            \frac{7}{\frac{7}{2}}x^{\frac{7}{2}} +
+                                                            c$
                                                             <input type="radio" id="6b" name="Latihan2" value="6b">
-                                                            <label for="6b">$\frac{3}{3}x^{3} +
-                                                                \frac{7}{\frac{7}{2}}x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="6c" class="kontainer">$\frac{3}{9}x^{3} +
+                                                            \frac{7}{\frac{14}{2}}x^{\frac{7}{2}} +
+                                                            c$
                                                             <input type="radio" id="6c" name="Latihan2" value="6c">
-                                                            <label for="6c">$\frac{3}{9}x^{3} +
-                                                                \frac{7}{\frac{14}{2}}x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
+
+                                                    <form>
+                                                        <p>$=$ <span id="6_1step"><input class="input3" disabled></span>
+                                                        </p>
+                                                        <label for="6_1a" class="kontainer">$\frac{1}{3}x^{3} +
+                                                            \frac{1}{\frac{7}{2}}x^{\frac{7}{2}} +
+                                                            c$
+                                                            <input type="radio" id="6_1a" name="Latihan2" value="6_1a">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="6_1b" class="kontainer">$x^{3} +
+                                                            7.\frac{2}{7}x^{\frac{7}{2}} + c $
+                                                            <input type="radio" id="6_1b" name="Latihan2" value="6_1b">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="6_1c" class="kontainer">$\frac{3}{9}x^{3} +
+                                                            \frac{7}{\frac{14}{2}}x^{\frac{7}{2}} +
+                                                            c$
+                                                            <input type="radio" id="6_1c" name="Latihan2" value="6_1c">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                    </form><br>
+
                                                     <form>
                                                         <p>$=$ <span id="7step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+
+                                                        <label for="7a" class="kontainer">$x^{3} +
+                                                            \frac{14}{7}x^{\frac{7}{2}} + c$
                                                             <input type="radio" id="7a" name="Latihan2" value="7a">
-                                                            <label for="7a">$3x^{3} +
-                                                                7x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="7b" class="kontainer">$3x^{3} +
+                                                            \frac{7}{\frac{7}{2}}x^{\frac{7}{2}} +
+                                                            c$
                                                             <input type="radio" id="7b" name="Latihan2" value="7b">
-                                                            <label for="7b">$3x^{3} +
-                                                                \frac{7}{\frac{7}{2}}x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="7c" class="kontainer">$x^{3} +
+                                                            x^{\frac{7}{2}} +
+                                                            c$
                                                             <input type="radio" id="7c" name="Latihan2" value="7c">
-                                                            <label for="7c">$x^{3} +
-                                                                x^{\frac{7}{2}} +
-                                                                c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
+
+
+
+                                                    <form>
+                                                        <p>$=$ <span id="7_2step"><input class="input3" disabled></span>
+                                                        </p>
+
+                                                        <label for="7_2a" class="kontainer"> $x^3 + 7x^{\frac{7}{2}} +
+                                                            c$
+                                                            <input type="radio" id="7_2a" name="Latihan2" value="7_2a">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="7_2b" class="kontainer"> $x^3 + 2x^{\frac{7}{2}} +
+                                                            c$
+                                                            <input type="radio" id="7_2b" name="Latihan2" value="7_2b">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="7_2c" class="kontainer">$3x^3 + 2x^{\frac{7}{2}} +
+                                                            c$
+                                                            <input type="radio" id="7_2c" name="Latihan2" value="7_2c">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </form><br>
+
+
 
                                                     <form>
                                                         <p>$=$ <span id="8step"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+
+                                                        <label for="8a" class="kontainer">$x^{3} - 2x^3\sqrt{x} + c$
                                                             <input type="radio" id="8a" name="Latihan2" value="8a">
-                                                            <label for="8a">$x^{3} - 7x^3\sqrt{x} + c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="8b" class="kontainer"> $x^{3} + 7x\sqrt{x} + c$
                                                             <input type="radio" id="8b" name="Latihan2" value="8b">
-                                                            <label for="8b"> $x^{3} + 7x\sqrt{x} + c$
-                                                            </label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="8c" class="kontainer">$x^{3} + 7x^3\sqrt{x} + c$
                                                             <input type="radio" id="8c" name="Latihan2" value="8c">
-                                                            <label for="8c">$x^{3} + 7x^3\sqrt{x} + c$
-                                                            </label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <p>Jadi nilai dari $\int({3x^2 + 7\sqrt{x^{5}}})dx$ adalah <span
                                                             id="8_1step"><input class="input3" disabled></p>
@@ -1257,128 +1376,161 @@
                                                     <form>
                                                         <p>$=$ <span id="stp1"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_1" class="kontainer">$\int(2x-5)(2x-5)dx$
                                                             <input type="radio" id="a_1" name="Latihan3" value="a_1">
-                                                            <label for="a_1">$\int(2x-5)(2x-5)dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="b_1" class="kontainer">$\int(2x+5)(2x-5)dx$
                                                             <input type="radio" id="b_1" name="Latihan3" value="b_1">
-                                                            <label for="b_1">$\int(2x+5)(2x-5)dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="c_1" class="kontainer">$\int(4x-10)dx$
                                                             <input type="radio" id="c_1" name="Latihan3" value="c_1">
-                                                            <label for="c_1">$\int(4x-10)dx$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp2"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_2" class="kontainer">$\int(4x^2 + 20x + 25)dx$
                                                             <input type="radio" id="a_2" name="Latihan3" value="a_2">
-                                                            <label for="a_2">$\int(4x^2 + 20x + 25)dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="b_2" class="kontainer">$\int (4x^2 + 10x - 25)dx$
                                                             <input type="radio" id="b_2" name="Latihan3" value="b_2">
-                                                            <label for="b_2">$\int (4x^2 + 10x - 25)dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="c_2" class="kontainer">$\int(4x^2 -20x + 25)dx$
                                                             <input type="radio" id="c_2" name="Latihan3" value="c_2">
-                                                            <label for="c_2">$\int(4x^2 -20x + 25)dx$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp3"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_3" class="kontainer">$\int 4x^2 dx + \int
+                                                            20x&ensp; dx+ \int 25
+                                                            dx$
                                                             <input type="radio" id="a_3" name="Latihan3" value="a_3">
-                                                            <label for="a_3">$\int 4x^2 dx + \int 20x&ensp; dx+ \int 25
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="b_3" class="kontainer">$\int 4x^2 dx- \int
+                                                            20x&ensp; dx+ \int 25
+                                                            dx$
                                                             <input type="radio" id="b_3" name="Latihan3" value="b_3">
-                                                            <label for="b_3">$\int 4x^2 dx- \int 20x&ensp; dx+ \int 25
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="c_3" class="kontainer">$\int 4x^2 dx - \int
+                                                            10x&ensp;dx +
+                                                            \int25dx$
                                                             <input type="radio" id="c_3" name="Latihan3" value="c_3">
-                                                            <label for="c_3">$\int 4x^2 dx - \int 10x&ensp;dx +
-                                                                \int25dx$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp4"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_4" class="kontainer">$4\int x^2 dx + 20\int
+                                                            x&ensp; dx+ \int 25
+                                                            dx$
                                                             <input type="radio" id="a_4" name="Latihan3" value="a_4">
-                                                            <label for="a_4">$4\int x^2 dx + 20\int x&ensp; dx+ \int 25
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="b_4" class="kontainer">$4\int x^2 dx- 20\int
+                                                            x&ensp; dx+ \int 25
+                                                            dx$
                                                             <input type="radio" id="b_4" name="Latihan3" value="b_4">
-                                                            <label for="b_4">$4\int x^2 dx- 20\int x&ensp; dx+ \int 25
-                                                                dx$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c_4" class="kontainer">$4\int x^2 dx - 10\int
+                                                            x&ensp;dx +
+                                                            \int25dx$
                                                             <input type="radio" id="c_4" name="Latihan3" value="c_4">
-                                                            <label for="c_4">$4\int x^2 dx - 10\int x&ensp;dx +
-                                                                \int25dx$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp5"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_5" class="kontainer">$4[\frac{1}{2+1}x^{2+1}]
+                                                            - 20[\frac{1}{1+1}x^{1+1}] + 25x +c$
                                                             <input type="radio" id="a_5" name="Latihan3" value="a_5">
-                                                            <label for="a_5">$4[\frac{1}{2+1}x^{2+1}] -
-                                                                20[\frac{1}{1+1}x^{1+1}] + 25x +c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="b_5" class="kontainer">$\frac{1}{2+1}x^{2+1} -
+                                                            \frac{1}{1+1}x^{1+1} + 25x +c$
                                                             <input type="radio" id="b_5" name="Latihan3" value="b_5">
-                                                            <label for="b_5">$\frac{1}{2+1}x^{2+1} -
-                                                                \frac{1}{1+1}x^{1+1} + 25x +c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c_5" class="kontainer">$4[\frac{1}{2+1}x^{2+1}]
+                                                            - 10[\frac{1}{1+1}x^{1+1}] + 25x +c$
                                                             <input type="radio" id="c_5" name="Latihan3" value="c_5">
-                                                            <label for="c_5">$4[\frac{1}{2+1}x^{2+1}] -
-                                                                10[\frac{1}{1+1}x^{1+1}] + 25x +c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp6"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_6" class="kontainer">$\frac{4}{3}x^3-
+                                                            \frac{20}{2}x^{2} + 25x +
+                                                            c$
                                                             <input type="radio" id="a_6" name="Latihan3" value="a_6">
-                                                            <label for="a_6">$\frac{4}{3}x^3- \frac{20}{2}x^{2} + 25x +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="b_6" class="kontainer">$\frac{4}{3}x^3 +
+                                                            \frac{20}{2}x^{2} + 25x +
+                                                            c$
                                                             <input type="radio" id="b_6" name="Latihan3" value="b_6">
-                                                            <label for="b_6">$\frac{4}{3}x^3 + \frac{20}{2}x^{2} + 25x +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
+                                                        <label for="c_6" class="kontainer">$\frac{4}{3}x^3 -
+                                                            \frac{10}{2}x^{2} + 25x +
+                                                            c$
                                                             <input type="radio" id="c_6" name="Latihan3" value="c_6">
-                                                            <label for="c_6">$\frac{4}{3}x^3 - \frac{10}{2}x^{2} + 25x +
-                                                                c$</label><br>
-                                                        </div>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+
                                                     </form><br>
                                                     <form>
                                                         <p>$=$ <span id="stp7"><input class="input3" disabled></span>
                                                         </p>
-                                                        <div class="">
+                                                        <label for="a_7" class="kontainer">$\frac{4}{3}x^3 - 5x^{2}
+                                                            + 25x +
+                                                            c$
                                                             <input type="radio" id="a_7" name="Latihan3" value="a_7">
-                                                            <label for="a_7">$\frac{4}{3}x^3 - 5x^{2} + 25x +
-                                                                c$</label><br>
-                                                        </div>
-                                                        <div class="">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="b_7" class="kontainer">$\frac{4}{3}x^3 + 10x^{2}
+                                                            + 25x +
+                                                            c$
                                                             <input type="radio" id="b_7" name="Latihan3" value="b_7">
-                                                            <label for="b_7">$\frac{4}{3}x^3 + 10x^{2} + 25x +
-                                                                c$</label><br>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label for="c_7" class="kontainer">$\frac{4}{3}x^3 - 10x^{2}
+                                                            + 25x +
+                                                            c$
+                                                            <input type="radio" id="c_7" name="Latihan3" value="c_7">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <div class="">
+
                                                         </div>
                                                         <div class="">
-                                                            <input type="radio" id="c_7" name="Latihan3" value="c_7">
-                                                            <label for="c_7">$\frac{4}{3}x^3 - 10x^{2} + 25x +
-                                                                c$</label><br>
+
+                                                        </div>
+                                                        <div class="">
+
                                                         </div>
                                                     </form><br>
 

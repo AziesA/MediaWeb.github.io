@@ -1,59 +1,16 @@
-<!DOCTYPE html>
-<html>
+<div id="pagination">
+    <button id="nextButton" disabled>Next</button>
+</div>
 
-<head>
-    <title>Contoh Reset Jawaban</title>
-    <style>
-        label {
-            display: block;
+<script>
+    var nextButton = document.getElementById("nextButton");
+    var currentPage = 1;
+
+    nextButton.addEventListener("click", function () {
+        currentPage++;
+        if (currentPage === 2) {
+            nextButton.disabled = true;
         }
-    </style>
-</head>
-
-<body>
-    <h1>Contoh Reset Jawaban</h1>
-
-    <form>
-        <div>
-            <input type="radio" name="Latihan1" id="option1" value="A">
-            <label for="option1">Pilihan A</label>
-        </div>
-        <div>
-            <input type="radio" name="Latihan1" id="option2" value="B">
-            <label for="option2">Pilihan B</label>
-        </div>
-        <div>
-            <input type="radio" name="Latihan1" id="option3" value="C">
-            <label for="option3">Pilihan C</label>
-        </div>
-    </form>
-
-    <div id="reset-container"></div>
-
-    <script>
-        function resetAnswers() {
-            var radioButtons = document.querySelectorAll('input[name="Latihan1"]');
-
-            radioButtons.forEach(function (radioButton) {
-                radioButton.checked = false;
-                radioButton.style.display = "inline-block";
-
-                var label = document.querySelector('label[for="' + radioButton.id + '"]');
-                if (label) {
-                    label.style.display = "inline-block";
-                }
-            });
-        }
-
-        // Membuat tombol reset
-        var resetButton = document.createElement("button");
-        resetButton.innerHTML = "Reset Jawaban";
-        resetButton.addEventListener("click", resetAnswers);
-
-        // Menambahkan tombol reset ke dalam elemen yang sesuai pada halaman
-        var container = document.getElementById("reset-container");
-        container.appendChild(resetButton);
-    </script>
-</body>
-
-</html>
+        // Lakukan aksi lain yang diperlukan saat berpindah ke halaman selanjutnya
+    });
+</script>

@@ -19,3 +19,4 @@ window.MathJax = {
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
+
