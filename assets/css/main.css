@@ -70,6 +70,11 @@ input {
     height: 30px;
 }
 
+.input4 {
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+}
 
 .border-bottom-mint {
     border-bottom: 0.25rem solid#0f8258 !important;

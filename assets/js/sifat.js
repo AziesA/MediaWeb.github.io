@@ -789,7 +789,7 @@ function resetRadioButtons3() {
 
         var label = document.querySelector('label[for="' + radioButton.id + '"]');
         if (label) {
-            label.style.display = "inline-block";
+            label.style.display = "block";
         }
     }
 
