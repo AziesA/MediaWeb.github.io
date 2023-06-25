@@ -350,30 +350,16 @@ function soal1() {
     document.getElementById("soalPrev").hidden = true;
     document.getElementById("id1").hidden = false;
     document.getElementById("id2").hidden = true;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
+
     document.getElementById("soalNext").setAttribute("onClick", "javascript: soal2();");
 }
 
 function soal2() {
     indeks.innerHTML = 2;
     document.getElementById("soalPrev").hidden = false;
-    document.getElementById("soalNext").hidden = false;
+    document.getElementById("soalNext").hidden = true;
     document.getElementById("id1").hidden = true;
     document.getElementById("id2").hidden = false;
-    document.getElementById("id3").hidden = true;
-    document.getElementById("id4").hidden = true;
-    document.getElementById("id5").hidden = true;
-    document.getElementById("id6").hidden = true;
-    document.getElementById("id7").hidden = true;
-    document.getElementById("id8").hidden = true;
-    document.getElementById("id9").hidden = true;
-    document.getElementById("id10").hidden = true;
+
     document.getElementById("soalPrev").setAttribute("onClick", "javascript: soal1();");
 }

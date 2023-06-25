@@ -817,25 +817,6 @@ function cekjwb4() {
     var tjuh = document.getElementById("7_b");
 
 
-
-    if (satu.checked) {
-        document.getElementById("ste1").innerHTML = '<span class="alert alert-success text-hitam"><b> $x^4 - 3x^2 + 5$ </b > </span > ';
-        document.getElementById("ste1_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$x^4 - 3x^2 + 5$</b > </span > ';
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("ste1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
-    }
-
-    if (dua.checked) {
-        document.getElementById("ste2").innerHTML = '<span class="alert alert-success text-hitam"><b> 2</b > </span > ';
-        document.getElementById("ste2_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$f(0)=2$</b > </span > ';
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("ste2").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
-    }
-
     if (tiga.checked) {
         document.getElementById("ste3").innerHTML = '<span class="alert alert-success text-hitam"><b> $\\int(x^4 - 3x^2 + 5)dx$</b > </span > ';
         document.getElementById("ste3_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\int(x^4 - 3x^2 + 5)dx$</b > </span > ';
@@ -852,6 +833,8 @@ function cekjwb4() {
     }
     else {
         document.getElementById("ste4").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+        document.getElementById("ste4_1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah </span>';
+
     }
 
     if (lima.checked) {
@@ -891,21 +874,19 @@ function resetRadioButtons4() {
 
         var label = document.querySelector('label[for="' + radioButton.id + '"]');
         if (label) {
-            label.style.display = "inline-block";
+            label.style.display = "block";
         }
     }
 
-    document.getElementById("ste1").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste1_1").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste12").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste12_1").innerHTML = '<input class="input3" disabled>';
+
     document.getElementById("ste3").innerHTML = '<input class="input3" disabled>';
     document.getElementById("ste3_1").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste14_1").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste15").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste16").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste17").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("ste17_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste4").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste4_1").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste5").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste6").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste7").innerHTML = '<input class="input3" disabled>';
+    document.getElementById("ste7_1").innerHTML = '<input class="input3" disabled>';
 
 
 }
