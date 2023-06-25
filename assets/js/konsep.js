@@ -857,6 +857,18 @@ function cekmm3_8() {
     }
 }
 
+function cekmm3_9_0() {
+    var soal3_9_0 = document.getElementById("smm3_9_0");
+
+    if (soal3_9_0.value == "2") {
+        document.getElementById("smm3_9_0").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        benar = 0;
+    }
+    else {
+        document.getElementById("smm3_9_0").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    }
+}
+
 
 function cekmm3_9() {
     var soal3_9 = document.getElementById("smm3_9");
