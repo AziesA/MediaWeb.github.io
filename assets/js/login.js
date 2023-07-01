@@ -4,7 +4,7 @@ function loginguru() {
 
     if (username1 === "guru1" && password1 === "guru1") {
         console.log("oke");
-        window.location.href = "halamanguru/dashboard.html";
+        window.location.href = "halamanguru/hasil_belajar.html";
     } else {
         alert("Masukkan ID dan password yang benar.");
     }
