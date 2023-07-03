@@ -318,7 +318,10 @@
                                                     warna hijau. </li>
                                                 <li> Jika jawaban kamu salah maka kolom tersebut akan berubah menjadi
                                                     warna merah. </li>
-
+                                                <li>Jika jawaban kamu salah, kamu dapat menghapus jawaban tersebut dan
+                                                    mengantinya dengan jawaban yang benar</li>
+                                                <li><input class="input3" disabled> Input disamping akan terisi jika
+                                                    jawaban anda benar atau salah</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -394,7 +397,8 @@
                                                                 $\frac{10}{9+1}x^{9+1}$
                                                             </td>
                                                             <td>
-                                                                <span id="fixhasil1"><input class="input3" disabled>
+                                                                <span id="fixhasil1" class="fixhasil"><input
+                                                                        class="input3 " disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -422,7 +426,8 @@
                                                                     </sup></sup>
                                                             </td>
                                                             <td>
-                                                                <span id="fixhasil2"><input class="input3" disabled>
+                                                                <span id="fixhasil2" class="fixhasil"><input
+                                                                        class="input3 fixhasil" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -440,7 +445,8 @@
                                                             <td class="text-center"> $\frac{12}{2+1}x^{2+1}$
                                                             </td>
                                                             <td>
-                                                                <span id="fixhasil3"><input class="input3" disabled>
+                                                                <span id="fixhasil3" class="fixhasil"><input
+                                                                        class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -471,7 +477,8 @@
                                                                     </sup></sup>
                                                             </td>
                                                             <td>
-                                                                <span id="fixhasil4"><input class="input3" disabled>
+                                                                <span id="fixhasil4" class="fixhasil"><input
+                                                                        class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -501,7 +508,8 @@
                                                                 $\frac{\frac{2}{3}}{-\frac{2}{3}+1}x^{-\frac{2}{3}+1}$
                                                             </td>
                                                             <td>
-                                                                <span id="fixhasil5"><input class="input3" disabled>
+                                                                <span id="fixhasil5" class="fixhasil"><input
+                                                                        class="input3" disabled>
 
                                                             </td>
                                                         </tr>
@@ -509,9 +517,16 @@
                                                 </table>
                                                 </p>
                                             </div>
+
                                         </div>
+
                                     </div>
                                 </div>
+                                <div class="text-center pt-3">
+                                    <button id="resetButton" class="btn btn-danger text-center">Reset
+                                        jawaban</button>
+                                </div>
+
                             </div>
                         </div>
                     </div>

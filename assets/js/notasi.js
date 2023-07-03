@@ -170,3 +170,21 @@ function cekmm5() {
 }
 
 
+
+function resetForm() {
+    var inputs = document.getElementsByTagName('input');
+    var fixhasil = document.getElementsByClassName('fixhasil');
+
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+        inputs[i].style.border = '1px solid black';
+    }
+
+    for (var j = 0; j < fixhasil.length; j++) {
+        fixhasil[j].innerHTML = '<span><input class="input3" disabled></span>';
+    }
+}
+
+// Tombol reset semua
+var resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', resetForm);
