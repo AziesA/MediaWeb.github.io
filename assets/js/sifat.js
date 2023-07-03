@@ -768,7 +768,7 @@ function cekjwb3() {
 
     if (g_1.checked) {
         document.getElementById("stp7").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{4}{3}x^3 - 10x^{2} + 25x + c$</b > </span > ';
-        document.getElementById("stp7_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{4}{3}X^3 - 10x^{2} + 25x + c$</b > </span > ';
+        document.getElementById("stp7_1").innerHTML = '<span class="alert alert-success text-hitam"><b>$\\frac{4}{3}x^3 - 10x^{2} + 25x + c$</b > </span > ';
         MathJax.typeset();
     }
     else {
