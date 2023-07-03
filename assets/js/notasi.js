@@ -72,308 +72,101 @@ function tiga() {
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 //mari mencoba latihan
-function cekhasil1() {
-    var hasil1 = document.getElementById("hasil1");
+//mari mencoba latihan 3
 
-    if (hasil1.value == "10") {
-        document.getElementById("hasil1").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
-        var hasil1 = document.getElementById("hasil1").value;
-        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{10}x^{10}$</span>';
-        document.getElementById("fixhasil1_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{10}{9+1}x^{9+1}$</span>';
-        MathJax.typeset();
+function cekmm1() {
+
+    var soal1 = document.getElementById("mm1");
+
+    if (soal1.value === "10") {
+        document.getElementById("mm1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-success text-hitam">Jawaban Benar</span>';
     }
     else {
-        document.getElementById("hasil1").style = "border:3px solid red; width:35px;height: 30px; text-align:center";
-    }
+        document.getElementById("mm1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+        document.getElementById("fixhasil1").innerHTML = '<span class="alert alert-danger text-hitam">Jawaban Salah</span>';
 
-}
-
-var benar = 0
-function cekmm2_0() {
-    var soal2_0 = document.getElementById("smm2_0");
-
-    if (soal2_0.value == "-36") {
-        document.getElementById("smm2_0").style = "border:3px solid green; width:35px;height: 35px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2_0").style = "border:3px solid red; width:35px;height: 35px; text-align:center";
     }
 }
-
-function cekhasil2() {
-    var hasil2 = document.getElementById("hasil2");
-
-    if (hasil2.value == "11") {
-        document.getElementById("hasil2").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
-        var hasil2 = document.getElementById("hasil2").value;
-        document.getElementById("fixhasil2").innerHTML = '<span class="alert alert-success text-hitam">$-36x^{11}$</span>';
-        document.getElementById("fixhasil2_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{-36}{12}x^{12}$</span>';
-        document.getElementById("fixhasil2_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{-36}{11+1}x^{1+1}$</span>';
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("hasil2").style = "border:3px solid red; width:35px;height: 30px; text-align:center";
-    }
-
-}
-
 
 
 function cekmm2() {
-    var soal2 = document.getElementById("smm2");
+    var soal1 = document.getElementById("mm2");
+    var soal2 = document.getElementById("mm2_1");
+    var soal3 = document.getElementById("mm2_2");
+    var fixhasil2 = document.getElementById("fixhasil2");
 
-    if (soal2.value == "-36") {
-        document.getElementById("smm2").style = "border:3px solid green; width:35px;height: 35px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2").style = "border:3px solid red; width:35px;height: 35px; text-align:center";
-    }
-}
-
-function cekmm2_1() {
-    var soal2_1 = document.getElementById("smm2_1");
-
-    if (soal2_1.value == "11") {
-        document.getElementById("smm2_1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2_1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    if (soal1.value === "-36" && soal2.value === "11" && soal3.value === "11") {
+        soal1.style.border = "3px solid green";
+        soal2.style.border = "3px solid green";
+        soal3.style.border = "3px solid green";
+        fixhasil2.innerHTML = '<span class="alert alert-success text-hitam"> Jawaban Benar </span>';
+    } else if (soal1.value !== "" && soal2.value !== "" && soal3.value !== "") {
+        soal1.style.border = "3px solid red";
+        soal2.style.border = "3px solid red";
+        soal3.style.border = "3px solid red";
+        fixhasil2.innerHTML = '<span class="alert alert-danger text-hitam"> Jawaban Salah </span>';
     }
 }
-
-function cekmm2_2() {
-    var soal2_2 = document.getElementById("smm2_2");
-
-    if (soal2_2.value == "1") {
-        document.getElementById("smm2_2").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2_2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm2_3() {
-    var soal2_3 = document.getElementById("smm2_3");
-
-    if (soal2_3.value == "11") {
-        document.getElementById("smm2_3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2_3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-
-function cekmm2_4() {
-    var soal2_4 = document.getElementById("smm2_4");
-
-    if (soal2_4.value == "1") {
-        document.getElementById("smm2_4").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm2_4").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-
 
 function cekmm3() {
-    var soal3 = document.getElementById("smm3");
+    var soal1 = document.getElementById("mm3");
+    var soal2 = document.getElementById("mm3_1");
+    var fixhasil3 = document.getElementById("fixhasil3");
 
-    if (soal3.value == "4") {
-        document.getElementById("smm3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    if (soal1.value === "4" && soal2.value === "3") {
+        soal1.style.border = "3px solid green";
+        soal2.style.border = "3px solid green";
+        fixhasil3.innerHTML = '<span class="alert alert-success text-hitam"> Jawaban Benar </span>';
+    } else if (soal1.value !== "" && soal2.value !== "") {
+        soal1.style.border = "3px solid red";
+        soal2.style.border = "3px solid red";
+        fixhasil3.innerHTML = '<span class="alert alert-danger text-hitam"> Jawaban Salah </span>';
     }
 }
-
-function cekhasil3() {
-    var hasil3 = document.getElementById("hasil3");
-
-    if (hasil3.value == "3") {
-        document.getElementById("hasil3").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
-        var hasil3 = document.getElementById("hasil3").value;
-        document.getElementById("fixhasil3").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{12}{3}x^{3}$</span>';
-        document.getElementById("fixhasil3_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{12}{2+1}x^{2+1}$</span>';
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("hasil3").style = "border:3px solid red; width:35px;height: 30px; text-align:center";
-    }
-
-}
-
 
 function cekmm4() {
-    var soal4 = document.getElementById("smm4");
+    var soal1 = document.getElementById("mm4");
+    var soal2 = document.getElementById("mm4_1");
+    var soal3 = document.getElementById("mm4_2");
+    var soal4 = document.getElementById("mm4_3");
+    var soal5 = document.getElementById("mm4_4");
+    var fixhasil4 = document.getElementById("fixhasil4");
 
-    if (soal4.value == "-15") {
-        document.getElementById("smm4").style = "border:3px solid green; width:35px;height: 35px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4").style = "border:3px solid red; width:35px;height: 35px; text-align:center";
-    }
-}
-
-function cekmm4_1() {
-    var soal4_1 = document.getElementById("smm4_1");
-
-    if (soal4_1.value == "4") {
-        document.getElementById("smm4_1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_2() {
-    var soal4_2 = document.getElementById("smm4_2");
-
-    if (soal4_2.value == "20") {
-        document.getElementById("smm4_2").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_2").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekhasil4() {
-    var hasil4 = document.getElementById("hasil4");
-
-    if (hasil4.value == "4") {
-        document.getElementById("hasil4").style = "border:3px solid green; width:35px;height: 30px; text-align:center";
-        var hasil4 = document.getElementById("hasil4").value;
-        document.getElementById("fixhasil4").innerHTML = '<span class="alert alert-success text-hitam">$20x^4 $ </span>';
-        document.getElementById("fixhasil4_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{20}{5}x^{5}$</span>';
-        document.getElementById("fixhasil4_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{20}{4+1}x^{4+1}$</span>';
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("hasil4").style = "border:3px solid red; width:35px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_3() {
-    var soal4_3 = document.getElementById("smm4_3");
-
-    if (soal4_3.value == "20") {
-        document.getElementById("smm4_3").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_3").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_4() {
-    var soal4_4 = document.getElementById("smm4_4");
-
-    if (soal4_4.value == "4") {
-        document.getElementById("smm4_4").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_4").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_5() {
-    var soal4_5 = document.getElementById("smm4_5");
-
-    if (soal4_5.value == "1") {
-        document.getElementById("smm4_5").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_5").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_6() {
-    var soal4_6 = document.getElementById("smm4_6");
-
-    if (soal4_6.value == "4") {
-        document.getElementById("smm4_6").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_6").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_7() {
-    var soal4_7 = document.getElementById("smm4_7");
-
-    if (soal4_7.value == "1") {
-        document.getElementById("smm4_7").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_7").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm4_7() {
-    var soal4_7 = document.getElementById("smm4_7");
-
-    if (soal4_7.value == "1") {
-        document.getElementById("smm4_7").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm4_7").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    if (soal1.value === "20" && soal2.value === "4" && soal3.value === "1" && soal4.value === "4" && soal5.value === "1") {
+        soal1.style.border = "3px solid green";
+        soal2.style.border = "3px solid green";
+        soal3.style.border = "3px solid green";
+        soal4.style.border = "3px solid green";
+        soal5.style.border = "3px solid green";
+        fixhasil4.innerHTML = '<span class="alert alert-success text-hitam"> Jawaban Benar </span>';
+    } else if (soal1.value !== "" && soal2.value !== "" && soal3.value !== "" && soal4.value !== "" && soal5.value !== "") {
+        soal1.style.border = "3px solid red";
+        soal2.style.border = "3px solid red";
+        soal3.style.border = "3px solid green";
+        soal4.style.border = "3px solid green";
+        soal5.style.border = "3px solid green";
+        fixhasil4.innerHTML = '<span class="alert alert-danger text-hitam"> Jawaban Salah </span>';
     }
 }
 
 function cekmm5() {
-    var soal5 = document.getElementById("smm5");
+    var soal1 = document.getElementById("mm5");
+    var soal2 = document.getElementById("mm5_1");
+    var soal3 = document.getElementById("mm5_2");
+    var fixhasil5 = document.getElementById("fixhasil5");
 
-    if (soal5.value == "2") {
-        document.getElementById("smm5").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm5").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}
-
-function cekmm5_1() {
-    var soal5_1 = document.getElementById("smm5_1");
-
-    if (soal5_1.value == "1") {
-        document.getElementById("smm5_1").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        benar = 0;
-    }
-    else {
-        document.getElementById("smm5_1").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
+    if (soal1.value === "2" && soal2.value === "1" && soal3.value === "3") {
+        soal1.style.border = "3px solid green";
+        soal2.style.border = "3px solid green";
+        soal3.style.border = "3px solid green";
+        fixhasil5.innerHTML = '<span class="alert alert-success text-hitam"> Jawaban Benar </span>';
+    } else if (soal1.value !== "" && soal2.value !== "" && soal3.value !== "") {
+        soal1.style.border = "3px solid red";
+        soal2.style.border = "3px solid red";
+        soal3.style.border = "3px solid red";
+        fixhasil5.innerHTML = '<span class="alert alert-danger text-hitam"> Jawaban Salah </span>';
     }
 }
 
-function cekhasil5() {
-    var hasil5 = document.getElementById("hasil5");
 
-    if (hasil5.value == "3") {
-        document.getElementById("hasil5").style = "border:3px solid green; width:30px;height: 30px; text-align:center";
-        var hasil5 = document.getElementById("hasil5").value;
-        document.getElementById("fixhasil5").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{2}{3}x^{-\\frac{2}{3}} $ </span>';
-        document.getElementById("fixhasil5_1").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{6}{3}x^{\\frac{1}{3}} $ </span>';
-        document.getElementById("fixhasil5_2").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{\\frac{2}{3}}{\\frac{1}{3}}x^{\\frac{1}{3}} $ </span>';
-        document.getElementById("fixhasil5_3").innerHTML = '<span class="alert alert-success text-hitam">$\\frac{\\frac{2}{3}}{-\\frac{2}{3}+1}x^{\\frac{2}{3}+1} $ </span>';
-
-        MathJax.typeset();
-    }
-    else {
-        document.getElementById("hasil5").style = "border:3px solid red; width:30px;height: 30px; text-align:center";
-    }
-}

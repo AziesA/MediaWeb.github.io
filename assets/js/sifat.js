@@ -572,7 +572,6 @@ function resetRadioButtons() {
     document.getElementById("step4").innerHTML = '<input class="input3" disabled>';
     document.getElementById("step5").innerHTML = '<input class="input3" disabled>';
     document.getElementById("step5_1").innerHTML = '<input class="input3" disabled>';
-    document.getElementById("Pembahasan1").innerHTML = '<input class="input3" disabled>';
 }
 
 

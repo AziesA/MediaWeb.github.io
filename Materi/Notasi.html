@@ -245,7 +245,7 @@
                                                             <th scope="col">No.</th>
                                                             <th scope="col">Turunan <br>Fungsi $(f(x))$</th>
                                                             <th scope="col">Antiturunan <br>Fungsi (F(x))</th>
-                                                            <th scope="col">Pola</th>
+                                                            <th scope="col">Definisi</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -253,39 +253,38 @@
                                                             <th scope="row">1.</th>
                                                             <td class="text-center">1</td>
                                                             <td class="text-center">$x$</td>
-                                                            <td>$1x^0 &#8594 \frac{1}{1}x^1 = \frac{1}{0+1}x^{0+1}$</td>
+                                                            <td class="text-center">$\frac{1}{0+1}x^{0+1}$</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">2.</th>
                                                             <td class="text-center">$2x$</td>
                                                             <td class="text-center">$x^2$</td>
-                                                            <td>$2x^1 &#8594 \frac{2}{2}x^2 = \frac{2}{1+1}x^{1+1}$</td>
+                                                            <td class="text-center">$ \frac{2}{1+1}x^{1+1}$</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">3.</th>
                                                             <td class="text-center">$3x^2$</td>
                                                             <td class="text-center">$x^3$</td>
-                                                            <td>$3x^2 &#8594 \frac{3}{3}x^2 = \frac{3}{2+1}x^{2+1}$</td>
+                                                            <td class="text-center">$\frac{3}{2+1}x^{2+1}$</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">4.</th>
                                                             <td class="text-center">$8x^2$</td>
                                                             <td class="text-center">$2x^4$</td>
-                                                            <td>$8x^3 &#8594 \frac{8}{4}x^3 = \frac{8}{3+1}x^{3+1}$</td>
+                                                            <td class="text-center">$ \frac{8}{3+1}x^{3+1}$</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">5.</th>
                                                             <td class="text-center">$anx^{n-1}$</td>
                                                             <td class="text-center">$ax^n$</td>
-                                                            <td>$anx^{n-1} &#8594 \frac{a}{1}x^{n-1} =
-                                                                \frac{a}{(n-1)+1}x^{(n-1)+1}$
+                                                            <td class="text-center">$ \frac{a}{(n-1)+1}x^{(n-1)+1}$
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">6.</th>
                                                             <td class="text-center">$ax^n$</td>
                                                             <td class="text-center">?</td>
-                                                            <td>$\frac{a}{n+1}x^{n-1}$</td>
+                                                            <td class="text-center">$\frac{a}{n+1}x^{n-1}$</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -313,15 +312,13 @@
                                                 <li> Isikan jawaban kamu pada kolom titik-titik atau kosong secara
                                                     berurutan dari
                                                     kiri ke kanan disetiap. </li>
-                                                <li>Gunakan angka dan simbol matematika ($+ &ensp;, - &ensp;, :&ensp;,
-                                                    dll)$ saat
+                                                <li>Gunakan angka saat
                                                     memasukkan jawaban</li>
                                                 <li> Jika jawaban kamu benar maka kolom tersebut akan berubah menjadi
                                                     warna hijau. </li>
                                                 <li> Jika jawaban kamu salah maka kolom tersebut akan berubah menjadi
                                                     warna merah. </li>
-                                                <li><input class="input3" disabled> Input disamping akan terisi jika
-                                                    jawaban anda benar</li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -350,7 +347,7 @@
                                         <div class="tab-content">
                                             <div class="tab-pane fade show active" id="Latihan1">
                                                 <p class="card-text" style=" font-size: 18px;">
-                                                <table class="table table-bordered text-hitam">
+                                                <table class="table table-bordered text-hitam" style="font-size: 22px;">
                                                     <thead>
                                                         <tr class="">
                                                             <th scope="col" class="text-center">No.</th>
@@ -360,7 +357,9 @@
                                                                 <br>Fungsi
                                                                 (F(x))
                                                             </th>
-                                                            <th scope="col" class="text-center">Pola</th>
+                                                            <th scope="col" class="text-center">Definisi</th>
+                                                            <th scope="col" class="text-center">Keterangan<br> Jawaban
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -372,50 +371,58 @@
                                                             <td class="text-center">
                                                                 <p>$2x^{2}$</p>
                                                             </td>
-                                                            <td>
-                                                                <p>$4x$ &rarr; $\frac{4}{2}x^{2} = \frac{4}{1+1}x^{1+1}$
+                                                            <td class="text-center">
+                                                                <p>$\frac{4}{1+1}x^{1+1}$
                                                                 </p>
                                                             </td>
+                                                            <!--  <td><input class=" text-hitam alert alert-success "
+                                                                    placeholder="Jawaban Benar" style="width:190px;">
+                                                            </td>-->
                                                         </tr>
                                                         <tr>
                                                             <th scope="row" class="text-center">$2$.</th>
                                                             <td class="text-center">
                                                                 <p>$10x^9$</p>
                                                             </td>
-                                                            <td class="text-center"><span>$x$<sup><sup><input
-                                                                                type="number" class="pangkat"
-                                                                                name="hasil1" id="hasil1"
-                                                                                onkeyup="cekhasil1()" placeholder="..."
-                                                                                autocomplete="off"></sup></sup></span>
+                                                            <td class="text-center">
+                                                                $x$<sup><sup> <input class="input" type="number"
+                                                                            id="mm1" onkeyup="cekmm1()"
+                                                                            onchange="hapusdisable1()" placeholder="..."
+                                                                            autocomplete="off"></sup></sup>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                $\frac{10}{9+1}x^{9+1}$
                                                             </td>
                                                             <td>
-                                                                <span>$10x^9$ &rarr; <span id="fixhasil1"><input
-                                                                            class="input" disabled> </span> = <span
-                                                                        id="fixhasil1_1"><input class="input" disabled>
-                                                                    </span>
-                                                                </span>
+                                                                <span id="fixhasil1"><input class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row" class="text-center">$3$.</th>
-                                                            <td class="text-center"><span><input type="number"
-                                                                        name="smm1" id="smm2_0" class="input"
-                                                                        onkeyup="cekmm2_0()" onchange="hapusdisable1()"
-                                                                        placeholder="..."> $x$ <sup><sup><input
-                                                                                type="number"
-                                                                                class="inputdisabled pangkat"
-                                                                                name="hasil2" id="hasil2"
-                                                                                onkeyup="cekhasil2()" placeholder="..."
-                                                                                autocomplete="off"></sup></sup>
-                                                                </span>
+                                                            <td class="text-center"> $-36x^{11}$
                                                             </td>
                                                             <td class="text-center">$-3x^{12}$</td>
-                                                            <td><span id="fixhasil1"><span> <span id="fixhasil2"><input
-                                                                                class="input" disabled></span> &rarr;
-                                                                        <span id="fixhasil2_1"><input class="input"
-                                                                                disabled></span>
-                                                                        $=$ <span id="fixhasil2_2"><input class="input"
-                                                                                disabled></span>
+                                                            <td class="text-center">
+                                                                <div class="frac">
+                                                                    <span> <input class="input2" type="number" id="mm2"
+                                                                            onkeyup="cekmm2()"
+                                                                            onchange="hapusdisable2()" placeholder="..."
+                                                                            autocomplete="off"></span>
+                                                                    <span class="symbol"></span>
+                                                                    <span class="bottom"><input class="input"
+                                                                            type="number" id="mm2_1" onkeyup="cekmm2()"
+                                                                            onchange="hapusdisable2()" placeholder="..."
+                                                                            autocomplete="off"> $+
+                                                                        1$</span>
+                                                                </div> $x$ <sup><sup>
+                                                                        <input class="input" type="number" id="mm2_2"
+                                                                            onkeyup="cekmm2()"
+                                                                            onchange="hapusdisable2()" placeholder="..."
+                                                                            autocomplete="off"> $ + 1$
+                                                                    </sup></sup>
+                                                            </td>
+                                                            <td>
+                                                                <span id="fixhasil2"><input class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -423,45 +430,48 @@
                                                             <td class="text-center">
                                                                 <p>$12x^{2}$</p>
                                                             </td>
-                                                            <td class="text-center"><span><input type="number"
-                                                                        name="smm1" id="smm3" class="input"
-                                                                        onkeyup="cekmm3()" onchange="hapusdisable1()"
-                                                                        placeholder="..."> $x$ <sup><sup><input
-                                                                                type="number"
-                                                                                class="inputdisabled pangkat"
-                                                                                name="hasil3" id="hasil3"
-                                                                                onkeyup="cekhasil3()"
-                                                                                placeholder="..."></sup></sup>
-                                                                </span>
-                                                                </span> </td>
-                                                            <td>$12x^{2}$ &rarr;<span id="fixhasil3"><input
-                                                                        class="input" disabled> </span> $=$ <span
-                                                                    id="fixhasil3_1"> <input class="input" disabled>
-                                                                </span>
+                                                            <td class="text-center"><input class="input" type="number"
+                                                                    id="mm3" onkeyup="cekmm3()" placeholder="..."
+                                                                    autocomplete="off">$x$
+                                                                <sup><sup><input class="input" type="number" id="mm3_1"
+                                                                            onkeyup="cekmm3()" placeholder="..."
+                                                                            autocomplete="off"></sup></sup>
+                                                            </td>
+                                                            <td class="text-center"> $\frac{12}{2+1}x^{2+1}$
+                                                            </td>
+                                                            <td>
+                                                                <span id="fixhasil3"><input class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row" class="text-center">$5$.</th>
-                                                            <td class="text-center">
-                                                                <span><span><input type="number" name="smm1" id="smm4_2"
-                                                                            class="input" onkeyup="cekmm4_2()"
-                                                                            onchange="hapusdisable4()"
-                                                                            placeholder="..."> $x$ <sup><sup><input
-                                                                                    type="number"
-                                                                                    class="inputdisabled pangkat"
-                                                                                    name="hasil4" id="hasil4"
-                                                                                    onkeyup="cekhasil4()"
-                                                                                    placeholder="..."></sup></sup>
-                                                                    </span>
-                                                                </span>
+                                                            <td class="text-center"> $20x^{4}$
                                                             </td>
                                                             <td class="text-center">$4x^5$</td>
-                                                            <td><span id="fixhasil4"><input class="input"
-                                                                        disabled></span> &rarr; <span
-                                                                    id="fixhasil4_1"><input class="input"
-                                                                        disabled></span>
-                                                                $=$ <span id="fixhasil4_2"><input class="input"
-                                                                        disabled></span>
+                                                            <td class="text-center">
+                                                                <div class="frac">
+                                                                    <span><input class="input" type="number" id="mm4"
+                                                                            onkeyup="cekmm4()" placeholder="..."
+                                                                            autocomplete="off"></span>
+                                                                    <span class="symbol">/</span>
+                                                                    <span class="bottom"><input class="input"
+                                                                            type="number" id="mm4_1" onkeyup="cekmm4()"
+                                                                            placeholder="..." autocomplete="off"> $+$
+                                                                        <input class="input" type="number" id="mm4_2"
+                                                                            onkeyup="cekmm4()" placeholder="..."
+                                                                            autocomplete="off"></span>
+                                                                </div> $x$ <sup><sup>
+                                                                        <span><input class="input" type="number"
+                                                                                id="mm4_3" onkeyup="cekmm4()"
+                                                                                placeholder="..." autocomplete="off">
+                                                                            $+$<input class="input" type="number"
+                                                                                id="mm4_4" onkeyup="cekmm4()"
+                                                                                placeholder="..."
+                                                                                autocomplete="off"></span>
+                                                                    </sup></sup>
+                                                            </td>
+                                                            <td>
+                                                                <span id="fixhasil4"><input class="input3" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -470,36 +480,29 @@
                                                                 $\frac{2}{3}x^{-\frac{2}{3}}$
                                                             </td>
                                                             <td class="text-center">
-                                                                <span>
-                                                                    <input type="number" name="smm1" id="smm5"
-                                                                        class="input" onkeyup="cekmm5()"
-                                                                        onchange="hapusdisable5()" placeholder="...">
-                                                                    $x$ <sup><sup>
-                                                                            <div class="frac">
-                                                                                <span> <input type="number" name="smm1"
-                                                                                        id="smm5_1" class="pangkat"
-                                                                                        onkeyup="cekmm5_1()"
-                                                                                        onchange="hapusdisable5()"
-                                                                                        placeholder="..."> </span>
-                                                                                <span class="symbol">/</span>
-                                                                                <span class="bottom">
-                                                                                    <input type="number" class="pangkat"
-                                                                                        name="hasil5" id="hasil5"
-                                                                                        onkeyup="cekhasil5()"
-                                                                                        placeholder="...">
-                                                                                </span>
-                                                                            </div>
-                                                                        </sup></sup>
-                                                                </span>
+                                                                <input class="input" type="number" id="mm5"
+                                                                    onkeyup="cekmm5()" placeholder="..."
+                                                                    autocomplete="off">$x$
+                                                                <sup><sup>
+                                                                        <div class="frac">
+                                                                            <span> <input class="input" type="number"
+                                                                                    id="mm5_1" onkeyup="cekmm5()"
+                                                                                    placeholder="..."
+                                                                                    autocomplete="off"></span>
+                                                                            <span class="symbol">/</span>
+                                                                            <span class="bottom"> <input class="input"
+                                                                                    type="number" id="mm5_2"
+                                                                                    onkeyup="cekmm5()" placeholder="..."
+                                                                                    autocomplete="off"></span>
+                                                                        </div>
+                                                                    </sup></sup>
                                                             </td>
-                                                            <td><span id="fixhasil5"><input class="input"
-                                                                        disabled></span> &rarr; <span
-                                                                    id="fixhasil5_1"><input class="input"
-                                                                        disabled></span> &rarr; <span
-                                                                    id="fixhasil5_2"><input class="input"
-                                                                        disabled></span> $=$ <span
-                                                                    id="fixhasil5_3"><input class="input"
-                                                                        disabled></span>
+                                                            <td class="text-center">
+                                                                $\frac{\frac{2}{3}}{-\frac{2}{3}+1}x^{-\frac{2}{3}+1}$
+                                                            </td>
+                                                            <td>
+                                                                <span id="fixhasil5"><input class="input3" disabled>
+
                                                             </td>
                                                         </tr>
                                                     </tbody>
